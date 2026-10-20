@@ -55,7 +55,9 @@ CAPSULE_BORDER = 0.12  # the capsule outline stroke
 # the gerbers, so the fab needs nothing - but whoever plots them does. The
 # font is embedded in the board (board.EmbedFonts) so it travels with the
 # file instead of depending on what is installed.
-PAD_SILK_CLEAR = 0.18  # silk kept this far off an LED pad
+PAD_SILK_CLEAR = 0.06  # silk kept just off the pad: enough that it is
+                       # not ON the mask opening, no more. The old 0.18
+                       # plus half a stroke read as a gap round every LED.
 RIVER_MITRE = 1.0  # extra length added at each river segment end, to close gaps
 # citymap.repel() only pushes vertices, not the edges between them, so two
 # adjacent vertices each individually clear of a station can still bound an
@@ -254,50 +256,77 @@ def land_outline_blocks(city, scale, geo=None):
 
 
 def route_blocks(city, scale, keepouts=None):
-    """The transit lines themselves, as F.SilkS strokes between adjacent
-    stations - one solid style for every segment (future extensions are
-    drawn like the rest; the map shows the network as it will be).
+    """The transit lines, as filled F.SilkS polygons with the elements cut
+    out of them.
 
-    `keepouts` is a shapely geometry the strokes are cut out of: the label
-    capsules and the LED pads. White text on a white line is unreadable, so
-    the line gives way; and silkscreen will not print on a pad's mask
-    opening anyway, so ink drawn across a pad is ink the board would not
-    have had. A segment crossing a keepout is emitted as the pieces that
-    survive rather than as one stroke.
+    The strokes are unioned into one shape and the keepouts - the label
+    capsules and the LED pads - are subtracted from it. That is a solid
+    line with a hole in it, which is what the map wants.
+
+    Cutting the CENTRE LINE instead and drawing thick segments does not
+    give that. A centre line trimmed to clear a capsule stops half a
+    stroke width short of it, and KiCad draws the segment end flush, so
+    every element ended up ringed by a visible gap - about 0.5 mm at a
+    0.75 mm stroke. Unioning also removes the seams between consecutive
+    segments, so a line reads as one stroke rather than a chain of them.
     """
-    blocks = []
+    from shapely.geometry import LineString as _L
+    from shapely.ops import unary_union as _uu
     weight = {l.id: getattr(l, "weight", 1.0) for l in city.lines}
-    _grown = {}          # keepouts buffered per distinct stroke width
-    for i, (line_id, p1, p2, a, b) in enumerate(citymap.segments(city)):
+    strokes = []
+    for line_id, p1, p2, a, b in citymap.segments(city):
         p1s = (p1[0] * scale, p1[1] * scale)
         p2s = (p2[0] * scale, p2[1] * scale)
-        if keepouts is None:
-            pieces = [(p1s, p2s)]
-        else:
-            from shapely.geometry import LineString as _L
-            # Cut the centre line against the keepout GROWN BY HALF THE
-            # STROKE. The route is 0.75 mm wide (1.65 mm for the
-            # Shinkansen), so a centre line that clears a capsule can still
-            # paint over it by half the width - which is why the lines were
-            # still crossing the capsules at Kayabacho and Kyobashi.
-            w = ROUTE_W * weight.get(line_id, 1.0)
-            grown = _grown.get(w)
-            if grown is None:
-                grown = keepouts.buffer(w / 2.0, join_style=1)
-                _grown[w] = grown
-            left = _L([p1s, p2s]).difference(grown)
-            if left.is_empty:
-                continue
-            pieces = []
-            for g in getattr(left, "geoms", [left]):
-                if g.geom_type != "LineString" or g.length < 0.05:
-                    continue
-                c = list(g.coords)
-                pieces.append((c[0], c[-1]))
-        for j, (q1, q2) in enumerate(pieces):
-            blocks.append(line_block(q1, q2, "F.SilkS",
-                                     f"route:{i}.{j}:{a}:{b}", width=ROUTE_W))
+        if p1s == p2s:
+            continue
+        w = ROUTE_W * weight.get(line_id, 1.0)
+        strokes.append(_L([p1s, p2s]).buffer(w / 2.0, cap_style=1,
+                                             join_style=1, resolution=8))
+    for line in city.lines:
+        for (x0, y0), (x1, y1) in line.stubs:
+            strokes.append(_L([(x0 * scale, y0 * scale),
+                               (x1 * scale, y1 * scale)])
+                           .buffer(ROUTE_W * line.weight / 2.0, cap_style=1,
+                                   join_style=1, resolution=8))
+    if not strokes:
+        return []
+    shape = _uu(strokes)
+    if keepouts is not None:
+        shape = shape.difference(keepouts)
+    blocks = []
+    for i, g in enumerate(getattr(shape, "geoms", [shape])):
+        if g.geom_type != "Polygon" or g.is_empty or g.area < 0.004:
+            continue
+        # A hole is emitted as its own filled polygon on the mask-away
+        # layer? No - gr_poly has one ring, so a ring with holes is cut
+        # open along a seam to the nearest point on the hole.
+        ring = _with_holes(g)
+        blocks.append(poly_block("gr_poly", ring, "F.SilkS", True,
+                                 f"route:{i}", width=0.01))
     return blocks
+
+
+def _with_holes(poly):
+    """A single point list for a polygon that may have holes.
+
+    gr_poly carries one ring, so each hole is bridged into the outer ring
+    by a seam: out to the hole, round it, and back. The seam is the width
+    of nothing, so it does not print.
+    """
+    pts = list(poly.exterior.coords)
+    for interior in poly.interiors:
+        hole = list(interior.coords)
+        # join at the closest pair of points
+        best = None
+        for i, a in enumerate(pts):
+            for j, b in enumerate(hole):
+                d = (a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2
+                if best is None or d < best[0]:
+                    best = (d, i, j)
+        _, i, j = best
+        bridged = hole[j:] + hole[:j + 1]
+        pts = pts[:i + 1] + bridged + pts[i:]
+    return pts
 
 
 def station_ring_blocks(city, scale):
@@ -376,7 +405,8 @@ def main():
     import capsules
     from shapely.ops import unary_union as _uu
     caps = list(capsules.all_capsules(city, args.scale).values())
-    keepouts = _uu(caps + capsules.pad_keepouts(city, args.scale, PAD_SILK_CLEAR))
+    keepouts = _uu([c.buffer(CAPSULE_BORDER / 2.0) for c in caps]
+                   + capsules.pad_keepouts(city, args.scale, PAD_SILK_CLEAR))
     routes = (route_blocks(city, args.scale, keepouts)
               + station_ring_blocks(city, args.scale))
 
