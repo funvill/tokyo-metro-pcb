@@ -49,6 +49,12 @@ DASH_STYLES = {  # (dash, gap) in mm for "line" geo and future routes
     "dot": (0.5, 0.9),
     "dashdot": None,  # handled specially: long dash, gap, dot, gap
 }
+LABEL_FACE = "Archivo Narrow SemiBold"
+CAPSULE_BORDER = 0.12  # the capsule outline stroke
+# KiCad renders this as an outline font and plots the glyph outlines into
+# the gerbers, so the fab needs nothing - but whoever plots them does. The
+# font is embedded in the board (board.EmbedFonts) so it travels with the
+# file instead of depending on what is installed.
 PAD_SILK_CLEAR = 0.18  # silk kept this far off an LED pad
 RIVER_MITRE = 1.0  # extra length added at each river segment end, to close gaps
 # citymap.repel() only pushes vertices, not the edges between them, so two
@@ -156,7 +162,8 @@ def text_block(text, x, y, angle, anchor, layer, key, size=None, bold=False):
     thickness = max(0.12, h * ratio)
     return (f'(gr_text "{text}"\n\t\t(at {x:.3f} {y:.3f} {angle % 360:.1f})\n'
             f'\t\t(layer "{layer}")\n\t\t(uuid "{art_uuid(key)}")\n\t\t'
-            f'(effects\n\t\t\t(font\n\t\t\t\t(size {h} {h})\n'
+            f'(effects\n\t\t\t(font\n\t\t\t\t(face "{LABEL_FACE}")\n'
+            f'\t\t\t\t(size {h} {h})\n'
             f'\t\t\t\t(thickness {thickness:.3f})\n\t\t\t){justify}\n\t\t)\n\t)')
 
 
@@ -360,6 +367,20 @@ def main():
     keepouts = _uu(caps + capsules.pad_keepouts(city, args.scale, PAD_SILK_CLEAR))
     routes = (route_blocks(city, args.scale, keepouts)
               + station_ring_blocks(city, args.scale))
+
+    # The capsule outline itself. It was being computed as a keepout and
+    # never drawn, so the board had the cleared space but no border round
+    # it. One closed polyline per capsule, unfilled.
+    capsule_blocks = []
+    for sid, cap in capsules.all_capsules(city, args.scale).items():
+        for g in getattr(cap, "geoms", [cap]):
+            if g.geom_type != "Polygon" or g.is_empty:
+                continue
+            pts = [(x, y) for x, y in g.exterior.coords]
+            capsule_blocks.append(poly_block("gr_poly", pts, "F.SilkS", False,
+                                             f"capsule:{sid}",
+                                             width=CAPSULE_BORDER))
+    routes += capsule_blocks
     land = land_outline_blocks(city, args.scale, geo)
     labels = label_blocks(city, args.scale)
     annotations = annotation_blocks(city, args.scale)
