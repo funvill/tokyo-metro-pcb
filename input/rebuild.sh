@@ -1,0 +1,82 @@
+#!/bin/bash
+# Rebuild input/tokyo.json, the board's data file, from the cached OSM
+# responses. Every intermediate is disposable: this script is the record of
+# how the board was made, so the variants it writes along the way are not
+# kept in the repo.
+#
+#   ./rebuild.sh            # station list, layout, crop, previews
+#   ./rebuild.sh --labels   # ... and re-run the label optimiser from scratch
+#
+# Hand work is NOT regenerated. label_overrides.json and chain.json are
+# re-applied on every build (lesson B5), so the only way to change them is
+# import_labels.py / build_chain.py, deliberately.
+set -euo pipefail
+cd "$(dirname "$0")"
+
+BOARD=340x340          # the layout is solved on the uncropped square...
+CROP=320x280           # ... then the board edge is moved in at the same scale
+FRAME=35.580,139.643,35.765,139.889
+BAY=25                 # board height reserved below the map for Tokyo Bay
+SHORE=1.6              # how far clear of the water a station must sit
+
+echo "== station list"
+python -X utf8 build_station_latlon.py
+
+echo
+echo "== track alignments from the cached OSM ways"
+python -X utf8 make_alignments.py osm/tracks.json tokyo_station_latlon.json \
+    alignments.json
+
+echo
+echo "== layout on the $BOARD board"
+# The map is ORGANIC: stations stay where the city puts them and the track
+# follows the real rails, so there is no octolinear solve at all.
+# --crossings is what carries the rails; --shore-shift walks a station
+# inland, along its own bank, until its clearance disc stops notching the
+# water. Taking the nearest dry point instead would put Ichigaya across the
+# moat from where it belongs.
+python -X utf8 build_tokyo.py --variant natural \
+    --board "$BOARD" --crop "$FRAME" --bay "$BAY" --anchor n \
+    --suffix=-full --labels label_overrides.json \
+    --crossings alignments.json --shore-shift --shore-clear "$SHORE"
+
+if [ "${1:-}" = "--labels" ]; then
+    echo
+    echo "== label optimiser (slow; overwrites the frozen placements)"
+    ( cd ../tools && python -X utf8 auto_label.py ../input/tokyo-natural-full.json )
+    python -X utf8 - <<'PY'
+import json, io
+d = json.load(io.open('tokyo-natural-full.json', encoding='utf-8'))
+ov = {k: {"label": v["label"], **({"wrap": v["wrap"]} if "wrap" in v else {})}
+      for k, v in d["stations"].items() if "label" in v}
+json.dump(ov, io.open('label_overrides.json', 'w', encoding='utf-8'),
+          ensure_ascii=False, indent=1, sort_keys=True)
+print(f"re-froze {len(ov)} labels")
+PY
+fi
+
+echo
+echo "== crop to $CROP at the same scale"
+python -X utf8 ../tools/crop_board.py tokyo-natural-full.json "$CROP" \
+    tokyo.json --drop-stations
+
+echo
+echo "== re-apply the chain"
+python -X utf8 apply_chain.py tokyo.json chain.json
+
+echo
+echo "== clean the geometry"
+# Reversals left by cutting a leg out of a merged rail line, and isolated
+# specks of water that read as dirt rather than as geography.
+python -X utf8 ../tools/despike.py tokyo.json
+python -X utf8 ../tools/drop_ponds.py tokyo.json
+
+echo
+echo "== previews"
+python -X utf8 ../tools/preview_map.py tokyo.json ../test-results/board.png
+python -X utf8 ../tools/preview_map.py tokyo.json \
+    ../test-results/board-collisions.png --collisions
+
+rm -f tokyo-natural-full.json
+echo
+echo "tokyo.json rebuilt. Hand work came from label_overrides.json and chain.json."

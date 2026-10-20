@@ -1,0 +1,61 @@
+{
+ "_comment": [
+  "Stations on the two Tokyo Metro extensions under construction. Both began",
+  "construction in November 2024 per Tokyo Metro's 2025-2027 Mid-term",
+  "Management Plan, each targeting a mid-2030s opening; the board outlives the",
+  "construction timeline, so they are on it (docs/decisions.md).",
+  "",
+  "Lesson A3: future stations are not in OSM as ordinary station nodes, so",
+  "each position is recorded here with where it came from, rather than being",
+  "quietly invented."
+ ],
+ "stations": [
+  {
+   "id": "edagawa",
+   "name": "Edagawa",
+   "name_ja": "枝川",
+   "codes": [],
+   "lat": 35.6586133,
+   "lon": 139.8069025,
+   "status": "under-construction",
+   "note": "Provisional name (仮称). Between Toyosu and Toyocho on the Yurakucho line branch.",
+   "source": "OSM node 12765586687, construction:railway=station, name 枝川駅（仮称）, on the railway=construction ways tagged 有楽町線豊洲〜住吉延伸 (1019981869, 1378585824, 1378585825, 1378585828)"
+  },
+  {
+   "id": "sengoku-koto",
+   "name": "Sengoku",
+   "name_ja": "千石",
+   "codes": [],
+   "lat": 35.6790862,
+   "lon": 139.8159783,
+   "status": "under-construction",
+   "note": "Provisional name (仮称). In Koto ward, between Toyocho and Sumiyoshi. Romanises identically to the Mita line's Sengoku (千石, Bunkyo ward), which already has an LED - the two labels will need disambiguating, and the provisional name may yet change.",
+   "source": "OSM node 12765586688, construction:railway=station, name 千石駅（仮称）, on the same railway=construction way"
+  },
+  {
+   "id": "shinagawa",
+   "name": "Shinagawa",
+   "name_ja": "品川",
+   "codes": [],
+   "lat": 35.6286688,
+   "lon": 139.7391673,
+   "status": "under-construction",
+   "note": "Terminus of the Namboku line branch from Shirokane-Takanawa, 2.5 km with no intermediate station. The new platform will be under the station's west side; this is the existing JR/Keikyu station's position.",
+   "source": "OSM node 4011643454, railway=station, name 品川 (the Namboku branch itself has no OSM way yet)"
+  }
+ ],
+ "insert": [
+  {
+   "line": "yurakucho",
+   "new_path": true,
+   "path": ["toyosu", "edagawa", "toyocho", "sengoku-koto", "sumiyoshi"],
+   "note": "The branch leaves the main line at Toyosu (Y-22) and runs 4.8 km to Sumiyoshi. Toyocho (Tozai, T-14) and Sumiyoshi (Hanzomon Z-12 / Toei Shinjuku S-13) already have LEDs; this path adds them to the Yurakucho line and brings in two new stations."
+  },
+  {
+   "line": "namboku",
+   "new_path": true,
+   "path": ["shirokane-takanawa", "shinagawa"],
+   "note": "The branch leaves the main line at Shirokane-Takanawa (N-03) and runs 2.5 km to Shinagawa with no intermediate station."
+  }
+ ]
+}

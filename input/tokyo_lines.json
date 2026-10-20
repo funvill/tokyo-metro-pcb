@@ -1,0 +1,642 @@
+{
+ "arakawa": {
+  "colour": "#D85B81",
+  "id": "arakawa",
+  "mode": "other",
+  "name": "Toden Arakawa Line",
+  "operator": "Toei",
+  "paths": [
+   [
+    "waseda",
+    "omokagebashi",
+    "gakushuinshita",
+    "kishibojimmae",
+    "toden-zoshigaya",
+    "higashi-ikebukuro-yonchome",
+    "mukohara",
+    "otsuka-ekimae",
+    "sugamoshinden",
+    "koshinzuka",
+    "shin-koshinzuka",
+    "nishigahara-yonchome",
+    "takinogawa-itchome",
+    "asukayama",
+    "oji-ekimae",
+    "sakaecho",
+    "kajiwara",
+    "arakawa-shakomae",
+    "arakawa-yuenchimae",
+    "odai",
+    "miyanomae",
+    "kumanomae",
+    "higashi-ogu-sanchome",
+    "machiya-nichome",
+    "machiya-ekimae",
+    "arakawa-nanachome",
+    "arakawa-nichome",
+    "arakawa-kuyakushomae",
+    "arakawa-itchumae",
+    "minowabashi"
+   ]
+  ],
+  "ref": "SA",
+  "stations": 30
+ },
+ "asakusa": {
+  "colour": "#E85298",
+  "id": "asakusa",
+  "name": "Asakusa Line",
+  "operator": "Toei",
+  "paths": [
+   [
+    "nishi-magome",
+    "magome",
+    "nakanobu",
+    "togoshi",
+    "gotanda",
+    "takanawadai",
+    "sengakuji",
+    "mita",
+    "daimon",
+    "shimbashi",
+    "higashi-ginza",
+    "takaracho",
+    "nihombashi",
+    "ningyocho",
+    "higashi-nihombashi",
+    "asakusabashi",
+    "kuramae",
+    "asakusa",
+    "honjo-azumabashi",
+    "oshiage"
+   ]
+  ],
+  "ref": "A",
+  "stations": 20
+ },
+ "chiyoda": {
+  "colour": "#00BB85",
+  "id": "chiyoda",
+  "name": "Chiyoda Line",
+  "operator": "Tokyo Metro",
+  "paths": [
+   [
+    "yoyogi-uehara",
+    "yoyogi-koen",
+    "meiji-jingumae",
+    "omote-sando",
+    "nogizaka",
+    "akasaka",
+    "kokkai-gijidomae",
+    "kasumigaseki",
+    "hibiya",
+    "nijubashimae",
+    "otemachi",
+    "shin-ochanomizu",
+    "yushima",
+    "nezu",
+    "sendagi",
+    "nishi-nippori",
+    "machiya",
+    "kita-senju",
+    "ayase"
+   ],
+   [
+    "kita-ayase",
+    "ayase"
+   ]
+  ],
+  "ref": "C",
+  "stations": 20
+ },
+ "fukutoshin": {
+  "colour": "#9C5E31",
+  "id": "fukutoshin",
+  "name": "Fukutoshin Line",
+  "operator": "Tokyo Metro",
+  "paths": [
+   [
+    "wakoshi",
+    "chikatetsu-narimasu",
+    "chikatetsu-akatsuka",
+    "heiwadai",
+    "hikawadai",
+    "kotake-mukaihara",
+    "senkawa",
+    "kanamecho",
+    "ikebukuro",
+    "zoshigaya",
+    "nishi-waseda",
+    "higashi-shinjuku",
+    "shinjuku-sanchome",
+    "kita-sando",
+    "meiji-jingumae",
+    "shibuya"
+   ]
+  ],
+  "ref": "F",
+  "stations": 16
+ },
+ "ginza": {
+  "colour": "#FF9500",
+  "id": "ginza",
+  "name": "Ginza Line",
+  "operator": "Tokyo Metro",
+  "paths": [
+   [
+    "asakusa",
+    "tawaramachi",
+    "inaricho",
+    "ueno",
+    "ueno-hirokoji",
+    "suehirocho",
+    "kanda",
+    "mitsukoshimae",
+    "nihombashi",
+    "kyobashi",
+    "ginza",
+    "shimbashi",
+    "toranomon",
+    "tameike-sanno",
+    "akasaka-mitsuke",
+    "aoyama-itchome",
+    "gaiemmae",
+    "omote-sando",
+    "shibuya"
+   ]
+  ],
+  "ref": "G",
+  "stations": 19
+ },
+ "hanzomon": {
+  "colour": "#8F76D6",
+  "id": "hanzomon",
+  "name": "Hanzomon Line",
+  "operator": "Tokyo Metro",
+  "paths": [
+   [
+    "shibuya",
+    "omote-sando",
+    "aoyama-itchome",
+    "nagatacho",
+    "hanzomon",
+    "kudanshita",
+    "jimbocho",
+    "otemachi",
+    "mitsukoshimae",
+    "suitengumae",
+    "kiyosumi-shirakawa",
+    "sumiyoshi",
+    "kinshicho",
+    "oshiage"
+   ]
+  ],
+  "ref": "Z",
+  "stations": 14
+ },
+ "hibiya": {
+  "colour": "#B5B5AC",
+  "id": "hibiya",
+  "name": "Hibiya Line",
+  "operator": "Tokyo Metro",
+  "paths": [
+   [
+    "naka-meguro",
+    "ebisu",
+    "hiro-o",
+    "roppongi",
+    "kamiyacho",
+    "toranomon-hills",
+    "kasumigaseki",
+    "hibiya",
+    "ginza",
+    "higashi-ginza",
+    "tsukiji",
+    "hatchobori",
+    "kayabacho",
+    "ningyocho",
+    "kodemmacho",
+    "akihabara",
+    "naka-okachimachi",
+    "ueno",
+    "iriya",
+    "minowa",
+    "minami-senju",
+    "kita-senju"
+   ]
+  ],
+  "ref": "H",
+  "stations": 22
+ },
+ "marunouchi": {
+  "colour": "#F62E36",
+  "id": "marunouchi",
+  "name": "Marunouchi Line",
+  "operator": "Tokyo Metro",
+  "paths": [
+   [
+    "ogikubo",
+    "minami-asagaya",
+    "shin-koenji",
+    "higashi-koenji",
+    "shin-nakano",
+    "nakano-sakaue",
+    "nishi-shinjuku",
+    "shinjuku",
+    "shinjuku-sanchome",
+    "shinjuku-gyoemmae",
+    "yotsuya-sanchome",
+    "yotsuya",
+    "akasaka-mitsuke",
+    "kokkai-gijidomae",
+    "kasumigaseki",
+    "ginza",
+    "tokyo",
+    "otemachi",
+    "awajicho",
+    "ochanomizu",
+    "hongo-sanchome",
+    "korakuen",
+    "myogadani",
+    "shin-otsuka",
+    "ikebukuro"
+   ],
+   [
+    "nakano-sakaue",
+    "nakano-shimbashi",
+    "nakano-fujimicho",
+    "honancho"
+   ]
+  ],
+  "ref": "M",
+  "stations": 28
+ },
+ "mita": {
+  "colour": "#0079C2",
+  "id": "mita",
+  "name": "Mita Line",
+  "operator": "Toei",
+  "paths": [
+   [
+    "meguro",
+    "shirokanedai",
+    "shirokane-takanawa",
+    "mita",
+    "shibakoen",
+    "onarimon",
+    "uchisaiwaicho",
+    "hibiya",
+    "otemachi",
+    "jimbocho",
+    "suidobashi",
+    "kasuga",
+    "hakusan",
+    "sengoku",
+    "sugamo",
+    "nishi-sugamo",
+    "shin-itabashi",
+    "itabashi-kuyakushomae",
+    "itabashihoncho",
+    "motohasunuma",
+    "shimura-sakaue",
+    "shimura-sanchome",
+    "hasune",
+    "nishidai",
+    "takashimadaira",
+    "shin-takashimadaira",
+    "nishi-takashimadaira"
+   ]
+  ],
+  "ref": "I",
+  "stations": 27
+ },
+ "namboku": {
+  "colour": "#00AC9B",
+  "id": "namboku",
+  "name": "Namboku Line",
+  "operator": "Tokyo Metro",
+  "paths": [
+   [
+    "meguro",
+    "shirokanedai",
+    "shirokane-takanawa",
+    "azabu-juban",
+    "roppongi-itchome",
+    "tameike-sanno",
+    "nagatacho",
+    "yotsuya",
+    "ichigaya",
+    "iidabashi",
+    "korakuen",
+    "todaimae",
+    "hon-komagome",
+    "komagome",
+    "nishigahara",
+    "oji",
+    "oji-kamiya",
+    "shimo",
+    "akabane-iwabuchi"
+   ],
+   [
+    "shirokane-takanawa",
+    "shinagawa"
+   ]
+  ],
+  "ref": "N",
+  "stations": 20
+ },
+ "oedo": {
+  "colour": "#B6007A",
+  "id": "oedo",
+  "name": "Oedo Line",
+  "operator": "Toei",
+  "paths": [
+   [
+    "hikarigaoka",
+    "nerima-kasugacho",
+    "toshimaen",
+    "nerima",
+    "shin-egota",
+    "ochiai-minami-nagasaki",
+    "nakai",
+    "higashi-nakano",
+    "nakano-sakaue",
+    "nishi-shinjuku-gochome",
+    "tochomae",
+    "shinjuku",
+    "yoyogi",
+    "kokuritsu-kyogijo",
+    "aoyama-itchome",
+    "roppongi",
+    "azabu-juban",
+    "akabanebashi",
+    "daimon",
+    "shiodome",
+    "tsukijishijo",
+    "kachidoki",
+    "tsukishima",
+    "monzen-nakacho",
+    "kiyosumi-shirakawa",
+    "morishita",
+    "ryogoku",
+    "kuramae",
+    "shin-okachimachi",
+    "ueno-okachimachi",
+    "hongo-sanchome",
+    "kasuga",
+    "iidabashi",
+    "ushigome-kagurazaka",
+    "ushigome-yanagicho",
+    "wakamatsu-kawada",
+    "higashi-shinjuku",
+    "shinjuku-nishiguchi",
+    "tochomae"
+   ]
+  ],
+  "ref": "E",
+  "stations": 38
+ },
+ "rinkai": {
+  "colour": "#00389E",
+  "id": "rinkai",
+  "mode": "other",
+  "name": "Rinkai Line",
+  "operator": "Tokyo Waterfront",
+  "paths": [
+   [
+    "shin-kiba",
+    "shinonome",
+    "kokusai-tenjijo",
+    "tokyo-teleport",
+    "tennozu-isle",
+    "shinagawa-seaside",
+    "oimachi",
+    "osaki"
+   ]
+  ],
+  "ref": "R",
+  "stations": 8
+ },
+ "shinjuku": {
+  "colour": "#6CBB5A",
+  "id": "shinjuku",
+  "name": "Shinjuku Line",
+  "operator": "Toei",
+  "paths": [
+   [
+    "motoyawata",
+    "shinozaki",
+    "mizue",
+    "ichinoe",
+    "funabori",
+    "higashi-ojima",
+    "ojima",
+    "nishi-ojima",
+    "sumiyoshi",
+    "kikukawa",
+    "morishita",
+    "hamacho",
+    "bakuroyokoyama",
+    "iwamotocho",
+    "ogawamachi",
+    "jimbocho",
+    "kudanshita",
+    "ichigaya",
+    "akebonobashi",
+    "shinjuku-sanchome",
+    "shinjuku"
+   ]
+  ],
+  "ref": "S",
+  "stations": 21
+ },
+ "shinkansen": {
+  "colour": "#2E3192",
+  "id": "shinkansen",
+  "mode": "hand",
+  "name": "Shinkansen",
+  "off_board": [
+   {
+    "from": "ueno",
+    "note": "Tohoku Shinkansen on to Omiya",
+    "toward": [
+     35.9064,
+     139.6238
+    ]
+   },
+   {
+    "from": "shinagawa",
+    "note": "Tokaido Shinkansen on to Shin-Yokohama",
+    "toward": [
+     35.5077,
+     139.6173
+    ]
+   }
+  ],
+  "operator": "JR",
+  "paths": [
+   [
+    "ueno",
+    "tokyo"
+   ],
+   [
+    "tokyo",
+    "shinagawa"
+   ]
+  ],
+  "ref": "SK",
+  "stations": 3,
+  "weight": 2.2
+ },
+ "tozai": {
+  "colour": "#009BBF",
+  "id": "tozai",
+  "name": "Tozai Line",
+  "operator": "Tokyo Metro",
+  "paths": [
+   [
+    "nakano",
+    "ochiai",
+    "takadanobaba",
+    "waseda",
+    "kagurazaka",
+    "iidabashi",
+    "kudanshita",
+    "takebashi",
+    "otemachi",
+    "nihombashi",
+    "kayabacho",
+    "monzen-nakacho",
+    "kiba",
+    "toyocho",
+    "minami-sunamachi",
+    "nishi-kasai",
+    "kasai",
+    "urayasu",
+    "minami-gyotoku",
+    "gyotoku",
+    "myoden",
+    "baraki-nakayama",
+    "nishi-funabashi"
+   ]
+  ],
+  "ref": "T",
+  "stations": 23
+ },
+ "yamanote": {
+  "colour": "#B1CB39",
+  "id": "yamanote",
+  "mode": "other",
+  "name": "JR Yamanote Line",
+  "operator": "JR East",
+  "paths": [
+   [
+    "shinagawa",
+    "osaki",
+    "gotanda",
+    "meguro",
+    "ebisu",
+    "shibuya",
+    "harajuku",
+    "yoyogi",
+    "shinjuku",
+    "shin-okubo",
+    "takadanobaba",
+    "mejiro",
+    "ikebukuro",
+    "otsuka",
+    "sugamo",
+    "komagome",
+    "tabata",
+    "nishi-nippori",
+    "nippori",
+    "uguisudani",
+    "ueno",
+    "okachimachi",
+    "akihabara",
+    "kanda",
+    "tokyo",
+    "yurakucho",
+    "shimbashi",
+    "hamamatsucho",
+    "tamachi",
+    "takanawa-gateway",
+    "shinagawa"
+   ]
+  ],
+  "ref": "JY",
+  "stations": 30
+ },
+ "yurakucho": {
+  "colour": "#C1A470",
+  "id": "yurakucho",
+  "name": "Yurakucho Line",
+  "operator": "Tokyo Metro",
+  "paths": [
+   [
+    "wakoshi",
+    "chikatetsu-narimasu",
+    "chikatetsu-akatsuka",
+    "heiwadai",
+    "hikawadai",
+    "kotake-mukaihara",
+    "senkawa",
+    "kanamecho",
+    "ikebukuro",
+    "higashi-ikebukuro",
+    "gokokuji",
+    "edogawabashi",
+    "iidabashi",
+    "ichigaya",
+    "kojimachi",
+    "nagatacho",
+    "sakuradamon",
+    "yurakucho",
+    "ginza-itchome",
+    "shintomicho",
+    "tsukishima",
+    "toyosu",
+    "tatsumi",
+    "shin-kiba"
+   ],
+   [
+    "toyosu",
+    "edagawa",
+    "toyocho",
+    "sengoku-koto",
+    "sumiyoshi"
+   ]
+  ],
+  "ref": "Y",
+  "stations": 28
+ },
+ "yurikamome": {
+  "colour": "#1662B8",
+  "id": "yurikamome",
+  "mode": "other",
+  "name": "Yurikamome",
+  "operator": "Yurikamome",
+  "paths": [
+   [
+    "shimbashi",
+    "shiodome",
+    "takeshiba",
+    "hinode",
+    "shibaura-futo",
+    "odaiba-kaihinkoen",
+    "daiba",
+    "tokyo-international-cruise-terminal",
+    "telecom-center",
+    "aomi",
+    "tokyo-big-sight",
+    "ariake",
+    "ariake-tennis-no-mori",
+    "shijo-mae",
+    "shin-toyosu",
+    "toyosu"
+   ]
+  ],
+  "ref": "U",
+  "stations": 16
+ }
+}

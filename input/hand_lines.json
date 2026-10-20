@@ -1,0 +1,42 @@
+{
+ "_comment": [
+  "Lines drawn by hand rather than taken from an OSM route relation, because",
+  "OSM has no usable relation for them inside the frame. Every station named",
+  "here must already exist in the data: a hand line adds track, never LEDs.",
+  "",
+  "The Shinkansen is on the board for one reason - it is the line that is not",
+  "like the others - and it is drawn at WEIGHT times the normal route width to",
+  "say so. It costs nothing: Ueno, Tokyo and Shinagawa are already LEDs.",
+  "",
+  "Simplification, recorded rather than hidden: the Tohoku and Tokaido",
+  "Shinkansen are two separate railways that happen to meet at Tokyo. They are",
+  "drawn here as one line with two arms, because on a board whose point is",
+  "'this one is different' the distinction between them is not worth a second",
+  "colour.",
+  "",
+  "OSM has the Tohoku Shinkansen as relations 9326156 / 9349293 (Tokyo - Ueno -",
+  "Omiya and back). It has no Tokaido Shinkansen route relation in this bbox,",
+  "so the Tokyo - Shinagawa arm is hand-made from the two stations it serves."
+ ],
+ "lines": [
+  {
+   "id": "shinkansen",
+   "name": "Shinkansen",
+   "ref": "SK",
+   "colour": "#2E3192",
+   "operator": "JR",
+   "weight": 2.2,
+   "paths": [
+    ["ueno", "tokyo"],
+    ["tokyo", "shinagawa"]
+   ],
+   "off_board": [
+    {"from": "ueno", "toward": [35.9064, 139.6238],
+     "note": "Tohoku Shinkansen on to Omiya"},
+    {"from": "shinagawa", "toward": [35.5077, 139.6173],
+     "note": "Tokaido Shinkansen on to Shin-Yokohama"}
+   ],
+   "source": "OSM relations 9326156 / 9349293 for the Tohoku arm; the Tokaido arm hand-made from Tokyo and Shinagawa"
+  }
+ ]
+}

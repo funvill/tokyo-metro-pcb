@@ -1,0 +1,100 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-19T03:03:20Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 2546879674,
+  "lat": 35.6280635,
+  "lon": 139.7380112,
+  "tags": {
+    "gauge": "1435",
+    "name": "品川",
+    "name:en": "Shinagawa",
+    "name:fr": "Shinagawa",
+    "name:it": "Shinagawa",
+    "name:ja": "品川",
+    "name:ja-Hira": "しながわ",
+    "name:ja-Latn": "Shinagawa",
+    "name:ko": "시나가와",
+    "name:ru": "Синагава",
+    "name:th": "ชินางาวะ",
+    "name:zh": "品川",
+    "note": "National-Land Numerical Information (Railway) 2007, MLIT Japan",
+    "operator": "京浜急行電鉄",
+    "operator:en": "Keikyu Corporation",
+    "operator:ja": "京浜急行電鉄",
+    "public_transport": "station",
+    "railway": "station",
+    "ref": "KK01",
+    "source": "Bing",
+    "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-N02-v1_1.html",
+    "subway": "yes",
+    "train": "yes",
+    "wikidata": "Q801442",
+    "wikipedia": "ja:品川駅"
+  }
+},
+{
+  "type": "node",
+  "id": 4011643454,
+  "lat": 35.6286688,
+  "lon": 139.7391673,
+  "tags": {
+    "contact:website": "https://www.jreast.co.jp/estation/station/info.aspx?StationCd=788",
+    "name": "品川",
+    "name:de": "Shinagawa",
+    "name:en": "Shinagawa",
+    "name:fr": "Shinagawa",
+    "name:it": "Shinagawa",
+    "name:ja": "品川",
+    "name:ja-Hira": "しながわ",
+    "name:ja-Latn": "Shinagawa",
+    "name:ko": "시나가와",
+    "name:ru": "Синагава",
+    "name:th": "ชินางาวะ",
+    "name:zh": "品川",
+    "operator": "東日本旅客鉄道",
+    "operator:en": "East Japan Railway Company",
+    "operator:ja": "東日本旅客鉄道",
+    "operator:wikidata": "Q499071",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:traffic_mode": "passenger",
+    "ref": "SGW",
+    "wikidata": "Q801442",
+    "wikipedia": "ja:品川駅"
+  }
+},
+{
+  "type": "node",
+  "id": 7792004174,
+  "lat": 35.6286457,
+  "lon": 139.7400659,
+  "tags": {
+    "name": "品川",
+    "name:de": "Shinagawa",
+    "name:en": "Shinagawa",
+    "name:fr": "Shinagawa",
+    "name:it": "Shinagawa",
+    "name:ja": "品川",
+    "name:ja-Hira": "しながわ",
+    "name:ja-Latn": "Shinagawa",
+    "name:ko": "시나가와",
+    "name:ru": "Синагава",
+    "name:th": "ชินางาวะ",
+    "network": "東海道新幹線",
+    "operator": "JR東海",
+    "public_transport": "station",
+    "railway": "station",
+    "wheelchair": "yes"
+  }
+}
+
+  ]
+}

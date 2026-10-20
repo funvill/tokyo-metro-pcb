@@ -1,0 +1,3975 @@
+{
+ "akabane-iwabuchi": {
+  "codes": [],
+  "lat": 35.7834478,
+  "lines": [
+   "namboku"
+  ],
+  "lon": 139.7221,
+  "name": "Akabane-iwabuchi",
+  "name_ja": "赤羽岩淵",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "akabanebashi": {
+  "codes": [
+   "E-21"
+  ],
+  "lat": 35.6550406,
+  "lines": [
+   "oedo"
+  ],
+  "lon": 139.7439828,
+  "name": "Akabanebashi",
+  "name_ja": "赤羽橋",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "akasaka": {
+  "codes": [
+   "C-06"
+  ],
+  "lat": 35.672224,
+  "lines": [
+   "chiyoda"
+  ],
+  "lon": 139.736388,
+  "name": "Akasaka",
+  "name_ja": "赤坂",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "akasaka-mitsuke": {
+  "codes": [
+   "G-05",
+   "M-13"
+  ],
+  "lat": 35.6763213,
+  "lines": [
+   "ginza",
+   "marunouchi"
+  ],
+  "lon": 139.7375253,
+  "name": "Akasaka-mitsuke",
+  "name_ja": "赤坂見附",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "akebonobashi": {
+  "codes": [
+   "S-03"
+  ],
+  "lat": 35.6924146,
+  "lines": [
+   "shinjuku"
+  ],
+  "lon": 139.7228634,
+  "name": "Akebonobashi",
+  "name_ja": "曙橋",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "akihabara": {
+  "codes": [
+   "H-15"
+  ],
+  "lat": 35.6984622,
+  "lines": [
+   "hibiya",
+   "yamanote"
+  ],
+  "lon": 139.775504,
+  "name": "Akihabara",
+  "name_ja": "秋葉原",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "aomi": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.6247166,
+  "lines": [
+   "yurikamome"
+  ],
+  "lon": 139.7812328,
+  "name": "Aomi",
+  "name_ja": "青海",
+  "nodes": 2,
+  "spread_km": 0.009
+ },
+ "aoyama-itchome": {
+  "codes": [
+   "E-24",
+   "G-04",
+   "Z-03"
+  ],
+  "lat": 35.6727797,
+  "lines": [
+   "ginza",
+   "hanzomon",
+   "oedo"
+  ],
+  "lon": 139.7240186,
+  "name": "Aoyama-itchome",
+  "name_ja": "青山一丁目",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "arakawa-itchumae": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.7337157,
+  "lines": [
+   "arakawa"
+  ],
+  "lon": 139.7889309,
+  "name": "Arakawa-itchumae",
+  "name_ja": "荒川一中前",
+  "nodes": 2,
+  "spread_km": 0.003
+ },
+ "arakawa-kuyakushomae": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.734941649999996,
+  "lines": [
+   "arakawa"
+  ],
+  "lon": 139.78644029999998,
+  "name": "Arakawa-kuyakushomae",
+  "name_ja": "荒川区役所前",
+  "nodes": 2,
+  "spread_km": 0.003
+ },
+ "arakawa-nanachome": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.742004449999996,
+  "lines": [
+   "arakawa"
+  ],
+  "lon": 139.78412255,
+  "name": "Arakawa-nanachome",
+  "name_ja": "荒川七丁目",
+  "nodes": 2,
+  "spread_km": 0.003
+ },
+ "arakawa-nichome": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.73870135,
+  "lines": [
+   "arakawa"
+  ],
+  "lon": 139.78466425,
+  "name": "Arakawa-nichome",
+  "name_ja": "荒川二丁目",
+  "nodes": 2,
+  "spread_km": 0.036
+ },
+ "arakawa-shakomae": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.75089215,
+  "lines": [
+   "arakawa"
+  ],
+  "lon": 139.7526968,
+  "name": "Arakawa-shakomae",
+  "name_ja": "荒川車庫前",
+  "nodes": 2,
+  "spread_km": 0.003
+ },
+ "arakawa-yuenchimae": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.750682600000005,
+  "lines": [
+   "arakawa"
+  ],
+  "lon": 139.7578801,
+  "name": "Arakawa-yuenchimae",
+  "name_ja": "荒川遊園地前",
+  "nodes": 2,
+  "spread_km": 0.035
+ },
+ "ariake": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.6345758,
+  "lines": [
+   "yurikamome"
+  ],
+  "lon": 139.79329575,
+  "name": "Ariake",
+  "name_ja": "有明",
+  "nodes": 2,
+  "spread_km": 0.018
+ },
+ "ariake-tennis-no-mori": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.64011025,
+  "lines": [
+   "yurikamome"
+  ],
+  "lon": 139.78878615000002,
+  "name": "Ariake-Tennis-no-mori",
+  "name_ja": "有明テニスの森",
+  "nodes": 2,
+  "spread_km": 0.009
+ },
+ "asakusa": {
+  "codes": [
+   "A-18",
+   "G-19"
+  ],
+  "lat": 35.70990065,
+  "lines": [
+   "asakusa",
+   "ginza"
+  ],
+  "lon": 139.79719154999998,
+  "name": "Asakusa",
+  "name_ja": "浅草",
+  "nodes": 2,
+  "spread_km": 0.237
+ },
+ "asakusabashi": {
+  "codes": [
+   "A-16"
+  ],
+  "lat": 35.6973915,
+  "lines": [
+   "asakusa"
+  ],
+  "lon": 139.7863101,
+  "name": "Asakusabashi",
+  "name_ja": "浅草橋",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "asukayama": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.75018235,
+  "lines": [
+   "arakawa"
+  ],
+  "lon": 139.73740550000002,
+  "name": "Asukayama",
+  "name_ja": "飛鳥山",
+  "nodes": 2,
+  "spread_km": 0.003
+ },
+ "awajicho": {
+  "codes": [
+   "M-19"
+  ],
+  "lat": 35.6950614,
+  "lines": [
+   "marunouchi"
+  ],
+  "lon": 139.767473,
+  "name": "Awajicho",
+  "name_ja": "淡路町",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "ayase": {
+  "codes": [
+   "C-19"
+  ],
+  "lat": 35.7621283,
+  "lines": [
+   "chiyoda"
+  ],
+  "lon": 139.8248669,
+  "name": "Ayase",
+  "name_ja": "綾瀬",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "azabu-juban": {
+  "codes": [
+   "E-22",
+   "N-04"
+  ],
+  "lat": 35.65584015,
+  "lines": [
+   "namboku",
+   "oedo"
+  ],
+  "lon": 139.73665595,
+  "name": "Azabu-juban",
+  "name_ja": "麻布十番",
+  "nodes": 2,
+  "spread_km": 0.171
+ },
+ "bakuroyokoyama": {
+  "codes": [
+   "S-09"
+  ],
+  "lat": 35.6921222,
+  "lines": [
+   "shinjuku"
+  ],
+  "lon": 139.7827937,
+  "name": "Bakuroyokoyama",
+  "name_ja": "馬喰横山",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "baraki-nakayama": {
+  "codes": [
+   "T-22"
+  ],
+  "lat": 35.7031484,
+  "lines": [
+   "tozai"
+  ],
+  "lon": 139.9416595,
+  "name": "Baraki-nakayama",
+  "name_ja": "原木中山",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "chikatetsu-akatsuka": {
+  "codes": [],
+  "lat": 35.7699229,
+  "lines": [
+   "fukutoshin",
+   "yurakucho"
+  ],
+  "lon": 139.6441259,
+  "name": "Chikatetsu-akatsuka",
+  "name_ja": "地下鉄赤塚",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "chikatetsu-narimasu": {
+  "codes": [],
+  "lat": 35.7766946,
+  "lines": [
+   "fukutoshin",
+   "yurakucho"
+  ],
+  "lon": 139.6312465,
+  "name": "Chikatetsu-narimasu",
+  "name_ja": "地下鉄成増",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "daiba": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.625885350000004,
+  "lines": [
+   "yurikamome"
+  ],
+  "lon": 139.77140665000002,
+  "name": "Daiba",
+  "name_ja": "台場",
+  "nodes": 2,
+  "spread_km": 0.009
+ },
+ "daimon": {
+  "codes": [
+   "A-09",
+   "E-20"
+  ],
+  "lat": 35.656834950000004,
+  "lines": [
+   "asakusa",
+   "oedo"
+  ],
+  "lon": 139.7550373,
+  "name": "Daimon",
+  "name_ja": "大門",
+  "nodes": 2,
+  "spread_km": 0.063
+ },
+ "ebisu": {
+  "codes": [
+   "H-02"
+  ],
+  "lat": 35.6469738,
+  "lines": [
+   "hibiya",
+   "yamanote"
+  ],
+  "lon": 139.7086461,
+  "name": "Ebisu",
+  "name_ja": "恵比寿",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "edagawa": {
+  "codes": [],
+  "lat": 35.6586133,
+  "lines": [
+   "yurakucho"
+  ],
+  "lon": 139.8069025,
+  "name": "Edagawa",
+  "name_ja": "枝川",
+  "nodes": 0,
+  "source": "OSM node 12765586687, construction:railway=station, name 枝川駅（仮称）, on the railway=construction ways tagged 有楽町線豊洲〜住吉延伸 (1019981869, 1378585824, 1378585825, 1378585828)",
+  "spread_km": 0.0,
+  "status": "under-construction"
+ },
+ "edogawabashi": {
+  "codes": [
+   "Y-12"
+  ],
+  "lat": 35.7095155,
+  "lines": [
+   "yurakucho"
+  ],
+  "lon": 139.7335636,
+  "name": "Edogawabashi",
+  "name_ja": "江戸川橋",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "funabori": {
+  "codes": [
+   "S-17"
+  ],
+  "lat": 35.6838309,
+  "lines": [
+   "shinjuku"
+  ],
+  "lon": 139.864297,
+  "name": "Funabori",
+  "name_ja": "船堀",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "gaiemmae": {
+  "codes": [
+   "G-03"
+  ],
+  "lat": 35.6704649,
+  "lines": [
+   "ginza"
+  ],
+  "lon": 139.7178823,
+  "name": "Gaiemmae",
+  "name_ja": "外苑前",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "gakushuinshita": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.71634655,
+  "lines": [
+   "arakawa"
+  ],
+  "lon": 139.71251685,
+  "name": "Gakushuinshita",
+  "name_ja": "学習院下",
+  "nodes": 2,
+  "spread_km": 0.033
+ },
+ "ginza": {
+  "codes": [
+   "G-09",
+   "H-08",
+   "M-16"
+  ],
+  "lat": 35.67212466666667,
+  "lines": [
+   "ginza",
+   "hibiya",
+   "marunouchi"
+  ],
+  "lon": 139.76409853333334,
+  "name": "Ginza",
+  "name_ja": "銀座",
+  "nodes": 3,
+  "spread_km": 0.25
+ },
+ "ginza-itchome": {
+  "codes": [
+   "Y-19"
+  ],
+  "lat": 35.6743469,
+  "lines": [
+   "yurakucho"
+  ],
+  "lon": 139.7670332,
+  "name": "Ginza-itchome",
+  "name_ja": "銀座一丁目",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "gokokuji": {
+  "codes": [
+   "Y-11"
+  ],
+  "lat": 35.7190787,
+  "lines": [
+   "yurakucho"
+  ],
+  "lon": 139.7274629,
+  "name": "Gokokuji",
+  "name_ja": "護国寺",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "gotanda": {
+  "codes": [
+   "A-05"
+  ],
+  "lat": 35.6270895,
+  "lines": [
+   "asakusa",
+   "yamanote"
+  ],
+  "lon": 139.7242137,
+  "name": "Gotanda",
+  "name_ja": "五反田",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "gyotoku": {
+  "codes": [
+   "T-20"
+  ],
+  "lat": 35.6828816,
+  "lines": [
+   "tozai"
+  ],
+  "lon": 139.9145062,
+  "name": "Gyotoku",
+  "name_ja": "行徳",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "hakusan": {
+  "codes": [],
+  "lat": 35.7215048,
+  "lines": [
+   "mita"
+  ],
+  "lon": 139.7521578,
+  "name": "Hakusan",
+  "name_ja": "白山",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "hamacho": {
+  "codes": [
+   "S-10"
+  ],
+  "lat": 35.6884743,
+  "lines": [
+   "shinjuku"
+  ],
+  "lon": 139.7881422,
+  "name": "Hamacho",
+  "name_ja": "浜町",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "hamamatsucho": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.65511185,
+  "lines": [
+   "yamanote"
+  ],
+  "lon": 139.7570553,
+  "name": "Hamamatsucho",
+  "name_ja": "浜松町",
+  "nodes": 4,
+  "spread_km": 0.026
+ },
+ "hanzomon": {
+  "codes": [
+   "Z-05"
+  ],
+  "lat": 35.6852213,
+  "lines": [
+   "hanzomon"
+  ],
+  "lon": 139.7415832,
+  "name": "Hanzomon",
+  "name_ja": "半蔵門",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "harajuku": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.6702198,
+  "lines": [
+   "yamanote"
+  ],
+  "lon": 139.70241985,
+  "name": "Harajuku",
+  "name_ja": "原宿",
+  "nodes": 2,
+  "spread_km": 0.009
+ },
+ "hasune": {
+  "codes": [
+   "I-23"
+  ],
+  "lat": 35.7843239,
+  "lines": [
+   "mita"
+  ],
+  "lon": 139.6790713,
+  "name": "Hasune",
+  "name_ja": "蓮根",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "hatchobori": {
+  "codes": [
+   "H-12"
+  ],
+  "lat": 35.6750004,
+  "lines": [
+   "hibiya"
+  ],
+  "lon": 139.7770726,
+  "name": "Hatchobori",
+  "name_ja": "八丁堀",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "heiwadai": {
+  "codes": [],
+  "lat": 35.7576885,
+  "lines": [
+   "fukutoshin",
+   "yurakucho"
+  ],
+  "lon": 139.6541369,
+  "name": "Heiwadai",
+  "name_ja": "平和台",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "hibiya": {
+  "codes": [
+   "C-09",
+   "H-07",
+   "I-08"
+  ],
+  "lat": 35.67479576666667,
+  "lines": [
+   "chiyoda",
+   "hibiya",
+   "mita"
+  ],
+  "lon": 139.7596262666667,
+  "name": "Hibiya",
+  "name_ja": "日比谷",
+  "nodes": 3,
+  "spread_km": 0.33
+ },
+ "higashi-ginza": {
+  "codes": [
+   "A-11",
+   "H-09"
+  ],
+  "lat": 35.6697513,
+  "lines": [
+   "asakusa",
+   "hibiya"
+  ],
+  "lon": 139.76710295,
+  "name": "Higashi-Ginza",
+  "name_ja": "東銀座",
+  "nodes": 2,
+  "spread_km": 0.032
+ },
+ "higashi-ikebukuro": {
+  "codes": [
+   "Y-10"
+  ],
+  "lat": 35.7256214,
+  "lines": [
+   "yurakucho"
+  ],
+  "lon": 139.7193857,
+  "name": "Higashi-ikebukuro",
+  "name_ja": "東池袋",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "higashi-ikebukuro-yonchome": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.7252757,
+  "lines": [
+   "arakawa"
+  ],
+  "lon": 139.7201502,
+  "name": "Higashi-ikebukuro-yonchome",
+  "name_ja": "東池袋四丁目",
+  "nodes": 2,
+  "spread_km": 0.038
+ },
+ "higashi-koenji": {
+  "codes": [
+   "M-04"
+  ],
+  "lat": 35.6979717,
+  "lines": [
+   "marunouchi"
+  ],
+  "lon": 139.6581601,
+  "name": "Higashi-koenji",
+  "name_ja": "東高円寺",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "higashi-nakano": {
+  "codes": [
+   "E-31"
+  ],
+  "lat": 35.7073477,
+  "lines": [
+   "oedo"
+  ],
+  "lon": 139.6832315,
+  "name": "Higashi-nakano",
+  "name_ja": "東中野",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "higashi-nihombashi": {
+  "codes": [
+   "A-15"
+  ],
+  "lat": 35.6921239,
+  "lines": [
+   "asakusa"
+  ],
+  "lon": 139.7848848,
+  "name": "Higashi-nihombashi",
+  "name_ja": "東日本橋",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "higashi-ogu-sanchome": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.745569,
+  "lines": [
+   "arakawa"
+  ],
+  "lon": 139.774069,
+  "name": "Higashi-ogu-sanchome",
+  "name_ja": "東尾久三丁目",
+  "nodes": 2,
+  "spread_km": 0.086
+ },
+ "higashi-ojima": {
+  "codes": [
+   "S-16"
+  ],
+  "lat": 35.6902967,
+  "lines": [
+   "shinjuku"
+  ],
+  "lon": 139.8459524,
+  "name": "Higashi-ojima",
+  "name_ja": "東大島",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "higashi-shinjuku": {
+  "codes": [
+   "E-02",
+   "F-12"
+  ],
+  "lat": 35.69841485,
+  "lines": [
+   "fukutoshin",
+   "oedo"
+  ],
+  "lon": 139.70761965,
+  "name": "Higashi-shinjuku",
+  "name_ja": "東新宿",
+  "nodes": 2,
+  "spread_km": 0.115
+ },
+ "hikarigaoka": {
+  "codes": [
+   "E-38"
+  ],
+  "lat": 35.7585523,
+  "lines": [
+   "oedo"
+  ],
+  "lon": 139.6293801,
+  "name": "Hikarigaoka",
+  "name_ja": "光が丘",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "hikawadai": {
+  "codes": [],
+  "lat": 35.7497818,
+  "lines": [
+   "fukutoshin",
+   "yurakucho"
+  ],
+  "lon": 139.6650083,
+  "name": "Hikawadai",
+  "name_ja": "氷川台",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "hinode": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.649150500000005,
+  "lines": [
+   "yurikamome"
+  ],
+  "lon": 139.759088,
+  "name": "Hinode",
+  "name_ja": "日の出",
+  "nodes": 2,
+  "spread_km": 0.009
+ },
+ "hiro-o": {
+  "codes": [
+   "H-03"
+  ],
+  "lat": 35.6520629,
+  "lines": [
+   "hibiya"
+  ],
+  "lon": 139.7222033,
+  "name": "Hiro-o",
+  "name_ja": "広尾",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "hon-komagome": {
+  "codes": [],
+  "lat": 35.7247631,
+  "lines": [
+   "namboku"
+  ],
+  "lon": 139.7537008,
+  "name": "Hon-komagome",
+  "name_ja": "本駒込",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "honancho": {
+  "codes": [],
+  "lat": 35.6835007,
+  "lines": [
+   "marunouchi"
+  ],
+  "lon": 139.6576888,
+  "name": "Honancho",
+  "name_ja": "方南町",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "hongo-sanchome": {
+  "codes": [
+   "E-08",
+   "M-21"
+  ],
+  "lat": 35.70707725,
+  "lines": [
+   "marunouchi",
+   "oedo"
+  ],
+  "lon": 139.76025579999998,
+  "name": "Hongo-sanchome",
+  "name_ja": "本郷三丁目",
+  "nodes": 2,
+  "spread_km": 0.111
+ },
+ "honjo-azumabashi": {
+  "codes": [
+   "A-19"
+  ],
+  "lat": 35.7085609,
+  "lines": [
+   "asakusa"
+  ],
+  "lon": 139.8043487,
+  "name": "Honjo-azumabashi",
+  "name_ja": "本所吾妻橋",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "ichigaya": {
+  "codes": [
+   "S-04",
+   "Y-14"
+  ],
+  "lat": 35.69237693333333,
+  "lines": [
+   "namboku",
+   "shinjuku",
+   "yurakucho"
+  ],
+  "lon": 139.7370045,
+  "name": "Ichigaya",
+  "name_ja": "市ケ谷",
+  "nodes": 3,
+  "spread_km": 0.205
+ },
+ "ichinoe": {
+  "codes": [
+   "S-18"
+  ],
+  "lat": 35.6860437,
+  "lines": [
+   "shinjuku"
+  ],
+  "lon": 139.8831198,
+  "name": "Ichinoe",
+  "name_ja": "一之江",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "iidabashi": {
+  "codes": [
+   "E-06",
+   "Y-13"
+  ],
+  "lat": 35.70212916666667,
+  "lines": [
+   "namboku",
+   "oedo",
+   "tozai",
+   "yurakucho"
+  ],
+  "lon": 139.74511213333335,
+  "name": "Iidabashi",
+  "name_ja": "飯田橋",
+  "nodes": 3,
+  "spread_km": 0.277
+ },
+ "ikebukuro": {
+  "codes": [
+   "F-09",
+   "M-25",
+   "Y-09"
+  ],
+  "lat": 35.7303379,
+  "lines": [
+   "fukutoshin",
+   "marunouchi",
+   "yamanote",
+   "yurakucho"
+  ],
+  "lon": 139.71003803333335,
+  "name": "Ikebukuro",
+  "name_ja": "池袋",
+  "nodes": 3,
+  "spread_km": 0.283
+ },
+ "inaricho": {
+  "codes": [
+   "G-17"
+  ],
+  "lat": 35.7113867,
+  "lines": [
+   "ginza"
+  ],
+  "lon": 139.7826851,
+  "name": "Inaricho",
+  "name_ja": "稲荷町",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "iriya": {
+  "codes": [
+   "H-19"
+  ],
+  "lat": 35.720709,
+  "lines": [
+   "hibiya"
+  ],
+  "lon": 139.7845821,
+  "name": "Iriya",
+  "name_ja": "入谷",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "itabashi-kuyakushomae": {
+  "codes": [
+   "I-18"
+  ],
+  "lat": 35.7513477,
+  "lines": [
+   "mita"
+  ],
+  "lon": 139.71004,
+  "name": "Itabashi-kuyakushomae",
+  "name_ja": "板橋区役所前",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "itabashihoncho": {
+  "codes": [
+   "I-19"
+  ],
+  "lat": 35.7614305,
+  "lines": [
+   "mita"
+  ],
+  "lon": 139.7055249,
+  "name": "Itabashihoncho",
+  "name_ja": "板橋本町",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "iwamotocho": {
+  "codes": [
+   "S-08"
+  ],
+  "lat": 35.695614,
+  "lines": [
+   "shinjuku"
+  ],
+  "lon": 139.7753176,
+  "name": "Iwamotocho",
+  "name_ja": "岩本町",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "jimbocho": {
+  "codes": [
+   "I-10",
+   "S-06",
+   "Z-07"
+  ],
+  "lat": 35.69563573333334,
+  "lines": [
+   "hanzomon",
+   "mita",
+   "shinjuku"
+  ],
+  "lon": 139.7579559333333,
+  "name": "Jimbocho",
+  "name_ja": "神保町",
+  "nodes": 3,
+  "spread_km": 0.151
+ },
+ "kachidoki": {
+  "codes": [
+   "E-17"
+  ],
+  "lat": 35.6589623,
+  "lines": [
+   "oedo"
+  ],
+  "lon": 139.7771747,
+  "name": "Kachidoki",
+  "name_ja": "勝どき",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "kagurazaka": {
+  "codes": [],
+  "lat": 35.7039298,
+  "lines": [
+   "tozai"
+  ],
+  "lon": 139.7341347,
+  "name": "Kagurazaka",
+  "name_ja": "神楽坂",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "kajiwara": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.75108015,
+  "lines": [
+   "arakawa"
+  ],
+  "lon": 139.74781639999998,
+  "name": "Kajiwara",
+  "name_ja": "梶原",
+  "nodes": 2,
+  "spread_km": 0.075
+ },
+ "kamiyacho": {
+  "codes": [
+   "H-05"
+  ],
+  "lat": 35.662964,
+  "lines": [
+   "hibiya"
+  ],
+  "lon": 139.7450477,
+  "name": "Kamiyacho",
+  "name_ja": "神谷町",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "kanamecho": {
+  "codes": [
+   "F-08",
+   "Y-08"
+  ],
+  "lat": 35.7332405,
+  "lines": [
+   "fukutoshin",
+   "yurakucho"
+  ],
+  "lon": 139.6986842,
+  "name": "Kanamecho",
+  "name_ja": "要町",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "kanda": {
+  "codes": [
+   "G-13"
+  ],
+  "lat": 35.6937148,
+  "lines": [
+   "ginza",
+   "yamanote"
+  ],
+  "lon": 139.7708898,
+  "name": "Kanda",
+  "name_ja": "神田",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "kasai": {
+  "codes": [
+   "T-17"
+  ],
+  "lat": 35.6636282,
+  "lines": [
+   "tozai"
+  ],
+  "lon": 139.8726921,
+  "name": "Kasai",
+  "name_ja": "葛西",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "kasuga": {
+  "codes": [
+   "E-07"
+  ],
+  "lat": 35.70918505,
+  "lines": [
+   "mita",
+   "oedo"
+  ],
+  "lon": 139.7529626,
+  "name": "Kasuga",
+  "name_ja": "春日",
+  "nodes": 2,
+  "spread_km": 0.159
+ },
+ "kasumigaseki": {
+  "codes": [
+   "C-08",
+   "H-06",
+   "M-15"
+  ],
+  "lat": 35.67352426666667,
+  "lines": [
+   "chiyoda",
+   "hibiya",
+   "marunouchi"
+  ],
+  "lon": 139.75179866666667,
+  "name": "Kasumigaseki",
+  "name_ja": "霞ケ関",
+  "nodes": 3,
+  "spread_km": 0.242
+ },
+ "kayabacho": {
+  "codes": [
+   "H-13",
+   "T-11"
+  ],
+  "lat": 35.6797429,
+  "lines": [
+   "hibiya",
+   "tozai"
+  ],
+  "lon": 139.77958080000002,
+  "name": "Kayabacho",
+  "name_ja": "茅場町",
+  "nodes": 2,
+  "spread_km": 0.111
+ },
+ "kiba": {
+  "codes": [
+   "T-13"
+  ],
+  "lat": 35.669416,
+  "lines": [
+   "tozai"
+  ],
+  "lon": 139.8065455,
+  "name": "Kiba",
+  "name_ja": "木場",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "kikukawa": {
+  "codes": [
+   "S-12"
+  ],
+  "lat": 35.6884156,
+  "lines": [
+   "shinjuku"
+  ],
+  "lon": 139.806123,
+  "name": "Kikukawa",
+  "name_ja": "菊川",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "kinshicho": {
+  "codes": [
+   "Z-13"
+  ],
+  "lat": 35.6963122,
+  "lines": [
+   "hanzomon"
+  ],
+  "lon": 139.8150431,
+  "name": "Kinshicho",
+  "name_ja": "錦糸町",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "kishibojimmae": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.72021605,
+  "lines": [
+   "arakawa"
+  ],
+  "lon": 139.7148505,
+  "name": "Kishibojimmae",
+  "name_ja": "鬼子母神前",
+  "nodes": 2,
+  "spread_km": 0.025
+ },
+ "kita-ayase": {
+  "codes": [
+   "C-20"
+  ],
+  "lat": 35.7768999,
+  "lines": [
+   "chiyoda"
+  ],
+  "lon": 139.832145,
+  "name": "Kita-ayase",
+  "name_ja": "北綾瀬",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "kita-sando": {
+  "codes": [
+   "F-14"
+  ],
+  "lat": 35.6784974,
+  "lines": [
+   "fukutoshin"
+  ],
+  "lon": 139.705414,
+  "name": "Kita-sando",
+  "name_ja": "北参道",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "kita-senju": {
+  "codes": [
+   "C-18",
+   "H-22"
+  ],
+  "lat": 35.7495833,
+  "lines": [
+   "chiyoda",
+   "hibiya"
+  ],
+  "lon": 139.80495704999998,
+  "name": "Kita-Senju",
+  "name_ja": "北千住",
+  "nodes": 2,
+  "spread_km": 0.084
+ },
+ "kiyosumi-shirakawa": {
+  "codes": [
+   "E-14",
+   "Z-11"
+  ],
+  "lat": 35.6820504,
+  "lines": [
+   "hanzomon",
+   "oedo"
+  ],
+  "lon": 139.7987644,
+  "name": "Kiyosumi-shirakawa",
+  "name_ja": "清澄白河",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "kodemmacho": {
+  "codes": [
+   "H-15"
+  ],
+  "lat": 35.6907525,
+  "lines": [
+   "hibiya"
+  ],
+  "lon": 139.7784526,
+  "name": "Kodemmacho",
+  "name_ja": "小伝馬町",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "kojimachi": {
+  "codes": [
+   "Y-15"
+  ],
+  "lat": 35.6840244,
+  "lines": [
+   "yurakucho"
+  ],
+  "lon": 139.7376514,
+  "name": "Kojimachi",
+  "name_ja": "麹町",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "kokkai-gijidomae": {
+  "codes": [
+   "C-07",
+   "M-14"
+  ],
+  "lat": 35.6741187,
+  "lines": [
+   "chiyoda",
+   "marunouchi"
+  ],
+  "lon": 139.7444898,
+  "name": "Kokkai-gijidomae",
+  "name_ja": "国会議事堂前",
+  "nodes": 2,
+  "spread_km": 0.215
+ },
+ "kokuritsu-kyogijo": {
+  "codes": [
+   "E-25"
+  ],
+  "lat": 35.6801003,
+  "lines": [
+   "oedo"
+  ],
+  "lon": 139.7139442,
+  "name": "Kokuritsu-kyogijo",
+  "name_ja": "国立競技場",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "kokusai-tenjijo": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.634443000000005,
+  "lines": [
+   "rinkai"
+  ],
+  "lon": 139.7917518,
+  "name": "Kokusai-tenjijo",
+  "name_ja": "国際展示場",
+  "nodes": 2,
+  "spread_km": 0.008
+ },
+ "komagome": {
+  "codes": [],
+  "lat": 35.7359873,
+  "lines": [
+   "namboku",
+   "yamanote"
+  ],
+  "lon": 139.7467609,
+  "name": "Komagome",
+  "name_ja": "駒込",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "korakuen": {
+  "codes": [
+   "M-22"
+  ],
+  "lat": 35.70780055,
+  "lines": [
+   "marunouchi",
+   "namboku"
+  ],
+  "lon": 139.75150725,
+  "name": "Korakuen",
+  "name_ja": "後楽園",
+  "nodes": 2,
+  "spread_km": 0.115
+ },
+ "koshinzuka": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.7396152,
+  "lines": [
+   "arakawa"
+  ],
+  "lon": 139.7297265,
+  "name": "Koshinzuka",
+  "name_ja": "庚申塚",
+  "nodes": 2,
+  "spread_km": 0.03
+ },
+ "kotake-mukaihara": {
+  "codes": [
+   "F-06",
+   "Y-06"
+  ],
+  "lat": 35.7433734,
+  "lines": [
+   "fukutoshin",
+   "yurakucho"
+  ],
+  "lon": 139.6795267,
+  "name": "Kotake-mukaihara",
+  "name_ja": "小竹向原",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "kudanshita": {
+  "codes": [
+   "S-05",
+   "T-07",
+   "Z-06"
+  ],
+  "lat": 35.6955024,
+  "lines": [
+   "hanzomon",
+   "shinjuku",
+   "tozai"
+  ],
+  "lon": 139.75072246666664,
+  "name": "Kudanshita",
+  "name_ja": "九段下",
+  "nodes": 3,
+  "spread_km": 0.111
+ },
+ "kumanomae": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.748776750000005,
+  "lines": [
+   "arakawa"
+  ],
+  "lon": 139.7697715,
+  "name": "Kumanomae",
+  "name_ja": "熊野前",
+  "nodes": 4,
+  "spread_km": 0.125
+ },
+ "kuramae": {
+  "codes": [
+   "A-17",
+   "E-11"
+  ],
+  "lat": 35.70436545,
+  "lines": [
+   "asakusa",
+   "oedo"
+  ],
+  "lon": 139.79167460000002,
+  "name": "Kuramae",
+  "name_ja": "蔵前",
+  "nodes": 2,
+  "spread_km": 0.288
+ },
+ "kyobashi": {
+  "codes": [
+   "G-10"
+  ],
+  "lat": 35.676696,
+  "lines": [
+   "ginza"
+  ],
+  "lon": 139.7700412,
+  "name": "Kyobashi",
+  "name_ja": "京橋",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "machiya": {
+  "codes": [
+   "C-17"
+  ],
+  "lat": 35.7421779,
+  "lines": [
+   "chiyoda"
+  ],
+  "lon": 139.7800901,
+  "name": "Machiya",
+  "name_ja": "町屋",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "machiya-ekimae": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.7427777,
+  "lines": [
+   "arakawa"
+  ],
+  "lon": 139.78095969999998,
+  "name": "Machiya-ekimae",
+  "name_ja": "町屋駅前",
+  "nodes": 2,
+  "spread_km": 0.008
+ },
+ "machiya-nichome": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.7437759,
+  "lines": [
+   "arakawa"
+  ],
+  "lon": 139.77679089999998,
+  "name": "Machiya-nichome",
+  "name_ja": "町屋二丁目",
+  "nodes": 2,
+  "spread_km": 0.042
+ },
+ "magome": {
+  "codes": [
+   "A-02"
+  ],
+  "lat": 35.5967788,
+  "lines": [
+   "asakusa"
+  ],
+  "lon": 139.7119274,
+  "name": "Magome",
+  "name_ja": "馬込",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "meguro": {
+  "codes": [
+   "I-01",
+   "N-01"
+  ],
+  "lat": 35.6325078,
+  "lines": [
+   "mita",
+   "namboku",
+   "yamanote"
+  ],
+  "lon": 139.7157717,
+  "name": "Meguro",
+  "name_ja": "目黒",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "meiji-jingumae": {
+  "codes": [
+   "C-03",
+   "F-15"
+  ],
+  "lat": 35.668695650000004,
+  "lines": [
+   "chiyoda",
+   "fukutoshin"
+  ],
+  "lon": 139.7048507,
+  "name": "Meiji-jingumae",
+  "name_ja": "明治神宮前",
+  "nodes": 2,
+  "spread_km": 0.107
+ },
+ "mejiro": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.7211919,
+  "lines": [
+   "yamanote"
+  ],
+  "lon": 139.70646449999998,
+  "name": "Mejiro",
+  "name_ja": "目白",
+  "nodes": 2,
+  "spread_km": 0.01
+ },
+ "minami-asagaya": {
+  "codes": [
+   "M-02"
+  ],
+  "lat": 35.6993987,
+  "lines": [
+   "marunouchi"
+  ],
+  "lon": 139.6357088,
+  "name": "Minami-asagaya",
+  "name_ja": "南阿佐ケ谷",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "minami-gyotoku": {
+  "codes": [
+   "T-19"
+  ],
+  "lat": 35.6727318,
+  "lines": [
+   "tozai"
+  ],
+  "lon": 139.902279,
+  "name": "Minami-gyotoku",
+  "name_ja": "南行徳",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "minami-senju": {
+  "codes": [
+   "H-20"
+  ],
+  "lat": 35.7323539,
+  "lines": [
+   "hibiya"
+  ],
+  "lon": 139.7988024,
+  "name": "Minami-senju",
+  "name_ja": "南千住",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "minami-sunamachi": {
+  "codes": [
+   "T-15"
+  ],
+  "lat": 35.6683446,
+  "lines": [
+   "tozai"
+  ],
+  "lon": 139.8318642,
+  "name": "Minami-sunamachi",
+  "name_ja": "南砂町",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "minowa": {
+  "codes": [
+   "H-20"
+  ],
+  "lat": 35.7295502,
+  "lines": [
+   "hibiya"
+  ],
+  "lon": 139.7913004,
+  "name": "Minowa",
+  "name_ja": "三ノ輪",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "minowabashi": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.732138,
+  "lines": [
+   "arakawa"
+  ],
+  "lon": 139.7916028,
+  "name": "Minowabashi",
+  "name_ja": "三ノ輪橋",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "mita": {
+  "codes": [
+   "A-08",
+   "I-04"
+  ],
+  "lat": 35.6476619,
+  "lines": [
+   "asakusa",
+   "mita"
+  ],
+  "lon": 139.7483983,
+  "name": "Mita",
+  "name_ja": "三田",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "mitsukoshimae": {
+  "codes": [
+   "G-12",
+   "Z-09"
+  ],
+  "lat": 35.6860028,
+  "lines": [
+   "ginza",
+   "hanzomon"
+  ],
+  "lon": 139.7733513,
+  "name": "Mitsukoshimae",
+  "name_ja": "三越前",
+  "nodes": 2,
+  "spread_km": 0.238
+ },
+ "miyanomae": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.750043000000005,
+  "lines": [
+   "arakawa"
+  ],
+  "lon": 139.76526454999998,
+  "name": "Miyanomae",
+  "name_ja": "宮ノ前",
+  "nodes": 2,
+  "spread_km": 0.053
+ },
+ "mizue": {
+  "codes": [
+   "S-19"
+  ],
+  "lat": 35.6932479,
+  "lines": [
+   "shinjuku"
+  ],
+  "lon": 139.8976392,
+  "name": "Mizue",
+  "name_ja": "瑞江",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "monzen-nakacho": {
+  "codes": [
+   "E-15",
+   "T-12"
+  ],
+  "lat": 35.6724533,
+  "lines": [
+   "oedo",
+   "tozai"
+  ],
+  "lon": 139.7950343,
+  "name": "Monzen-nakacho",
+  "name_ja": "門前仲町",
+  "nodes": 2,
+  "spread_km": 0.037
+ },
+ "morishita": {
+  "codes": [
+   "E-13"
+  ],
+  "lat": 35.6879977,
+  "lines": [
+   "oedo",
+   "shinjuku"
+  ],
+  "lon": 139.7970443,
+  "name": "Morishita",
+  "name_ja": "森下",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "motohasunuma": {
+  "codes": [
+   "I-20"
+  ],
+  "lat": 35.7685214,
+  "lines": [
+   "mita"
+  ],
+  "lon": 139.7024438,
+  "name": "Motohasunuma",
+  "name_ja": "本蓮沼",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "motoyawata": {
+  "codes": [
+   "S-21"
+  ],
+  "lat": 35.7237135,
+  "lines": [
+   "shinjuku"
+  ],
+  "lon": 139.9270611,
+  "name": "Motoyawata",
+  "name_ja": "本八幡",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "mukohara": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.7290468,
+  "lines": [
+   "arakawa"
+  ],
+  "lon": 139.7251036,
+  "name": "Mukohara",
+  "name_ja": "向原",
+  "nodes": 2,
+  "spread_km": 0.046
+ },
+ "myoden": {
+  "codes": [
+   "T-21"
+  ],
+  "lat": 35.6910897,
+  "lines": [
+   "tozai"
+  ],
+  "lon": 139.9244066,
+  "name": "Myoden",
+  "name_ja": "妙典",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "myogadani": {
+  "codes": [
+   "M-23"
+  ],
+  "lat": 35.7171896,
+  "lines": [
+   "marunouchi"
+  ],
+  "lon": 139.7369396,
+  "name": "Myogadani",
+  "name_ja": "茗荷谷",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "nagatacho": {
+  "codes": [
+   "N-07",
+   "Y-16",
+   "Z-04"
+  ],
+  "lat": 35.67831976666667,
+  "lines": [
+   "hanzomon",
+   "namboku",
+   "yurakucho"
+  ],
+  "lon": 139.73989626666665,
+  "name": "Nagatacho",
+  "name_ja": "永田町",
+  "nodes": 3,
+  "spread_km": 0.25
+ },
+ "naka-meguro": {
+  "codes": [],
+  "lat": 35.6441395,
+  "lines": [
+   "hibiya"
+  ],
+  "lon": 139.6988317,
+  "name": "Naka-meguro",
+  "name_ja": "中目黒",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "naka-okachimachi": {
+  "codes": [],
+  "lat": 35.7064914,
+  "lines": [
+   "hibiya"
+  ],
+  "lon": 139.7761952,
+  "name": "Naka-okachimachi",
+  "name_ja": "仲御徒町",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "nakai": {
+  "codes": [
+   "E-32"
+  ],
+  "lat": 35.714067,
+  "lines": [
+   "oedo"
+  ],
+  "lon": 139.6863482,
+  "name": "Nakai",
+  "name_ja": "中井",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "nakano": {
+  "codes": [
+   "T-01"
+  ],
+  "lat": 35.7058282,
+  "lines": [
+   "tozai"
+  ],
+  "lon": 139.665537,
+  "name": "Nakano",
+  "name_ja": "中野",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "nakano-fujimicho": {
+  "codes": [],
+  "lat": 35.6905641,
+  "lines": [
+   "marunouchi"
+  ],
+  "lon": 139.6670329,
+  "name": "Nakano-fujimicho",
+  "name_ja": "中野富士見町",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "nakano-sakaue": {
+  "codes": [
+   "E-30",
+   "M-06"
+  ],
+  "lat": 35.6972006,
+  "lines": [
+   "marunouchi",
+   "oedo"
+  ],
+  "lon": 139.6823353,
+  "name": "Nakano-sakaue",
+  "name_ja": "中野坂上",
+  "nodes": 2,
+  "spread_km": 0.107
+ },
+ "nakano-shimbashi": {
+  "codes": [],
+  "lat": 35.692021,
+  "lines": [
+   "marunouchi"
+  ],
+  "lon": 139.6738042,
+  "name": "Nakano-shimbashi",
+  "name_ja": "中野新橋",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "nakanobu": {
+  "codes": [
+   "A-03"
+  ],
+  "lat": 35.605254,
+  "lines": [
+   "asakusa"
+  ],
+  "lon": 139.7136531,
+  "name": "Nakanobu",
+  "name_ja": "中延",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "nerima": {
+  "codes": [
+   "E-35"
+  ],
+  "lat": 35.7373437,
+  "lines": [
+   "oedo"
+  ],
+  "lon": 139.6544918,
+  "name": "Nerima",
+  "name_ja": "練馬",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "nerima-kasugacho": {
+  "codes": [
+   "E-27"
+  ],
+  "lat": 35.751398,
+  "lines": [
+   "oedo"
+  ],
+  "lon": 139.6403755,
+  "name": "Nerima-kasugacho",
+  "name_ja": "練馬春日町",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "nezu": {
+  "codes": [
+   "C-14"
+  ],
+  "lat": 35.7173914,
+  "lines": [
+   "chiyoda"
+  ],
+  "lon": 139.7657175,
+  "name": "Nezu",
+  "name_ja": "根津",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "nihombashi": {
+  "codes": [
+   "A-13",
+   "G-11"
+  ],
+  "lat": 35.68204096666667,
+  "lines": [
+   "asakusa",
+   "ginza",
+   "tozai"
+  ],
+  "lon": 139.77456700000002,
+  "name": "Nihombashi",
+  "name_ja": "日本橋",
+  "nodes": 3,
+  "spread_km": 0.222
+ },
+ "nijubashimae": {
+  "codes": [
+   "C-10"
+  ],
+  "lat": 35.6803213,
+  "lines": [
+   "chiyoda"
+  ],
+  "lon": 139.7616161,
+  "name": "Nijubashimae",
+  "name_ja": "二重橋前",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "ningyocho": {
+  "codes": [
+   "A-14",
+   "H-14"
+  ],
+  "lat": 35.68623235,
+  "lines": [
+   "asakusa",
+   "hibiya"
+  ],
+  "lon": 139.78230205,
+  "name": "Ningyocho",
+  "name_ja": "人形町",
+  "nodes": 2,
+  "spread_km": 0.023
+ },
+ "nippori": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.728282183333334,
+  "lines": [
+   "yamanote"
+  ],
+  "lon": 139.77071848333333,
+  "name": "Nippori",
+  "name_ja": "日暮里",
+  "nodes": 6,
+  "spread_km": 0.144
+ },
+ "nishi-funabashi": {
+  "codes": [
+   "T-23"
+  ],
+  "lat": 35.7072922,
+  "lines": [
+   "tozai"
+  ],
+  "lon": 139.9588761,
+  "name": "Nishi-Funabashi",
+  "name_ja": "西船橋",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "nishi-kasai": {
+  "codes": [
+   "T-16"
+  ],
+  "lat": 35.6645795,
+  "lines": [
+   "tozai"
+  ],
+  "lon": 139.8593173,
+  "name": "Nishi-kasai",
+  "name_ja": "西葛西",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "nishi-magome": {
+  "codes": [
+   "A-01"
+  ],
+  "lat": 35.5872987,
+  "lines": [
+   "asakusa"
+  ],
+  "lon": 139.7063115,
+  "name": "Nishi-magome",
+  "name_ja": "西馬込",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "nishi-nippori": {
+  "codes": [
+   "C-16"
+  ],
+  "lat": 35.7325841,
+  "lines": [
+   "chiyoda",
+   "yamanote"
+  ],
+  "lon": 139.7672175,
+  "name": "Nishi-nippori",
+  "name_ja": "西日暮里",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "nishi-ojima": {
+  "codes": [
+   "S-14"
+  ],
+  "lat": 35.6893724,
+  "lines": [
+   "shinjuku"
+  ],
+  "lon": 139.8266345,
+  "name": "Nishi-ojima",
+  "name_ja": "西大島",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "nishi-shinjuku": {
+  "codes": [
+   "M-07"
+  ],
+  "lat": 35.6944315,
+  "lines": [
+   "marunouchi"
+  ],
+  "lon": 139.6927667,
+  "name": "Nishi-shinjuku",
+  "name_ja": "西新宿",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "nishi-shinjuku-gochome": {
+  "codes": [
+   "E-29"
+  ],
+  "lat": 35.6898839,
+  "lines": [
+   "oedo"
+  ],
+  "lon": 139.6845183,
+  "name": "Nishi-shinjuku-gochome",
+  "name_ja": "西新宿五丁目",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "nishi-sugamo": {
+  "codes": [
+   "I-16"
+  ],
+  "lat": 35.7435537,
+  "lines": [
+   "mita"
+  ],
+  "lon": 139.7286973,
+  "name": "Nishi-sugamo",
+  "name_ja": "西巣鴨",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "nishi-takashimadaira": {
+  "codes": [
+   "I-27"
+  ],
+  "lat": 35.7919112,
+  "lines": [
+   "mita"
+  ],
+  "lon": 139.6457724,
+  "name": "Nishi-takashimadaira",
+  "name_ja": "西高島平",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "nishi-waseda": {
+  "codes": [
+   "F-11"
+  ],
+  "lat": 35.7079347,
+  "lines": [
+   "fukutoshin"
+  ],
+  "lon": 139.7090404,
+  "name": "Nishi-waseda",
+  "name_ja": "西早稲田",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "nishidai": {
+  "codes": [
+   "I-24"
+  ],
+  "lat": 35.7869663,
+  "lines": [
+   "mita"
+  ],
+  "lon": 139.6740221,
+  "name": "Nishidai",
+  "name_ja": "西台",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "nishigahara": {
+  "codes": [
+   "N-15"
+  ],
+  "lat": 35.7460496,
+  "lines": [
+   "namboku"
+  ],
+  "lon": 139.7421722,
+  "name": "Nishigahara",
+  "name_ja": "西ケ原",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "nishigahara-yonchome": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.744578000000004,
+  "lines": [
+   "arakawa"
+  ],
+  "lon": 139.7329418,
+  "name": "Nishigahara-yonchome",
+  "name_ja": "西ケ原四丁目",
+  "nodes": 2,
+  "spread_km": 0.043
+ },
+ "nogizaka": {
+  "codes": [
+   "C-05"
+  ],
+  "lat": 35.6666651,
+  "lines": [
+   "chiyoda"
+  ],
+  "lon": 139.726365,
+  "name": "Nogizaka",
+  "name_ja": "乃木坂",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "ochanomizu": {
+  "codes": [
+   "M-20"
+  ],
+  "lat": 35.7005755,
+  "lines": [
+   "marunouchi"
+  ],
+  "lon": 139.764082,
+  "name": "Ochanomizu",
+  "name_ja": "御茶ノ水",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "ochiai": {
+  "codes": [
+   "T-02"
+  ],
+  "lat": 35.7106637,
+  "lines": [
+   "tozai"
+  ],
+  "lon": 139.6859133,
+  "name": "Ochiai",
+  "name_ja": "落合",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "ochiai-minami-nagasaki": {
+  "codes": [
+   "E-33"
+  ],
+  "lat": 35.7232248,
+  "lines": [
+   "oedo"
+  ],
+  "lon": 139.6835782,
+  "name": "Ochiai-minami-nagasaki",
+  "name_ja": "落合南長崎",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "odai": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.75052045,
+  "lines": [
+   "arakawa"
+  ],
+  "lon": 139.76201625,
+  "name": "Odai",
+  "name_ja": "小台",
+  "nodes": 2,
+  "spread_km": 0.069
+ },
+ "odaiba-kaihinkoen": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.629905750000006,
+  "lines": [
+   "yurikamome"
+  ],
+  "lon": 139.77880449999998,
+  "name": "Odaiba-kaihinkoen",
+  "name_ja": "お台場海浜公園",
+  "nodes": 2,
+  "spread_km": 0.01
+ },
+ "ogawamachi": {
+  "codes": [
+   "S-07"
+  ],
+  "lat": 35.6949465,
+  "lines": [
+   "shinjuku"
+  ],
+  "lon": 139.7662986,
+  "name": "Ogawamachi",
+  "name_ja": "小川町",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "ogikubo": {
+  "codes": [
+   "M-01"
+  ],
+  "lat": 35.7042744,
+  "lines": [
+   "marunouchi"
+  ],
+  "lon": 139.6200267,
+  "name": "Ogikubo",
+  "name_ja": "荻窪",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "oimachi": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.606920025,
+  "lines": [
+   "rinkai"
+  ],
+  "lon": 139.73464525,
+  "name": "Oimachi",
+  "name_ja": "大井町",
+  "nodes": 4,
+  "spread_km": 0.13
+ },
+ "oji": {
+  "codes": [
+   "N-16"
+  ],
+  "lat": 35.7539617,
+  "lines": [
+   "namboku"
+  ],
+  "lon": 139.7375243,
+  "name": "Oji",
+  "name_ja": "王子",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "oji-ekimae": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.752749249999994,
+  "lines": [
+   "arakawa"
+  ],
+  "lon": 139.73824995,
+  "name": "Oji-ekimae",
+  "name_ja": "王子駅前",
+  "nodes": 2,
+  "spread_km": 0.029
+ },
+ "oji-kamiya": {
+  "codes": [
+   "N-17"
+  ],
+  "lat": 35.7650552,
+  "lines": [
+   "namboku"
+  ],
+  "lon": 139.7357178,
+  "name": "Oji-kamiya",
+  "name_ja": "王子神谷",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "ojima": {
+  "codes": [
+   "S-15"
+  ],
+  "lat": 35.6897695,
+  "lines": [
+   "shinjuku"
+  ],
+  "lon": 139.835076,
+  "name": "Ojima",
+  "name_ja": "大島",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "okachimachi": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.706952425,
+  "lines": [
+   "yamanote"
+  ],
+  "lon": 139.77463245,
+  "name": "Okachimachi",
+  "name_ja": "御徒町",
+  "nodes": 4,
+  "spread_km": 0.024
+ },
+ "omokagebashi": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.71303035,
+  "lines": [
+   "arakawa"
+  ],
+  "lon": 139.71424155,
+  "name": "Omokagebashi",
+  "name_ja": "面影橋",
+  "nodes": 2,
+  "spread_km": 0.067
+ },
+ "omote-sando": {
+  "codes": [
+   "C-04",
+   "G-02",
+   "Z-02"
+  ],
+  "lat": 35.6651609,
+  "lines": [
+   "chiyoda",
+   "ginza",
+   "hanzomon"
+  ],
+  "lon": 139.7125432,
+  "name": "Omote-sando",
+  "name_ja": "表参道",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "onarimon": {
+  "codes": [
+   "I-06"
+  ],
+  "lat": 35.6608011,
+  "lines": [
+   "mita"
+  ],
+  "lon": 139.7513591,
+  "name": "Onarimon",
+  "name_ja": "御成門",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "osaki": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.619398575,
+  "lines": [
+   "rinkai",
+   "yamanote"
+  ],
+  "lon": 139.728503875,
+  "name": "Osaki",
+  "name_ja": "大崎",
+  "nodes": 4,
+  "spread_km": 0.055
+ },
+ "oshiage": {
+  "codes": [
+   "A-20",
+   "Z-14"
+  ],
+  "lat": 35.710271649999996,
+  "lines": [
+   "asakusa",
+   "hanzomon"
+  ],
+  "lon": 139.81305195,
+  "name": "Oshiage",
+  "name_ja": "押上",
+  "nodes": 2,
+  "spread_km": 0.09
+ },
+ "otemachi": {
+  "codes": [
+   "C-11",
+   "I-09",
+   "M-18",
+   "T-09",
+   "Z-08"
+  ],
+  "lat": 35.685772400000005,
+  "lines": [
+   "chiyoda",
+   "hanzomon",
+   "marunouchi",
+   "mita",
+   "tozai"
+  ],
+  "lon": 139.76480053999998,
+  "name": "Otemachi",
+  "name_ja": "大手町",
+  "nodes": 5,
+  "spread_km": 0.46
+ },
+ "otsuka": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.731683200000006,
+  "lines": [
+   "yamanote"
+  ],
+  "lon": 139.72859745,
+  "name": "Otsuka",
+  "name_ja": "大塚",
+  "nodes": 2,
+  "spread_km": 0.011
+ },
+ "otsuka-ekimae": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.73143975,
+  "lines": [
+   "arakawa"
+  ],
+  "lon": 139.72925465,
+  "name": "Otsuka-ekimae",
+  "name_ja": "大塚駅前",
+  "nodes": 2,
+  "spread_km": 0.003
+ },
+ "roppongi": {
+  "codes": [
+   "E-23",
+   "H-04"
+  ],
+  "lat": 35.6632061,
+  "lines": [
+   "hibiya",
+   "oedo"
+  ],
+  "lon": 139.7316487,
+  "name": "Roppongi",
+  "name_ja": "六本木",
+  "nodes": 2,
+  "spread_km": 0.1
+ },
+ "roppongi-itchome": {
+  "codes": [
+   "N-05"
+  ],
+  "lat": 35.6649728,
+  "lines": [
+   "namboku"
+  ],
+  "lon": 139.738849,
+  "name": "Roppongi-itchome",
+  "name_ja": "六本木一丁目",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "ryogoku": {
+  "codes": [
+   "E-12"
+  ],
+  "lat": 35.6968538,
+  "lines": [
+   "oedo"
+  ],
+  "lon": 139.7974284,
+  "name": "Ryogoku",
+  "name_ja": "両国",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "sakaecho": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.75091245,
+  "lines": [
+   "arakawa"
+  ],
+  "lon": 139.742308,
+  "name": "Sakaecho",
+  "name_ja": "栄町",
+  "nodes": 2,
+  "spread_km": 0.033
+ },
+ "sakuradamon": {
+  "codes": [
+   "Y-17"
+  ],
+  "lat": 35.6774009,
+  "lines": [
+   "yurakucho"
+  ],
+  "lon": 139.7515757,
+  "name": "Sakuradamon",
+  "name_ja": "桜田門",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "sendagi": {
+  "codes": [
+   "C-15"
+  ],
+  "lat": 35.7255677,
+  "lines": [
+   "chiyoda"
+  ],
+  "lon": 139.7632458,
+  "name": "Sendagi",
+  "name_ja": "千駄木",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "sengakuji": {
+  "codes": [
+   "A-07"
+  ],
+  "lat": 35.6386708,
+  "lines": [
+   "asakusa"
+  ],
+  "lon": 139.7400043,
+  "name": "Sengakuji",
+  "name_ja": "泉岳寺",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "sengoku": {
+  "codes": [],
+  "lat": 35.7277122,
+  "lines": [
+   "mita"
+  ],
+  "lon": 139.7449946,
+  "name": "Sengoku",
+  "name_ja": "千石",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "sengoku-koto": {
+  "codes": [],
+  "lat": 35.6790862,
+  "lines": [
+   "yurakucho"
+  ],
+  "lon": 139.8159783,
+  "name": "Sengoku",
+  "name_ja": "千石",
+  "nodes": 0,
+  "source": "OSM node 12765586688, construction:railway=station, name 千石駅（仮称）, on the same railway=construction way",
+  "spread_km": 0.0,
+  "status": "under-construction"
+ },
+ "senkawa": {
+  "codes": [
+   "F-07",
+   "Y-07"
+  ],
+  "lat": 35.7383242,
+  "lines": [
+   "fukutoshin",
+   "yurakucho"
+  ],
+  "lon": 139.689366,
+  "name": "Senkawa",
+  "name_ja": "千川",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "shibakoen": {
+  "codes": [
+   "I-05"
+  ],
+  "lat": 35.654237,
+  "lines": [
+   "mita"
+  ],
+  "lon": 139.7498924,
+  "name": "Shibakoen",
+  "name_ja": "芝公園",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "shibaura-futo": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.6417259,
+  "lines": [
+   "yurikamome"
+  ],
+  "lon": 139.75777145,
+  "name": "Shibaura-futo",
+  "name_ja": "芝浦ふ頭",
+  "nodes": 2,
+  "spread_km": 0.005
+ },
+ "shibuya": {
+  "codes": [
+   "F-16",
+   "G-01",
+   "T-01",
+   "Z-01"
+  ],
+  "lat": 35.65898336666667,
+  "lines": [
+   "fukutoshin",
+   "ginza",
+   "hanzomon",
+   "yamanote"
+  ],
+  "lon": 139.70241976666668,
+  "name": "Shibuya",
+  "name_ja": "渋谷",
+  "nodes": 3,
+  "spread_km": 0.14
+ },
+ "shijo-mae": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.64576255,
+  "lines": [
+   "yurikamome"
+  ],
+  "lon": 139.78577795,
+  "name": "Shijo-mae",
+  "name_ja": "市場前",
+  "nodes": 2,
+  "spread_km": 0.009
+ },
+ "shimbashi": {
+  "codes": [
+   "A-10",
+   "G-08"
+  ],
+  "lat": 35.66629535,
+  "lines": [
+   "asakusa",
+   "ginza",
+   "yamanote",
+   "yurikamome"
+  ],
+  "lon": 139.7591236,
+  "name": "Shimbashi",
+  "name_ja": "新橋",
+  "nodes": 2,
+  "spread_km": 0.203
+ },
+ "shimo": {
+  "codes": [
+   "N-18"
+  ],
+  "lat": 35.7779045,
+  "lines": [
+   "namboku"
+  ],
+  "lon": 139.7325256,
+  "name": "Shimo",
+  "name_ja": "志茂",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "shimura-sakaue": {
+  "codes": [
+   "I-21"
+  ],
+  "lat": 35.7756688,
+  "lines": [
+   "mita"
+  ],
+  "lon": 139.6955288,
+  "name": "Shimura-sakaue",
+  "name_ja": "志村坂上",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "shimura-sanchome": {
+  "codes": [
+   "I-22"
+  ],
+  "lat": 35.7775108,
+  "lines": [
+   "mita"
+  ],
+  "lon": 139.6859968,
+  "name": "Shimura-sanchome",
+  "name_ja": "志村三丁目",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "shin-egota": {
+  "codes": [
+   "E-34"
+  ],
+  "lat": 35.7326022,
+  "lines": [
+   "oedo"
+  ],
+  "lon": 139.6704167,
+  "name": "Shin-egota",
+  "name_ja": "新江古田",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "shin-itabashi": {
+  "codes": [
+   "I-17"
+  ],
+  "lat": 35.7487966,
+  "lines": [
+   "mita"
+  ],
+  "lon": 139.7199032,
+  "name": "Shin-itabashi",
+  "name_ja": "新板橋",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "shin-kiba": {
+  "codes": [
+   "Y-24"
+  ],
+  "lat": 35.6459052,
+  "lines": [
+   "rinkai",
+   "yurakucho"
+  ],
+  "lon": 139.8266597,
+  "name": "Shin-kiba",
+  "name_ja": "新木場",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "shin-koenji": {
+  "codes": [
+   "M-03"
+  ],
+  "lat": 35.6978735,
+  "lines": [
+   "marunouchi"
+  ],
+  "lon": 139.648688,
+  "name": "Shin-koenji",
+  "name_ja": "新高円寺",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "shin-koshinzuka": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.7415034,
+  "lines": [
+   "arakawa"
+  ],
+  "lon": 139.73062,
+  "name": "Shin-koshinzuka",
+  "name_ja": "新庚申塚",
+  "nodes": 2,
+  "spread_km": 0.05
+ },
+ "shin-nakano": {
+  "codes": [
+   "M-05"
+  ],
+  "lat": 35.6974599,
+  "lines": [
+   "marunouchi"
+  ],
+  "lon": 139.6686428,
+  "name": "Shin-nakano",
+  "name_ja": "新中野",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "shin-ochanomizu": {
+  "codes": [
+   "C-12"
+  ],
+  "lat": 35.6972185,
+  "lines": [
+   "chiyoda"
+  ],
+  "lon": 139.7656264,
+  "name": "Shin-ochanomizu",
+  "name_ja": "新御茶ノ水",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "shin-okachimachi": {
+  "codes": [
+   "E-10"
+  ],
+  "lat": 35.7070597,
+  "lines": [
+   "oedo"
+  ],
+  "lon": 139.7818428,
+  "name": "Shin-okachimachi",
+  "name_ja": "新御徒町",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "shin-okubo": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.7013004,
+  "lines": [
+   "yamanote"
+  ],
+  "lon": 139.70024155,
+  "name": "Shin-Okubo",
+  "name_ja": "新大久保",
+  "nodes": 2,
+  "spread_km": 0.01
+ },
+ "shin-otsuka": {
+  "codes": [
+   "M-24"
+  ],
+  "lat": 35.7257823,
+  "lines": [
+   "marunouchi"
+  ],
+  "lon": 139.7299234,
+  "name": "Shin-otsuka",
+  "name_ja": "新大塚",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "shin-takashimadaira": {
+  "codes": [
+   "I-26"
+  ],
+  "lat": 35.7902142,
+  "lines": [
+   "mita"
+  ],
+  "lon": 139.6544258,
+  "name": "Shin-takashimadaira",
+  "name_ja": "新高島平",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "shin-toyosu": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.64874915,
+  "lines": [
+   "yurikamome"
+  ],
+  "lon": 139.7901891,
+  "name": "Shin-Toyosu",
+  "name_ja": "新豊洲",
+  "nodes": 2,
+  "spread_km": 0.009
+ },
+ "shinagawa": {
+  "codes": [],
+  "lat": 35.6286688,
+  "lines": [
+   "namboku"
+  ],
+  "lon": 139.7391673,
+  "name": "Shinagawa",
+  "name_ja": "品川",
+  "nodes": 0,
+  "source": "OSM node 4011643454, railway=station, name 品川 (the Namboku branch itself has no OSM way yet)",
+  "spread_km": 0.0,
+  "status": "under-construction"
+ },
+ "shinagawa-seaside": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.60972305,
+  "lines": [
+   "rinkai"
+  ],
+  "lon": 139.7498656,
+  "name": "Shinagawa Seaside",
+  "name_ja": "品川シーサイド",
+  "nodes": 2,
+  "spread_km": 0.012
+ },
+ "shinjuku": {
+  "codes": [
+   "M-08",
+   "S-01"
+  ],
+  "lat": 35.689731200000004,
+  "lines": [
+   "marunouchi",
+   "oedo",
+   "shinjuku",
+   "yamanote"
+  ],
+  "lon": 139.6996176,
+  "name": "Shinjuku",
+  "name_ja": "新宿",
+  "nodes": 3,
+  "spread_km": 0.449
+ },
+ "shinjuku-gyoemmae": {
+  "codes": [
+   "M-10"
+  ],
+  "lat": 35.6885735,
+  "lines": [
+   "marunouchi"
+  ],
+  "lon": 139.7107396,
+  "name": "Shinjuku-gyoemmae",
+  "name_ja": "新宿御苑前",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "shinjuku-nishiguchi": {
+  "codes": [
+   "E-01"
+  ],
+  "lat": 35.6931366,
+  "lines": [
+   "oedo"
+  ],
+  "lon": 139.6991763,
+  "name": "Shinjuku-nishiguchi",
+  "name_ja": "新宿西口",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "shinjuku-sanchome": {
+  "codes": [
+   "F-13",
+   "M-09",
+   "S-02"
+  ],
+  "lat": 35.6908463,
+  "lines": [
+   "fukutoshin",
+   "marunouchi",
+   "shinjuku"
+  ],
+  "lon": 139.70504476666665,
+  "name": "Shinjuku-sanchome",
+  "name_ja": "新宿三丁目",
+  "nodes": 3,
+  "spread_km": 0.207
+ },
+ "shinonome": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.6407349,
+  "lines": [
+   "rinkai"
+  ],
+  "lon": 139.8036201,
+  "name": "Shinonome",
+  "name_ja": "東雲",
+  "nodes": 2,
+  "spread_km": 0.003
+ },
+ "shinozaki": {
+  "codes": [
+   "S-20"
+  ],
+  "lat": 35.7060788,
+  "lines": [
+   "shinjuku"
+  ],
+  "lon": 139.9038381,
+  "name": "Shinozaki",
+  "name_ja": "篠崎",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "shintomicho": {
+  "codes": [
+   "Y-20"
+  ],
+  "lat": 35.6706344,
+  "lines": [
+   "yurakucho"
+  ],
+  "lon": 139.7734197,
+  "name": "Shintomicho",
+  "name_ja": "新富町",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "shiodome": {
+  "codes": [
+   "E-19"
+  ],
+  "lat": 35.6632377,
+  "lines": [
+   "oedo",
+   "yurikamome"
+  ],
+  "lon": 139.7602718,
+  "name": "Shiodome",
+  "name_ja": "汐留",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "shirokane-takanawa": {
+  "codes": [
+   "I-03",
+   "N-03"
+  ],
+  "lat": 35.6429397,
+  "lines": [
+   "mita",
+   "namboku"
+  ],
+  "lon": 139.73416045,
+  "name": "Shirokane-takanawa",
+  "name_ja": "白金高輪",
+  "nodes": 2,
+  "spread_km": 0.003
+ },
+ "shirokanedai": {
+  "codes": [
+   "I-02",
+   "N-02"
+  ],
+  "lat": 35.6381027,
+  "lines": [
+   "mita",
+   "namboku"
+  ],
+  "lon": 139.7265652,
+  "name": "Shirokanedai",
+  "name_ja": "白金台",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "suehirocho": {
+  "codes": [
+   "G-14"
+  ],
+  "lat": 35.7029361,
+  "lines": [
+   "ginza"
+  ],
+  "lon": 139.7716793,
+  "name": "Suehirocho",
+  "name_ja": "末広町",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "sugamo": {
+  "codes": [],
+  "lat": 35.7337873,
+  "lines": [
+   "mita",
+   "yamanote"
+  ],
+  "lon": 139.7382188,
+  "name": "Sugamo",
+  "name_ja": "巣鴨",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "sugamoshinden": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.735537050000005,
+  "lines": [
+   "arakawa"
+  ],
+  "lon": 139.72772855,
+  "name": "Sugamoshinden",
+  "name_ja": "巣鴨新田",
+  "nodes": 2,
+  "spread_km": 0.035
+ },
+ "suidobashi": {
+  "codes": [],
+  "lat": 35.7035144,
+  "lines": [
+   "mita"
+  ],
+  "lon": 139.7551538,
+  "name": "Suidobashi",
+  "name_ja": "水道橋",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "suitengumae": {
+  "codes": [
+   "Z-10"
+  ],
+  "lat": 35.6825235,
+  "lines": [
+   "hanzomon"
+  ],
+  "lon": 139.7856405,
+  "name": "Suitengumae",
+  "name_ja": "水天宮前",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "sumiyoshi": {
+  "codes": [
+   "S-13",
+   "Z-12"
+  ],
+  "lat": 35.6889959,
+  "lines": [
+   "hanzomon",
+   "shinjuku",
+   "yurakucho"
+  ],
+  "lon": 139.8156854,
+  "name": "Sumiyoshi",
+  "name_ja": "住吉",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "tabata": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.737370399999996,
+  "lines": [
+   "yamanote"
+  ],
+  "lon": 139.761704375,
+  "name": "Tabata",
+  "name_ja": "田端",
+  "nodes": 4,
+  "spread_km": 0.028
+ },
+ "takadanobaba": {
+  "codes": [],
+  "lat": 35.7133806,
+  "lines": [
+   "tozai",
+   "yamanote"
+  ],
+  "lon": 139.7050188,
+  "name": "Takadanobaba",
+  "name_ja": "高田馬場",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "takanawa-gateway": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.635398,
+  "lines": [
+   "yamanote"
+  ],
+  "lon": 139.740667525,
+  "name": "Takanawa Gateway",
+  "name_ja": "高輪ゲートウェイ",
+  "nodes": 4,
+  "spread_km": 0.028
+ },
+ "takanawadai": {
+  "codes": [
+   "A-06"
+  ],
+  "lat": 35.6317345,
+  "lines": [
+   "asakusa"
+  ],
+  "lon": 139.7304256,
+  "name": "Takanawadai",
+  "name_ja": "高輪台",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "takaracho": {
+  "codes": [
+   "A-12"
+  ],
+  "lat": 35.6754339,
+  "lines": [
+   "asakusa"
+  ],
+  "lon": 139.7718846,
+  "name": "Takaracho",
+  "name_ja": "宝町",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "takashimadaira": {
+  "codes": [
+   "I-25"
+  ],
+  "lat": 35.7889131,
+  "lines": [
+   "mita"
+  ],
+  "lon": 139.6612548,
+  "name": "Takashimadaira",
+  "name_ja": "高島平",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "takebashi": {
+  "codes": [
+   "T-08"
+  ],
+  "lat": 35.6900994,
+  "lines": [
+   "tozai"
+  ],
+  "lon": 139.7587484,
+  "name": "Takebashi",
+  "name_ja": "竹橋",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "takeshiba": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.6539872,
+  "lines": [
+   "yurikamome"
+  ],
+  "lon": 139.76191584999998,
+  "name": "Takeshiba",
+  "name_ja": "竹芝",
+  "nodes": 2,
+  "spread_km": 0.005
+ },
+ "takinogawa-itchome": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.747299049999995,
+  "lines": [
+   "arakawa"
+  ],
+  "lon": 139.73539555,
+  "name": "Takinogawa-itchome",
+  "name_ja": "滝野川一丁目",
+  "nodes": 2,
+  "spread_km": 0.003
+ },
+ "tamachi": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.645739025,
+  "lines": [
+   "yamanote"
+  ],
+  "lon": 139.747686575,
+  "name": "Tamachi",
+  "name_ja": "田町",
+  "nodes": 4,
+  "spread_km": 0.025
+ },
+ "tameike-sanno": {
+  "codes": [
+   "G-06",
+   "N-06"
+  ],
+  "lat": 35.672262,
+  "lines": [
+   "ginza",
+   "namboku"
+  ],
+  "lon": 139.7416925,
+  "name": "Tameike-sanno",
+  "name_ja": "溜池山王",
+  "nodes": 2,
+  "spread_km": 0.168
+ },
+ "tatsumi": {
+  "codes": [
+   "Y-23"
+  ],
+  "lat": 35.6454772,
+  "lines": [
+   "yurakucho"
+  ],
+  "lon": 139.8107392,
+  "name": "Tatsumi",
+  "name_ja": "辰巳",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "tawaramachi": {
+  "codes": [
+   "G-18"
+  ],
+  "lat": 35.7098357,
+  "lines": [
+   "ginza"
+  ],
+  "lon": 139.7907549,
+  "name": "Tawaramachi",
+  "name_ja": "田原町",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "telecom-center": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.6175666,
+  "lines": [
+   "yurikamome"
+  ],
+  "lon": 139.7794432,
+  "name": "Telecom Center",
+  "name_ja": "テレコムセンター",
+  "nodes": 2,
+  "spread_km": 0.009
+ },
+ "tennozu-isle": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.6216631,
+  "lines": [
+   "rinkai"
+  ],
+  "lon": 139.7508307,
+  "name": "Tennozu Isle",
+  "name_ja": "天王洲アイル",
+  "nodes": 4,
+  "spread_km": 0.241
+ },
+ "tochomae": {
+  "codes": [
+   "E-28"
+  ],
+  "lat": 35.6906065,
+  "lines": [
+   "oedo"
+  ],
+  "lon": 139.692814,
+  "name": "Tochomae",
+  "name_ja": "都庁前",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "todaimae": {
+  "codes": [
+   "N-12"
+  ],
+  "lat": 35.7173365,
+  "lines": [
+   "namboku"
+  ],
+  "lon": 139.7581767,
+  "name": "Todaimae",
+  "name_ja": "東大前",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "toden-zoshigaya": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.724166350000004,
+  "lines": [
+   "arakawa"
+  ],
+  "lon": 139.71790055,
+  "name": "Toden-zoshigaya",
+  "name_ja": "都電雑司ケ谷",
+  "nodes": 2,
+  "spread_km": 0.034
+ },
+ "togoshi": {
+  "codes": [
+   "A-04"
+  ],
+  "lat": 35.614502,
+  "lines": [
+   "asakusa"
+  ],
+  "lon": 139.7163642,
+  "name": "Togoshi",
+  "name_ja": "戸越",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "tokyo": {
+  "codes": [
+   "M-17"
+  ],
+  "lat": 35.6820173,
+  "lines": [
+   "marunouchi",
+   "shinkansen",
+   "yamanote"
+  ],
+  "lon": 139.7649584,
+  "name": "Tokyo",
+  "name_ja": "東京",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "tokyo-big-sight": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.630218850000006,
+  "lines": [
+   "yurikamome"
+  ],
+  "lon": 139.79137064999998,
+  "name": "Tokyo Big Sight",
+  "name_ja": "東京ビッグサイト",
+  "nodes": 2,
+  "spread_km": 0.011
+ },
+ "tokyo-international-cruise-terminal": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.62140215,
+  "lines": [
+   "yurikamome"
+  ],
+  "lon": 139.7730795,
+  "name": "Tokyo International Cruise Terminal",
+  "name_ja": "東京国際クルーズターミナル",
+  "nodes": 2,
+  "spread_km": 0.009
+ },
+ "tokyo-teleport": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.627091050000004,
+  "lines": [
+   "rinkai"
+  ],
+  "lon": 139.77808355000002,
+  "name": "Tokyo Teleport",
+  "name_ja": "東京テレポート",
+  "nodes": 2,
+  "spread_km": 0.004
+ },
+ "toranomon": {
+  "codes": [
+   "G-07"
+  ],
+  "lat": 35.6701871,
+  "lines": [
+   "ginza"
+  ],
+  "lon": 139.750056,
+  "name": "Toranomon",
+  "name_ja": "虎ノ門",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "toranomon-hills": {
+  "codes": [
+   "H-06"
+  ],
+  "lat": 35.6674688,
+  "lines": [
+   "hibiya"
+  ],
+  "lon": 139.7477648,
+  "name": "Toranomon Hills",
+  "name_ja": "虎ノ門ヒルズ",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "toshimaen": {
+  "codes": [
+   "E-36"
+  ],
+  "lat": 35.7421722,
+  "lines": [
+   "oedo"
+  ],
+  "lon": 139.6490783,
+  "name": "Toshimaen",
+  "name_ja": "豊島園",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "toyocho": {
+  "codes": [
+   "T-14"
+  ],
+  "lat": 35.6695961,
+  "lines": [
+   "tozai",
+   "yurakucho"
+  ],
+  "lon": 139.8174761,
+  "name": "Toyocho",
+  "name_ja": "東陽町",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "toyosu": {
+  "codes": [
+   "Y-22"
+  ],
+  "lat": 35.6549298,
+  "lines": [
+   "yurakucho",
+   "yurikamome"
+  ],
+  "lon": 139.796174,
+  "name": "Toyosu",
+  "name_ja": "豊洲",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "tsukiji": {
+  "codes": [
+   "H-10"
+  ],
+  "lat": 35.6680848,
+  "lines": [
+   "hibiya"
+  ],
+  "lon": 139.7725918,
+  "name": "Tsukiji",
+  "name_ja": "築地",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "tsukijishijo": {
+  "codes": [
+   "E-18"
+  ],
+  "lat": 35.6648789,
+  "lines": [
+   "oedo"
+  ],
+  "lon": 139.7668843,
+  "name": "Tsukijishijo",
+  "name_ja": "築地市場",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "tsukishima": {
+  "codes": [
+   "E-16",
+   "Y-21"
+  ],
+  "lat": 35.66440725,
+  "lines": [
+   "oedo",
+   "yurakucho"
+  ],
+  "lon": 139.7845216,
+  "name": "Tsukishima",
+  "name_ja": "月島",
+  "nodes": 2,
+  "spread_km": 0.053
+ },
+ "uchisaiwaicho": {
+  "codes": [
+   "I-07"
+  ],
+  "lat": 35.6694556,
+  "lines": [
+   "mita"
+  ],
+  "lon": 139.7553799,
+  "name": "Uchisaiwaicho",
+  "name_ja": "内幸町",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "ueno": {
+  "codes": [
+   "H-18"
+  ],
+  "lat": 35.711764650000006,
+  "lines": [
+   "ginza",
+   "hibiya",
+   "shinkansen",
+   "yamanote"
+  ],
+  "lon": 139.7768618,
+  "name": "Ueno",
+  "name_ja": "上野",
+  "nodes": 2,
+  "spread_km": 0.129
+ },
+ "ueno-hirokoji": {
+  "codes": [
+   "G-15"
+  ],
+  "lat": 35.7078328,
+  "lines": [
+   "ginza"
+  ],
+  "lon": 139.7729909,
+  "name": "Ueno-hirokoji",
+  "name_ja": "上野広小路",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "ueno-okachimachi": {
+  "codes": [
+   "E-09"
+  ],
+  "lat": 35.7079766,
+  "lines": [
+   "oedo"
+  ],
+  "lon": 139.7732996,
+  "name": "Ueno-okachimachi",
+  "name_ja": "上野御徒町",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "uguisudani": {
+  "codes": [],
+  "from_stop_nodes": true,
+  "lat": 35.721702375,
+  "lines": [
+   "yamanote"
+  ],
+  "lon": 139.777914725,
+  "name": "Uguisudani",
+  "name_ja": "鶯谷",
+  "nodes": 4,
+  "spread_km": 0.027
+ },
+ "urayasu": {
+  "codes": [
+   "T-18"
+  ],
+  "lat": 35.6658445,
+  "lines": [
+   "tozai"
+  ],
+  "lon": 139.8930133,
+  "name": "Urayasu",
+  "name_ja": "浦安",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "ushigome-kagurazaka": {
+  "codes": [
+   "E-05"
+  ],
+  "lat": 35.7009139,
+  "lines": [
+   "oedo"
+  ],
+  "lon": 139.7359501,
+  "name": "Ushigome-kagurazaka",
+  "name_ja": "牛込神楽坂",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "ushigome-yanagicho": {
+  "codes": [
+   "E-04"
+  ],
+  "lat": 35.6994561,
+  "lines": [
+   "oedo"
+  ],
+  "lon": 139.7255744,
+  "name": "Ushigome-yanagicho",
+  "name_ja": "牛込柳町",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "wakamatsu-kawada": {
+  "codes": [
+   "E-03"
+  ],
+  "lat": 35.6992849,
+  "lines": [
+   "oedo"
+  ],
+  "lon": 139.7184084,
+  "name": "Wakamatsu-kawada",
+  "name_ja": "若松河田",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "wakoshi": {
+  "codes": [
+   "F-01",
+   "Y-01"
+  ],
+  "lat": 35.7884097,
+  "lines": [
+   "fukutoshin",
+   "yurakucho"
+  ],
+  "lon": 139.6126725,
+  "name": "Wakoshi",
+  "name_ja": "和光市",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "waseda": {
+  "codes": [
+   "T-04"
+  ],
+  "lat": 35.7058028,
+  "lines": [
+   "arakawa",
+   "tozai"
+  ],
+  "lon": 139.721191,
+  "name": "Waseda",
+  "name_ja": "早稲田",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "yotsuya": {
+  "codes": [
+   "M-12"
+  ],
+  "lat": 35.6852947,
+  "lines": [
+   "marunouchi",
+   "namboku"
+  ],
+  "lon": 139.7297126,
+  "name": "Yotsuya",
+  "name_ja": "四ツ谷",
+  "nodes": 2,
+  "spread_km": 0.077
+ },
+ "yotsuya-sanchome": {
+  "codes": [
+   "M-11"
+  ],
+  "lat": 35.687988,
+  "lines": [
+   "marunouchi"
+  ],
+  "lon": 139.7205752,
+  "name": "Yotsuya-sanchome",
+  "name_ja": "四谷三丁目",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "yoyogi": {
+  "codes": [],
+  "lat": 35.6835694,
+  "lines": [
+   "oedo",
+   "yamanote"
+  ],
+  "lon": 139.7015967,
+  "name": "Yoyogi",
+  "name_ja": "代々木",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "yoyogi-koen": {
+  "codes": [
+   "C-02"
+  ],
+  "lat": 35.6690489,
+  "lines": [
+   "chiyoda"
+  ],
+  "lon": 139.6900949,
+  "name": "Yoyogi-koen",
+  "name_ja": "代々木公園",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "yoyogi-uehara": {
+  "codes": [
+   "C-01"
+  ],
+  "from_stop_nodes": true,
+  "lat": 35.6690082,
+  "lines": [
+   "chiyoda"
+  ],
+  "lon": 139.6797884,
+  "name": "Yoyogi-Uehara",
+  "name_ja": "代々木上原",
+  "nodes": 2,
+  "spread_km": 0.005
+ },
+ "yurakucho": {
+  "codes": [
+   "Y-18"
+  ],
+  "lat": 35.6759691,
+  "lines": [
+   "yamanote",
+   "yurakucho"
+  ],
+  "lon": 139.7621359,
+  "name": "Yurakucho",
+  "name_ja": "有楽町",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "yushima": {
+  "codes": [
+   "C-13"
+  ],
+  "lat": 35.7073329,
+  "lines": [
+   "chiyoda"
+  ],
+  "lon": 139.7700104,
+  "name": "Yushima",
+  "name_ja": "湯島",
+  "nodes": 1,
+  "spread_km": 0.0
+ },
+ "zoshigaya": {
+  "codes": [
+   "F-10"
+  ],
+  "lat": 35.7202465,
+  "lines": [
+   "fukutoshin"
+  ],
+  "lon": 139.7147782,
+  "name": "Zoshigaya",
+  "name_ja": "雑司が谷",
+  "nodes": 1,
+  "spread_km": 0.0
+ }
+}

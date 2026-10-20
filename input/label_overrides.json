@@ -1,0 +1,1994 @@
+{
+ "akabanebashi": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "akasaka": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 0.0,
+   "dy": -2.09
+  }
+ },
+ "akasaka-mitsuke": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": 0.0
+  }
+ },
+ "akebonobashi": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "akihabara": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "aomi": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 0.72,
+   "dy": -2.09
+  }
+ },
+ "aoyama-itchome": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "arakawa-itchumae": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "arakawa-kuyakushomae": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": -0.45
+  }
+ },
+ "arakawa-nanachome": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 7.79,
+   "dy": -4.5,
+   "leader": true
+  }
+ },
+ "arakawa-nichome": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "arakawa-shakomae": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 2.86,
+   "dy": -2.09
+  }
+ },
+ "arakawa-yuenchimae": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 0.0,
+   "dy": 2.09
+  }
+ },
+ "ariake": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "ariake-tennis-no-mori": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "asakusa": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": -1.25,
+   "dy": -2.09
+  }
+ },
+ "asakusabashi": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 0.0,
+   "dy": -2.09
+  }
+ },
+ "asukayama": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.89
+  }
+ },
+ "awajicho": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "ayase": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "azabu-juban": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": -0.89
+  }
+ },
+ "bakuroyokoyama": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 0.0,
+   "dy": -2.09
+  }
+ },
+ "daiba": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "daimon": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "ebisu": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "edagawa": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "edogawabashi": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 2.15,
+   "dy": 2.09
+  }
+ },
+ "funabori": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "gaiemmae": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "gakushuinshita": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "ginza": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "ginza-itchome": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.45
+  }
+ },
+ "gokokuji": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "gotanda": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "hakusan": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "hamacho": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": 0.0
+  }
+ },
+ "hamamatsucho": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -2.39,
+   "dy": 6.58,
+   "leader": true
+  }
+ },
+ "hanzomon": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": 0.0
+  }
+ },
+ "harajuku": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "hatchobori": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "heiwadai": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "hibiya": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "higashi-ginza": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 0.0,
+   "dy": 2.09
+  }
+ },
+ "higashi-ikebukuro": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": -0.45
+  }
+ },
+ "higashi-ikebukuro-yonchome": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 1.77
+  }
+ },
+ "higashi-koenji": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "higashi-nakano": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 2.5,
+   "dy": -2.09
+  }
+ },
+ "higashi-nihombashi": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 0.0,
+   "dy": 2.09
+  }
+ },
+ "higashi-ogu-sanchome": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": -0.89
+  }
+ },
+ "higashi-ojima": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": 0.0
+  }
+ },
+ "higashi-shinjuku": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "hikawadai": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 1.61,
+   "dy": -2.09
+  }
+ },
+ "hinode": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": 0.0
+  }
+ },
+ "hiro-o": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "hon-komagome": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "honancho": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 1.43,
+   "dy": -2.09
+  }
+ },
+ "hongo-sanchome": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 2.5,
+   "dy": 2.09
+  }
+ },
+ "honjo-azumabashi": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "ichigaya": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "iidabashi": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 1.61,
+   "dy": 2.09
+  }
+ },
+ "ikebukuro": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "inaricho": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "iriya": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "itabashi-kuyakushomae": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 3.75,
+   "dy": -2.09
+  }
+ },
+ "itabashihoncho": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "iwamotocho": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "jimbocho": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "kachidoki": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": -1.61,
+   "dy": 2.09
+  }
+ },
+ "kagurazaka": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "kajiwara": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 0.0,
+   "dy": 2.09
+  }
+ },
+ "kamiyacho": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "kanamecho": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "kanda": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.45
+  }
+ },
+ "kasai": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "kasuga": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "kasumigaseki": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.89
+  }
+ },
+ "kayabacho": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": 0.0
+  }
+ },
+ "kiba": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 0.72,
+   "dy": -2.09
+  }
+ },
+ "kikukawa": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": -0.89
+  }
+ },
+ "kinshicho": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "kishibojimmae": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "kita-sando": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "kita-senju": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "kiyosumi-shirakawa": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "kodemmacho": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": 0.0
+  }
+ },
+ "kojimachi": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.45
+  }
+ },
+ "kokkai-gijidomae": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": -0.89
+  }
+ },
+ "kokuritsu-kyogijo": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "kokusai-tenjijo": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": 0.0
+  }
+ },
+ "komagome": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "korakuen": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "koshinzuka": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "kotake-mukaihara": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "kudanshita": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": -0.45
+  }
+ },
+ "kumanomae": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "kuramae": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": 0.45
+  }
+ },
+ "kyobashi": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 1.43,
+   "dy": -2.09
+  }
+ },
+ "machiya": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 1.25,
+   "dy": 2.09
+  }
+ },
+ "machiya-ekimae": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 2.5,
+   "dy": -2.09
+  }
+ },
+ "machiya-nichome": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": 0.0
+  }
+ },
+ "meguro": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "meiji-jingumae": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "mejiro": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "minami-senju": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "minami-sunamachi": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "minowa": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.45
+  }
+ },
+ "minowabashi": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 1.97,
+   "dy": 2.09
+  }
+ },
+ "mita": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "mitsukoshimae": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "miyanomae": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": -0.45
+  }
+ },
+ "monzen-nakacho": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "morishita": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.89
+  }
+ },
+ "mukohara": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "myogadani": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "nagatacho": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "naka-meguro": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": 0.0
+  }
+ },
+ "naka-okachimachi": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.89
+  }
+ },
+ "nakai": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "nakano": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "nakano-fujimicho": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "nakano-sakaue": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": 0.0
+  }
+ },
+ "nakano-shimbashi": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -0.73,
+   "dy": -6.96,
+   "leader": true
+  }
+ },
+ "nakanobu": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "nerima": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "nezu": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "nihombashi": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "nijubashimae": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "ningyocho": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "nippori": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "nishi-kasai": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "nishi-nippori": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "nishi-ojima": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": 0.0
+  }
+ },
+ "nishi-shinjuku": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "nishi-shinjuku-gochome": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 3.93,
+   "dy": 2.09
+  }
+ },
+ "nishi-sugamo": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.89
+  }
+ },
+ "nishi-waseda": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "nishigahara": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 4.64,
+   "dy": 1.87,
+   "leader": true
+  }
+ },
+ "nishigahara-yonchome": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "nogizaka": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "ochanomizu": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "ochiai": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "ochiai-minami-nagasaki": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "odai": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 0.0,
+   "dy": -2.09
+  }
+ },
+ "odaiba-kaihinkoen": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 3.31,
+   "dy": -11.54,
+   "leader": true
+  }
+ },
+ "ogawamachi": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 1.79,
+   "dy": 2.09
+  }
+ },
+ "oimachi": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "oji": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": 0.0
+  }
+ },
+ "oji-ekimae": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": -1.79,
+   "dy": -2.09
+  }
+ },
+ "ojima": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": 0.0
+  }
+ },
+ "okachimachi": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": 0.89
+  }
+ },
+ "omokagebashi": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 2.15,
+   "dy": 2.09
+  }
+ },
+ "omote-sando": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "onarimon": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "osaki": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 0.89,
+   "dy": 2.09
+  }
+ },
+ "oshiage": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "otemachi": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 1.43,
+   "dy": -2.09
+  }
+ },
+ "otsuka": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 1.07,
+   "dy": -2.09
+  }
+ },
+ "otsuka-ekimae": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "roppongi": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "roppongi-itchome": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "ryogoku": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "sakaecho": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 1.43,
+   "dy": -2.09
+  }
+ },
+ "sakuradamon": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": 0.0
+  }
+ },
+ "sendagi": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "sengakuji": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "sengoku": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "sengoku-koto": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "senkawa": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "shibakoen": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "shibaura-futo": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": 0.0
+  }
+ },
+ "shibuya": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "shijo-mae": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": -1.61,
+   "dy": 2.09
+  }
+ },
+ "shimbashi": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "shin-egota": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "shin-itabashi": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "shin-kiba": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "shin-koenji": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "shin-koshinzuka": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "shin-nakano": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 1.97,
+   "dy": -2.09
+  }
+ },
+ "shin-ochanomizu": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": 0.0
+  }
+ },
+ "shin-okachimachi": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": -0.45
+  }
+ },
+ "shin-okubo": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "shin-otsuka": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": -0.45
+  }
+ },
+ "shin-toyosu": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": -1.97,
+   "dy": 2.09
+  }
+ },
+ "shinagawa": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "shinagawa-seaside": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": 0.0
+  }
+ },
+ "shinjuku": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "shinjuku-gyoemmae": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": -0.89
+  }
+ },
+ "shinjuku-nishiguchi": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.45
+  }
+ },
+ "shinjuku-sanchome": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "shinonome": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": -1.61,
+   "dy": -2.09
+  }
+ },
+ "shintomicho": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "shiodome": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "shirokane-takanawa": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "shirokanedai": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "suehirocho": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "sugamo": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "sugamoshinden": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "suidobashi": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "suitengumae": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 1.97,
+   "dy": -2.09
+  }
+ },
+ "sumiyoshi": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": 0.0
+  }
+ },
+ "tabata": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "takadanobaba": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 2.15,
+   "dy": 2.09
+  }
+ },
+ "takanawa-gateway": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 2.86,
+   "dy": -2.09
+  }
+ },
+ "takanawadai": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "takaracho": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 6.06,
+   "dy": -3.5,
+   "leader": true
+  }
+ },
+ "takebashi": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -6.66,
+   "dy": -2.16,
+   "leader": true
+  }
+ },
+ "takeshiba": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": -1.61,
+   "dy": -2.09
+  }
+ },
+ "takinogawa-itchome": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "tamachi": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "tameike-sanno": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 0.0,
+   "dy": 2.09
+  }
+ },
+ "tatsumi": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "tawaramachi": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": 0.0
+  }
+ },
+ "telecom-center": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 2.5,
+   "dy": 2.09
+  }
+ },
+ "tennozu-isle": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 4.33,
+   "dy": -2.5,
+   "leader": true
+  }
+ },
+ "tochomae": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "todaimae": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "toden-zoshigaya": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": 0.0
+  }
+ },
+ "togoshi": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "tokyo": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "tokyo-big-sight": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "tokyo-international-cruise-terminal": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 1.77
+  }
+ },
+ "tokyo-teleport": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 0.0,
+   "dy": -2.09
+  }
+ },
+ "toranomon": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 1.61,
+   "dy": -2.09
+  }
+ },
+ "toranomon-hills": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "toshimaen": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "toyocho": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "toyosu": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "tsukiji": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "tsukijishijo": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "tsukishima": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": -1.79,
+   "dy": 2.09
+  }
+ },
+ "uchisaiwaicho": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "ueno": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "ueno-hirokoji": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": -0.45
+  }
+ },
+ "ueno-okachimachi": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 2.86,
+   "dy": -2.09
+  }
+ },
+ "uguisudani": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": -0.45
+  }
+ },
+ "ushigome-kagurazaka": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 3.4,
+   "dy": -2.09
+  }
+ },
+ "ushigome-yanagicho": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "wakamatsu-kawada": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 2.86,
+   "dy": -2.09
+  }
+ },
+ "waseda": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "yotsuya": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "yotsuya-sanchome": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "yoyogi": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "yoyogi-koen": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "yoyogi-uehara": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "yurakucho": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  }
+ },
+ "yushima": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 0.0,
+   "dy": -2.09
+  }
+ },
+ "zoshigaya": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": -0.89
+  }
+ }
+}

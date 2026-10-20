@@ -1,0 +1,24 @@
+# KiCad lock files
+*.lck
+# Python / PlatformIO build output
+__pycache__/
+firmware/.pio/
+
+# KiCad local state and backups
+*.kicad_prl
+*-backups/
+fp-info-cache
+*.bak
+.history/
+
+# Generated renders, netlists and DRC reports. Everything here is produced
+# by rebuild.sh or rebuild_board.sh and none of it is an input, so it is
+# not kept - it was 145 MB of scratch previews at the first commit.
+# board.png is the exception: the README shows it.
+test-results/*
+!test-results/board.png
+
+# The two reference files live in input/reference/; these are the copies
+# that were dropped in the project root and are byte-identical to them.
+/202305_number_en.pdf
+/Tokyo_subway_map_(metro).png
