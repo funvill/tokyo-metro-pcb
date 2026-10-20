@@ -6,389 +6,389 @@ const uint16_t NUM_LEDS = 248;
 
 const int LINE_ASAKUSA_COUNT = 18;
 const int LINE_ASAKUSA[] = {
-    112, // Nakanobu
-    111, // Togoshi
-    109, // Gotanda
-    108, // Takanawadai
-    106, // Sengakuji
-    104, // Mita
-    123, // Daimon
-    126, // Shimbashi
-    127, // Higashi-Ginza
-    130, // Takaracho
-     51, // Nihombashi
-    133, // Ningyocho
-    137, // Higashi-nihombashi
-    139, // Asakusabashi
-     27, // Kuramae
-     29, // Asakusa
-     30, // Honjo-azumabashi
-     31, // Oshiage
+    204, // Nakanobu
+    203, // Togoshi
+    202, // Gotanda
+    200, // Takanawadai
+    216, // Sengakuji
+    219, // Mita
+    181, // Daimon
+    225, // Shimbashi
+    228, // Higashi-Ginza
+     23, // Takaracho
+    231, // Nihombashi
+    234, // Ningyocho
+    237, // Higashi-nihombashi
+     53, // Asakusabashi
+     54, // Kuramae
+     57, // Asakusa
+     55, // Honjo-azumabashi
+     56, // Oshiage
 };
 
 const int LINE_CHIYODA_COUNT = 19;
 const int LINE_CHIYODA[] = {
-     87, // Yoyogi-Uehara
-     88, // Yoyogi-koen
-     90, // Meiji-jingumae
-     91, // Omote-sando
-     96, // Nogizaka
-     60, // Akasaka
-     62, // Kokkai-gijidomae
-     53, // Kasumigaseki
-     44, // Hibiya
-     47, // Nijubashimae
-     49, // Otemachi
-    231, // Shin-ochanomizu
-    219, // Yushima
-    146, // Nezu
-    215, // Sendagi
-    216, // Nishi-nippori
-    212, // Machiya
-    246, // Kita-Senju
-    247, // Ayase
+    165, // Yoyogi-Uehara
+    166, // Yoyogi-koen
+    169, // Meiji-jingumae
+    168, // Omote-sando
+    174, // Nogizaka
+    192, // Akasaka
+    187, // Kokkai-gijidomae
+    185, // Kasumigaseki
+     27, // Hibiya
+     29, // Nijubashimae
+     31, // Otemachi
+     41, // Shin-ochanomizu
+     50, // Yushima
+     74, // Nezu
+     63, // Sendagi
+     65, // Nishi-nippori
+     87, // Machiya
+     91, // Kita-Senju
+     90, // Ayase
 };
 
 const int LINE_OEDO_COUNT = 37;
 const int LINE_OEDO[] = {
-    189, // Toshimaen
-    188, // Nerima
-    187, // Shin-egota
-    182, // Ochiai-minami-nagasaki
-    183, // Nakai
-    185, // Higashi-nakano
-     80, // Nakano-sakaue
-     79, // Nishi-shinjuku-gochome
-     78, // Tochomae
-     75, // Shinjuku
-     71, // Yoyogi
-     70, // Kokuritsu-kyogijo
-     97, // Aoyama-itchome
-     59, // Roppongi
-    101, // Azabu-juban
-    102, // Akabanebashi
-    123, // Daimon
-    124, // Shiodome
-    125, // Tsukijishijo
-     41, // Kachidoki
-     40, // Tsukishima
-     39, // Monzen-nakacho
-     21, // Kiyosumi-shirakawa
-     22, // Morishita
-     26, // Ryogoku
-     27, // Kuramae
-    235, // Shin-okachimachi
-    234, // Ueno-okachimachi
-    220, // Hongo-sanchome
-    222, // Kasuga
-    153, // Iidabashi
-    154, // Ushigome-kagurazaka
-    156, // Ushigome-yanagicho
-    158, // Wakamatsu-kawada
-    159, // Higashi-shinjuku
-     76, // Shinjuku-nishiguchi
-     78, // Tochomae
+    110, // Toshimaen
+    111, // Nerima
+    112, // Shin-egota
+    113, // Ochiai-minami-nagasaki
+    119, // Nakai
+    160, // Higashi-nakano
+    159, // Nakano-sakaue
+    155, // Nishi-shinjuku-gochome
+    154, // Tochomae
+    151, // Shinjuku
+    171, // Yoyogi
+    148, // Kokuritsu-kyogijo
+    194, // Aoyama-itchome
+    175, // Roppongi
+    178, // Azabu-juban
+    179, // Akabanebashi
+    181, // Daimon
+    224, // Shiodome
+    227, // Tsukijishijo
+     20, // Kachidoki
+     19, // Tsukishima
+     18, // Monzen-nakacho
+     17, // Kiyosumi-shirakawa
+    239, // Morishita
+    240, // Ryogoku
+     54, // Kuramae
+     59, // Shin-okachimachi
+     51, // Ueno-okachimachi
+     39, // Hongo-sanchome
+     38, // Kasuga
+     35, // Iidabashi
+    145, // Ushigome-kagurazaka
+    126, // Ushigome-yanagicho
+    127, // Wakamatsu-kawada
+    123, // Higashi-shinjuku
+    152, // Shinjuku-nishiguchi
+    154, // Tochomae
 };
 
 const int LINE_FUKUTOSHIN_COUNT = 13;
 const int LINE_FUKUTOSHIN[] = {
-    190, // Heiwadai
-    191, // Hikawadai
-    192, // Kotake-mukaihara
-    193, // Senkawa
-    181, // Kanamecho
-    180, // Ikebukuro
-    165, // Zoshigaya
-    161, // Nishi-waseda
-    159, // Higashi-shinjuku
-     74, // Shinjuku-sanchome
-     72, // Kita-sando
-     90, // Meiji-jingumae
-     92, // Shibuya
+    109, // Heiwadai
+    108, // Hikawadai
+    107, // Kotake-mukaihara
+    114, // Senkawa
+    115, // Kanamecho
+    116, // Ikebukuro
+    131, // Zoshigaya
+    121, // Nishi-waseda
+    123, // Higashi-shinjuku
+    150, // Shinjuku-sanchome
+    172, // Kita-sando
+    169, // Meiji-jingumae
+    167, // Shibuya
 };
 
 const int LINE_GINZA_COUNT = 19;
 const int LINE_GINZA[] = {
-     29, // Asakusa
-     28, // Tawaramachi
-    236, // Inaricho
-    144, // Ueno
-    143, // Ueno-hirokoji
-    233, // Suehirocho
-    228, // Kanda
-     50, // Mitsukoshimae
-     51, // Nihombashi
-     52, // Kyobashi
-     43, // Ginza
-    126, // Shimbashi
-     54, // Toranomon
-    100, // Tameike-sanno
-     61, // Akasaka-mitsuke
-     97, // Aoyama-itchome
-     98, // Gaiemmae
-     91, // Omote-sando
-     92, // Shibuya
+     57, // Asakusa
+     58, // Tawaramachi
+     60, // Inaricho
+     61, // Ueno
+     49, // Ueno-hirokoji
+     47, // Suehirocho
+     44, // Kanda
+    232, // Mitsukoshimae
+    231, // Nihombashi
+     24, // Kyobashi
+     26, // Ginza
+    225, // Shimbashi
+    184, // Toranomon
+    193, // Tameike-sanno
+    191, // Akasaka-mitsuke
+    194, // Aoyama-itchome
+    173, // Gaiemmae
+    168, // Omote-sando
+    167, // Shibuya
 };
 
 const int LINE_HIBIYA_COUNT = 22;
 const int LINE_HIBIYA[] = {
-     93, // Naka-meguro
-     94, // Ebisu
-     95, // Hiro-o
-     59, // Roppongi
-     57, // Kamiyacho
-     56, // Toranomon Hills
-     53, // Kasumigaseki
-     44, // Hibiya
-     43, // Ginza
-    127, // Higashi-Ginza
-    128, // Tsukiji
-    131, // Hatchobori
-    132, // Kayabacho
-    133, // Ningyocho
-    229, // Kodemmacho
-    140, // Akihabara
-    141, // Naka-okachimachi
-    144, // Ueno
-    237, // Iriya
-    238, // Minowa
-    239, // Minami-senju
-    246, // Kita-Senju
+    197, // Naka-meguro
+    196, // Ebisu
+    195, // Hiro-o
+    175, // Roppongi
+    177, // Kamiyacho
+    183, // Toranomon Hills
+    185, // Kasumigaseki
+     27, // Hibiya
+     26, // Ginza
+    228, // Higashi-Ginza
+     21, // Tsukiji
+    229, // Hatchobori
+    230, // Kayabacho
+    234, // Ningyocho
+    235, // Kodemmacho
+     46, // Akihabara
+     52, // Naka-okachimachi
+     61, // Ueno
+     71, // Iriya
+     70, // Minowa
+     69, // Minami-senju
+     91, // Kita-Senju
 };
 
 const int LINE_MITA_COUNT = 19;
 const int LINE_MITA[] = {
-    110, // Meguro
-    107, // Shirokanedai
-    105, // Shirokane-takanawa
-    104, // Mita
-    103, // Shibakoen
-     42, // Onarimon
-     55, // Uchisaiwaicho
-     44, // Hibiya
-     49, // Otemachi
-    226, // Jimbocho
-    224, // Suidobashi
-    222, // Kasuga
-    147, // Hakusan
-    148, // Sengoku
-    150, // Sugamo
-    179, // Nishi-sugamo
-    196, // Shin-itabashi
-    194, // Itabashi-kuyakushomae
-    195, // Itabashihoncho
+    198, // Meguro
+    199, // Shirokanedai
+    217, // Shirokane-takanawa
+    219, // Mita
+    180, // Shibakoen
+    182, // Onarimon
+    226, // Uchisaiwaicho
+     27, // Hibiya
+     31, // Otemachi
+     33, // Jimbocho
+     36, // Suidobashi
+     38, // Kasuga
+     75, // Hakusan
+     77, // Sengoku
+     79, // Sugamo
+    103, // Nishi-sugamo
+    104, // Shin-itabashi
+    106, // Itabashi-kuyakushomae
+    105, // Itabashihoncho
 };
 
 const int LINE_YAMANOTE_COUNT = 31;
 const int LINE_YAMANOTE[] = {
-    116, // Shinagawa
-    114, // Osaki
-    109, // Gotanda
-    110, // Meguro
-     94, // Ebisu
-     92, // Shibuya
-     89, // Harajuku
-     71, // Yoyogi
-     75, // Shinjuku
-    160, // Shin-Okubo
-    164, // Takadanobaba
-    166, // Mejiro
-    180, // Ikebukuro
-    174, // Otsuka
-    150, // Sugamo
-    149, // Komagome
-    217, // Tabata
-    216, // Nishi-nippori
-    214, // Nippori
-    213, // Uguisudani
-    144, // Ueno
-    142, // Okachimachi
-    140, // Akihabara
-    228, // Kanda
-     48, // Tokyo
-     46, // Yurakucho
-    126, // Shimbashi
-    121, // Hamamatsucho
-    119, // Tamachi
-    117, // Takanawa Gateway
-    116, // Shinagawa
+    214, // Shinagawa
+    201, // Osaki
+    202, // Gotanda
+    198, // Meguro
+    196, // Ebisu
+    167, // Shibuya
+    170, // Harajuku
+    171, // Yoyogi
+    151, // Shinjuku
+    122, // Shin-Okubo
+    118, // Takadanobaba
+    117, // Mejiro
+    116, // Ikebukuro
+    137, // Otsuka
+     79, // Sugamo
+     78, // Komagome
+     64, // Tabata
+     65, // Nishi-nippori
+     73, // Nippori
+     72, // Uguisudani
+     61, // Ueno
+     48, // Okachimachi
+     46, // Akihabara
+     44, // Kanda
+     30, // Tokyo
+     28, // Yurakucho
+    225, // Shimbashi
+    223, // Hamamatsucho
+    218, // Tamachi
+    215, // Takanawa Gateway
+    214, // Shinagawa
 };
 
 const int LINE_MARUNOUCHI_HONANCHO_COUNT = 7;
 const int LINE_MARUNOUCHI_HONANCHO[] = {
-     85, // Shin-koenji
-     84, // Higashi-koenji
-     83, // Shin-nakano
-     80, // Nakano-sakaue
-     81, // Nakano-shimbashi
-     82, // Nakano-fujimicho
-     86, // Honancho
+    163, // Shin-koenji
+    162, // Higashi-koenji
+    158, // Shin-nakano
+    159, // Nakano-sakaue
+    156, // Nakano-shimbashi
+    157, // Nakano-fujimicho
+    164, // Honancho
 };
 
 const int LINE_NAMBOKU_SHINAGAWA_COUNT = 4;
 const int LINE_NAMBOKU_SHINAGAWA[] = {
-    110, // Meguro
-    107, // Shirokanedai
-    105, // Shirokane-takanawa
-    116, // Shinagawa
+    198, // Meguro
+    199, // Shirokanedai
+    217, // Shirokane-takanawa
+    214, // Shinagawa
 };
 
 const int LINE_RINKAI_COUNT = 8;
 const int LINE_RINKAI[] = {
       0, // Shin-kiba
       2, // Shinonome
-      4, // Kokusai-tenjijo
-      8, // Tokyo Teleport
-    115, // Tennozu Isle
-     12, // Shinagawa Seaside
-    113, // Oimachi
-    114, // Osaki
+      5, // Kokusai-tenjijo
+    210, // Tokyo Teleport
+    213, // Tennozu Isle
+    206, // Shinagawa Seaside
+    205, // Oimachi
+    201, // Osaki
 };
 
 const int LINE_SHINJUKU_COUNT = 17;
 const int LINE_SHINJUKU[] = {
-     35, // Funabori
-     34, // Higashi-ojima
-     33, // Ojima
-     32, // Nishi-ojima
-     24, // Sumiyoshi
-     23, // Kikukawa
-     22, // Morishita
-    135, // Hamacho
-    136, // Bakuroyokoyama
-    138, // Iwamotocho
-    230, // Ogawamachi
-    226, // Jimbocho
-    225, // Kudanshita
-     67, // Ichigaya
-     68, // Akebonobashi
-     74, // Shinjuku-sanchome
-     75, // Shinjuku
+    244, // Funabori
+    243, // Higashi-ojima
+    242, // Ojima
+    241, // Nishi-ojima
+     14, // Sumiyoshi
+     16, // Kikukawa
+    239, // Morishita
+    238, // Hamacho
+    236, // Bakuroyokoyama
+     45, // Iwamotocho
+     42, // Ogawamachi
+     33, // Jimbocho
+     34, // Kudanshita
+    146, // Ichigaya
+    125, // Akebonobashi
+    150, // Shinjuku-sanchome
+    151, // Shinjuku
 };
 
 const int LINE_ARAKAWA_COUNT = 30;
 const int LINE_ARAKAWA[] = {
-    157, // Waseda
-    162, // Omokagebashi
-    163, // Gakushuinshita
-    167, // Kishibojimmae
-    169, // Toden-zoshigaya
-    171, // Higashi-ikebukuro-yonchome
-    172, // Mukohara
-    175, // Otsuka-ekimae
-    176, // Sugamoshinden
-    177, // Koshinzuka
-    178, // Shin-koshinzuka
-    198, // Nishigahara-yonchome
-    197, // Takinogawa-itchome
-    200, // Asukayama
-    202, // Oji-ekimae
-    203, // Sakaecho
-    204, // Kajiwara
-    205, // Arakawa-shakomae
-    206, // Arakawa-yuenchimae
-    207, // Odai
-    208, // Miyanomae
-    209, // Kumanomae
-    210, // Higashi-ogu-sanchome
-    211, // Machiya-nichome
-    244, // Machiya-ekimae
-    245, // Arakawa-nanachome
-    243, // Arakawa-nichome
-    242, // Arakawa-kuyakushomae
-    241, // Arakawa-itchumae
-    240, // Minowabashi
+    128, // Waseda
+    129, // Omokagebashi
+    130, // Gakushuinshita
+    132, // Kishibojimmae
+    133, // Toden-zoshigaya
+    135, // Higashi-ikebukuro-yonchome
+    136, // Mukohara
+    139, // Otsuka-ekimae
+    138, // Sugamoshinden
+     81, // Koshinzuka
+     80, // Shin-koshinzuka
+    102, // Nishigahara-yonchome
+    101, // Takinogawa-itchome
+    100, // Asukayama
+     97, // Oji-ekimae
+     99, // Sakaecho
+     83, // Kajiwara
+     84, // Arakawa-shakomae
+     85, // Arakawa-yuenchimae
+     86, // Odai
+     96, // Miyanomae
+     95, // Kumanomae
+     94, // Higashi-ogu-sanchome
+     93, // Machiya-nichome
+     88, // Machiya-ekimae
+     89, // Arakawa-nanachome
+     92, // Arakawa-nichome
+     66, // Arakawa-kuyakushomae
+     67, // Arakawa-itchumae
+     68, // Minowabashi
 };
 
 const int LINE_SHINKANSEN_SHINAGAWA_COUNT = 3;
 const int LINE_SHINKANSEN_SHINAGAWA[] = {
-    144, // Ueno
-     48, // Tokyo
-    116, // Shinagawa
+     61, // Ueno
+     30, // Tokyo
+    214, // Shinagawa
 };
 
 const int LINE_TOZAI_COUNT = 17;
 const int LINE_TOZAI[] = {
-    186, // Nakano
-    184, // Ochiai
-    164, // Takadanobaba
-    157, // Waseda
-    155, // Kagurazaka
-    153, // Iidabashi
-    225, // Kudanshita
-    227, // Takebashi
-     49, // Otemachi
-     51, // Nihombashi
-    132, // Kayabacho
-     39, // Monzen-nakacho
-     18, // Kiba
-     19, // Toyocho
-     38, // Minami-sunamachi
-     37, // Nishi-kasai
-     36, // Kasai
+    161, // Nakano
+    120, // Ochiai
+    118, // Takadanobaba
+    128, // Waseda
+    144, // Kagurazaka
+     35, // Iidabashi
+     34, // Kudanshita
+     32, // Takebashi
+     31, // Otemachi
+    231, // Nihombashi
+    230, // Kayabacho
+     18, // Monzen-nakacho
+     11, // Kiba
+     12, // Toyocho
+    247, // Minami-sunamachi
+    246, // Nishi-kasai
+    245, // Kasai
 };
 
 const int LINE_YURIKAMOME_COUNT = 16;
 const int LINE_YURIKAMOME[] = {
-    126, // Shimbashi
-    124, // Shiodome
-    122, // Takeshiba
-    120, // Hinode
-    118, // Shibaura-futo
-      6, // Odaiba-kaihinkoen
-      7, // Daiba
-     10, // Tokyo International Cruise Terminal
-     11, // Telecom Center
-      9, // Aomi
-      5, // Tokyo Big Sight
+    225, // Shimbashi
+    224, // Shiodome
+    222, // Takeshiba
+    221, // Hinode
+    220, // Shibaura-futo
+    211, // Odaiba-kaihinkoen
+    212, // Daiba
+    207, // Tokyo International Cruise Terminal
+    208, // Telecom Center
+    209, // Aomi
+      4, // Tokyo Big Sight
       3, // Ariake
-     13, // Ariake-Tennis-no-mori
-     14, // Shijo-mae
-     15, // Shin-Toyosu
-     16, // Toyosu
+      6, // Ariake-Tennis-no-mori
+      7, // Shijo-mae
+      8, // Shin-Toyosu
+      9, // Toyosu
 };
 
 const int LINE_YURAKUCHO_SUMIYOSHI_COUNT = 23;
 const int LINE_YURAKUCHO_SUMIYOSHI[] = {
-    190, // Heiwadai
-    191, // Hikawadai
-    192, // Kotake-mukaihara
-    193, // Senkawa
-    181, // Kanamecho
-    180, // Ikebukuro
-    170, // Higashi-ikebukuro
-    168, // Gokokuji
-    152, // Edogawabashi
-    153, // Iidabashi
-     67, // Ichigaya
-     66, // Kojimachi
-     64, // Nagatacho
-     63, // Sakuradamon
-     46, // Yurakucho
-     45, // Ginza-itchome
-    129, // Shintomicho
-     40, // Tsukishima
-     16, // Toyosu
-     17, // Edagawa
-     19, // Toyocho
-     20, // Sengoku
-     24, // Sumiyoshi
+    109, // Heiwadai
+    108, // Hikawadai
+    107, // Kotake-mukaihara
+    114, // Senkawa
+    115, // Kanamecho
+    116, // Ikebukuro
+    134, // Higashi-ikebukuro
+    141, // Gokokuji
+    143, // Edogawabashi
+     35, // Iidabashi
+    146, // Ichigaya
+    189, // Kojimachi
+    190, // Nagatacho
+    186, // Sakuradamon
+     28, // Yurakucho
+     25, // Ginza-itchome
+     22, // Shintomicho
+     19, // Tsukishima
+      9, // Toyosu
+     10, // Edagawa
+     12, // Toyocho
+     13, // Sengoku
+     14, // Sumiyoshi
 };
 
 const int LINE_HANZOMON_COUNT = 14;
 const int LINE_HANZOMON[] = {
-     92, // Shibuya
-     91, // Omote-sando
-     97, // Aoyama-itchome
-     64, // Nagatacho
-     65, // Hanzomon
-    225, // Kudanshita
-    226, // Jimbocho
-     49, // Otemachi
-     50, // Mitsukoshimae
-    134, // Suitengumae
-     21, // Kiyosumi-shirakawa
-     24, // Sumiyoshi
-     25, // Kinshicho
-     31, // Oshiage
+    167, // Shibuya
+    168, // Omote-sando
+    194, // Aoyama-itchome
+    190, // Nagatacho
+    188, // Hanzomon
+     34, // Kudanshita
+     33, // Jimbocho
+     31, // Otemachi
+    232, // Mitsukoshimae
+    233, // Suitengumae
+     17, // Kiyosumi-shirakawa
+     14, // Sumiyoshi
+     15, // Kinshicho
+     56, // Oshiage
 };

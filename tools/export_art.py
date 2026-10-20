@@ -49,6 +49,7 @@ DASH_STYLES = {  # (dash, gap) in mm for "line" geo and future routes
     "dot": (0.5, 0.9),
     "dashdot": None,  # handled specially: long dash, gap, dot, gap
 }
+PAD_SILK_CLEAR = 0.18  # silk kept this far off an LED pad
 RIVER_MITRE = 1.0  # extra length added at each river segment end, to close gaps
 # citymap.repel() only pushes vertices, not the edges between them, so two
 # adjacent vertices each individually clear of a station can still bound an
@@ -245,16 +246,38 @@ def land_outline_blocks(city, scale, geo=None):
     return blocks
 
 
-def route_blocks(city, scale):
+def route_blocks(city, scale, keepouts=None):
     """The transit lines themselves, as F.SilkS strokes between adjacent
     stations - one solid style for every segment (future extensions are
-    drawn like the rest; the map shows the network as it will be)."""
+    drawn like the rest; the map shows the network as it will be).
+
+    `keepouts` is a shapely geometry the strokes are cut out of: the label
+    capsules and the LED pads. White text on a white line is unreadable, so
+    the line gives way; and silkscreen will not print on a pad's mask
+    opening anyway, so ink drawn across a pad is ink the board would not
+    have had. A segment crossing a keepout is emitted as the pieces that
+    survive rather than as one stroke.
+    """
     blocks = []
     for i, (line_id, p1, p2, a, b) in enumerate(citymap.segments(city)):
         p1s = (p1[0] * scale, p1[1] * scale)
         p2s = (p2[0] * scale, p2[1] * scale)
-        blocks.append(line_block(p1s, p2s, "F.SilkS",
-                                 f"route:{i}:{a}:{b}", width=ROUTE_W))
+        if keepouts is None:
+            pieces = [(p1s, p2s)]
+        else:
+            from shapely.geometry import LineString as _L
+            left = _L([p1s, p2s]).difference(keepouts)
+            if left.is_empty:
+                continue
+            pieces = []
+            for g in getattr(left, "geoms", [left]):
+                if g.geom_type != "LineString" or g.length < 0.05:
+                    continue
+                c = list(g.coords)
+                pieces.append((c[0], c[-1]))
+        for j, (q1, q2) in enumerate(pieces):
+            blocks.append(line_block(q1, q2, "F.SilkS",
+                                     f"route:{i}.{j}:{a}:{b}", width=ROUTE_W))
     return blocks
 
 
@@ -327,7 +350,16 @@ def main():
     city = citymap.load(args.data)
     geo = citymap.prepared_geo(city, args.scale, avoid_points(city, args.scale))
     water = water_blocks(city, args.scale, geo)
-    routes = route_blocks(city, args.scale) + station_ring_blocks(city, args.scale)
+    # What the silkscreen must keep clear of: the capsule behind every
+    # station name, and every LED pad. The capsule geometry is imported
+    # rather than restated - preview_map uses the same module, and every
+    # time the two have had their own copy they have drifted apart.
+    import capsules
+    from shapely.ops import unary_union as _uu
+    caps = list(capsules.all_capsules(city, args.scale).values())
+    keepouts = _uu(caps + capsules.pad_keepouts(city, args.scale, PAD_SILK_CLEAR))
+    routes = (route_blocks(city, args.scale, keepouts)
+              + station_ring_blocks(city, args.scale))
     land = land_outline_blocks(city, args.scale, geo)
     labels = label_blocks(city, args.scale)
     annotations = annotation_blocks(city, args.scale)
