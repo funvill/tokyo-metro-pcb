@@ -174,11 +174,19 @@ def avoid_points(city, scale):
             for st in list(city.stations.values()) + city.extras]
 
 
-def water_blocks(city, scale, geo=None):
+def water_blocks(city, scale, geo=None, mask_cut=None):
     """One F.Cu + one F.Mask filled polygon per water/lake shape, and a
     chain of mitred rectangles for river/linear water. Shapes are already
     repelled from LED pads and inset from the board edge by
-    citymap.prepared_geo, so the copper stays DRC-clean."""
+    citymap.prepared_geo, so the copper stays DRC-clean.
+
+    `mask_cut` is subtracted from the F.Mask polygon only - the label
+    capsules. The water reads as bare copper because its mask OPENING
+    exposes it, so a capsule sitting on the water showed gold inside.
+    Taking the capsule out of the opening leaves solder mask over that
+    patch: the copper is still there, covered, and the capsule reads the
+    same green as everywhere else. The F.Cu polygon is left alone - there
+    is nothing to gain by removing copper nobody can see."""
     geo = geo if geo is not None else citymap.prepared_geo(
         city, scale, avoid_points(city, scale))
     avoid = avoid_points(city, scale)
@@ -187,9 +195,20 @@ def water_blocks(city, scale, geo=None):
     for g in geo:
         pts = g["points"]
         if g["type"] in ("water", "lake"):
-            for layer in ("F.Cu", "F.Mask"):
-                blocks.append(poly_block("gr_poly", pts, layer, True,
-                                         f"water:{g['name']}:{layer}"))
+            blocks.append(poly_block("gr_poly", pts, "F.Cu", True,
+                                     f"water:{g['name']}:F.Cu"))
+            if mask_cut is None:
+                blocks.append(poly_block("gr_poly", pts, "F.Mask", True,
+                                         f"water:{g['name']}:F.Mask"))
+            else:
+                from shapely.geometry import Polygon as _P
+                opening = _P(pts).buffer(0).difference(mask_cut)
+                for k, piece in enumerate(getattr(opening, "geoms", [opening])):
+                    if piece.geom_type != "Polygon" or piece.is_empty:
+                        continue
+                    blocks.append(poly_block(
+                        "gr_poly", _with_holes(piece), "F.Mask", True,
+                        f"water:{g['name']}:F.Mask:{k}"))
         elif g["type"] == "river":
             half = g.get("width", 2.5) * scale / 2
             for i, (p1, p2) in enumerate(zip(pts, pts[1:])):
@@ -397,7 +416,6 @@ def main():
     args = ap.parse_args()
     city = citymap.load(args.data)
     geo = citymap.prepared_geo(city, args.scale, avoid_points(city, args.scale))
-    water = water_blocks(city, args.scale, geo)
     # What the silkscreen must keep clear of: the capsule behind every
     # station name, and every LED pad. The capsule geometry is imported
     # rather than restated - preview_map uses the same module, and every
@@ -405,6 +423,9 @@ def main():
     import capsules
     from shapely.ops import unary_union as _uu
     caps = list(capsules.all_capsules(city, args.scale).values())
+    water = water_blocks(city, args.scale, geo,
+                         mask_cut=_uu([c.buffer(CAPSULE_BORDER / 2.0)
+                                       for c in caps]))
     keepouts = _uu([c.buffer(CAPSULE_BORDER / 2.0) for c in caps]
                    + capsules.pad_keepouts(city, args.scale, PAD_SILK_CLEAR))
     routes = (route_blocks(city, args.scale, keepouts)
