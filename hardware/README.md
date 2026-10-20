@@ -103,3 +103,31 @@ the controller's own.
    the bare-copper water**, so the front pour is cut into islands and each
    needs its own via to the back plane; and **38 chain hops cross water**,
    which cannot be routed on the front at all.
+
+## The label font
+
+The board draws its station names in **Archivo Narrow SemiBold**, set as
+`(face ...)` on every `gr_text`. That is not cosmetic: every label
+placement, capsule and collision check in the pipeline is computed from
+this face, and KiCad's default stroke font is 35-59% wider. Drawn in the
+stroke font the names are wider than the space cleared for them; drawn in
+Verdana, which is what KiCad substitutes when the face is missing, wider
+still.
+
+The font is **embedded in the board** (`embedded_fonts yes`, with the TTF
+in the `embedded_files` section - it is most of the file's 7 MB), so the
+board carries it and does not depend on what any particular machine has
+installed. Embedding is done by `board.EmbedFonts()` through pcbnew, and
+it only works once the board-level `embedded_fonts` flag is set AND the
+font resolves on the machine doing the embedding - with the flag off, or
+the font missing, it runs and silently embeds nothing.
+
+If the face ever has to be re-embedded, install `fonts/ArchivoNarrow-SemiBold.ttf`
+and run:
+
+```
+"C:/Program Files/KiCad/10.0/bin/python.exe" -c "import pcbnew; b=pcbnew.LoadBoard('tokyo-metro-pcb.kicad_pcb'); b.EmbedFonts(); pcbnew.SaveBoard('tokyo-metro-pcb.kicad_pcb', b)"
+```
+
+Check it took: `kicad-cli pcb render` prints a substitution warning when
+the face is missing, and says nothing when it is found.
