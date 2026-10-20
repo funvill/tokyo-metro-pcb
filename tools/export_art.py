@@ -266,6 +266,8 @@ def route_blocks(city, scale, keepouts=None):
     survive rather than as one stroke.
     """
     blocks = []
+    weight = {l.id: getattr(l, "weight", 1.0) for l in city.lines}
+    _grown = {}          # keepouts buffered per distinct stroke width
     for i, (line_id, p1, p2, a, b) in enumerate(citymap.segments(city)):
         p1s = (p1[0] * scale, p1[1] * scale)
         p2s = (p2[0] * scale, p2[1] * scale)
@@ -273,7 +275,17 @@ def route_blocks(city, scale, keepouts=None):
             pieces = [(p1s, p2s)]
         else:
             from shapely.geometry import LineString as _L
-            left = _L([p1s, p2s]).difference(keepouts)
+            # Cut the centre line against the keepout GROWN BY HALF THE
+            # STROKE. The route is 0.75 mm wide (1.65 mm for the
+            # Shinkansen), so a centre line that clears a capsule can still
+            # paint over it by half the width - which is why the lines were
+            # still crossing the capsules at Kayabacho and Kyobashi.
+            w = ROUTE_W * weight.get(line_id, 1.0)
+            grown = _grown.get(w)
+            if grown is None:
+                grown = keepouts.buffer(w / 2.0, join_style=1)
+                _grown[w] = grown
+            left = _L([p1s, p2s]).difference(grown)
             if left.is_empty:
                 continue
             pieces = []
