@@ -18,10 +18,13 @@ and tunnels included — the Rainbow Bridge with its Shibaura spiral, the
 that knock the route out behind them, so a name may lie across a line and
 still read.
 
-**Status: the map is finished and the data file is frozen. The KiCad board
-has the old schematic-style artwork and needs rebuilding from this map.**
+**Status: the map is finished, and the KiCad board is built from it —
+placement, outline and artwork. Nothing is routed yet.**
 
 ![The board](test-results/board.png)
+
+*The KiCad board, rendered by `kicad-cli`. Not a preview: this is the
+artwork as it would be plotted.*
 
 ## Where things are
 
@@ -71,11 +74,11 @@ deliberately (lesson B5).
 | LEDs | 248 XL-1615 WS2812B, one per station |
 | Lines | 18, drawn in 0.75 mm white silkscreen on their real alignment; the Shinkansen at 2.2× |
 | Water | Bare ENIG copper, land placed rigidly at 14.4 mm/km, north up; no station's clearance disc notches it |
-| Labels | English names, 1.1 mm, Archivo Narrow SemiBold, each in a knockout capsule; 242 of 248 plain horizontal, none rotated |
+| Labels | English names, 1.1 mm, Archivo Narrow SemiBold **embedded in the board**, each in a knockout capsule; 242 of 248 plain horizontal, none rotated |
 | Power | A USB-C input of its own, plus a 2-pin Phoenix Contact terminal block on a cuttable link |
 | Controller | Seeed XIAO RP2040, hand-soldered at a board edge |
 
-## Known, going into the hardware stage
+## Known, going into routing
 
 - **67 LEDs sit in a hole cut out of the water**, so the front ground pour
   will be cut into islands and each of them needs its own via to the back
@@ -90,6 +93,12 @@ deliberately (lesson B5).
 
 ## Still to do
 
-1. Build the KiCad board: 248 LED symbols, annotation, placement, artwork.
-2. The hand pass over the remaining label collisions.
-3. Route by hand; then the Part C checklist before ordering.
+1. Route by hand. Before starting: **67 LEDs sit in a hole cut out of the
+   bare-copper water**, so the front pour is in islands and each needs its
+   own via to the back plane; and **38 chain hops cross water**, which
+   cannot be routed on the front.
+2. Clear the DRC that is left: 2 shorts where mounting holes fall in the
+   bay, 28 isolated copper islands, 16 starved thermals. The 11 "silkscreen
+   clipped by board edge" warnings are the line stubs running off the edge
+   on purpose, and the fab trims them.
+3. The Part C checklist before ordering.
