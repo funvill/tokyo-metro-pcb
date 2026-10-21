@@ -196,9 +196,22 @@ def led_symbol(template, n, p):
 CAP_PIN = 2.54      # the row decoupling cap's pins, above and below centre
 
 
+CAP_VALUE = "1uF,16V,X5R"   # see below
+
+
 def cap_symbol(template, n, p):
-    """One row decoupling capacitor, re-referenced and re-placed."""
-    return place(template, p, 0, f"cap:{n}", r"ROW\d+", f"ROW{n}")
+    """One decoupling capacitor, re-referenced, re-placed and re-valued.
+
+    The value is forced because the inherited template carries
+    "10uF,10V,X5R" in an 0402, and that part does not exist to buy - 10 uF
+    at 10 V needs 0603 at least. 1 uF 16 V X5R in 0402 is a real part, and
+    with several per row there is more total capacitance close to the LEDs
+    than the old one-per-row arrangement had anyway.
+    """
+    b = place(template, p, 0, f"cap:{n}", r"ROW\d+", f"ROW{n}")
+    b = re.sub(r'(\(property "Value" ")[^"]*(")', r"\g<1>" + CAP_VALUE + r"\g<2>",
+               b, count=1)
+    return b
 
 
 def main():
@@ -209,6 +222,10 @@ def main():
     ap.add_argument("--template", default=None,
                     help="the pristine sheet to build from; default <sch>.template")
     ap.add_argument("--per-row", type=int, default=20)
+    ap.add_argument("--caps-per-row", type=int, default=4,
+                    help="decoupling capacitors per row of LEDs; the "
+                         "first sits left of the row, the rest in the "
+                         "gaps between LED columns (default 4)")
     ap.add_argument("--origin", default="95,70",
                     help="first LED, x,y mm. 95 rather than 80 so the row "
                          "capacitors and their power symbols fit between the "
@@ -233,6 +250,7 @@ def main():
 
     blocks = top_blocks(s)
     cap_tpl = [None]
+    cap_n = [0]          # running ROWn reference across all rows
     led_tpl = None
     keep, drop_spans = [], []
     for a, b in blocks:
@@ -321,18 +339,54 @@ def main():
         # runs left from there, straight over a cap placed any closer.
         # check_schematic.py found all thirteen of them.
         x_cap = ox - 30.48
+        # One cap per row of 20 LEDs is bulk, not decoupling: the far LED is
+        # nineteen pitches of trace away from it, and the board browns out
+        # at the end of a row before it browns out at the supply. The extra
+        # caps go ON the row line, in the gaps between LED columns, so each
+        # one hangs straight off the same pair of rails the LEDs beside it
+        # are fed from.
+        # The extra caps go in the clear band to the RIGHT of the row, not
+        # in the gaps between LED columns: a cap body fits there, but its
+        # Value text is 11.3 mm wide and ran straight into the next LED, 74
+        # overlapping pairs' worth. Where they sit on the sheet does not
+        # matter electrically - they all just bridge the same two rails -
+        # and place_parts.py decides where they go on the BOARD, which is
+        # the placement that actually answers a brownout.
+        x_end = ox + (args.per_row - 1) * X_PITCH
+        cap_xs = [x_cap] + [x_end + 30.48 + 17.78 * j
+                            for j in range(args.caps_per_row - 1)]
         if cap_tpl[0] is not None:
-            gen.append(cap_symbol(cap_tpl[0], row, (x_cap, y)))
-            gen.append(wire((x_cap, y - CAP_PIN), (x_cap, y - RAIL), f"cap:{row}:g"))
-            gen.append(wire((x_cap, y + CAP_PIN), (x_cap, y + RAIL), f"cap:{row}:v"))
+            for xc in cap_xs:
+                n = cap_n[0]
+                cap_n[0] += 1
+                gen.append(cap_symbol(cap_tpl[0], n, (xc, y)))
+                gen.append(wire((xc, y - CAP_PIN), (xc, y - RAIL), f"cap:{n}:g"))
+                gen.append(wire((xc, y + CAP_PIN), (xc, y + RAIL), f"cap:{n}:v"))
         for xs, ry, kind, key in ((xs_g, y - RAIL, "GND", "g"), (xs_v, y + RAIL, "+5V", "v")):
             left = x_cap if cap_tpl[0] is not None else min(xs)
-            gen.append(wire((left, ry), (max(xs), ry), f"rail:{key}:{row}"))
+            # The rail has to run out to the furthest CAP, not to the last
+            # LED. The extra caps sit right of the row, past max(xs), so a
+            # rail that stopped at the LEDs left all 39 of them floating -
+            # with both pads on unconnected-(ROWn-Pad*), exactly the way R1
+            # was. check_led_chain.py does not look at capacitors, so it
+            # still printed PASS.
+            right = max([max(xs)] + ([max(cap_xs)] if cap_tpl[0] is not None else []))
+            gen.append(wire((left, ry), (right, ry), f"rail:{key}:{row}"))
+            # A junction wherever a stub MEETS the rail part-way along. In
+            # KiCad a wire whose endpoint lands in the middle of another
+            # wire is not connected without one; only an end-to-end meeting
+            # is. The last LED's stub used to be the rail's right end and
+            # needed none - extending the rail out to the caps turned it
+            # into a T, and that one LED per row went dark along with all
+            # 52 caps. Junction everything except the two real ends.
+            ends = {round(left, 3), round(right, 3)}
             for j, x in enumerate(xs):
-                if j < len(xs) - 1:
+                if round(x, 3) not in ends:
                     gen.append(junction((x, ry), f"j:{key}:{row}:{j}"))
             if cap_tpl[0] is not None:
-                gen.append(junction((x_cap, ry), f"j:cap:{key}:{row}"))
+                for j, xc in enumerate(cap_xs):
+                    if round(xc, 3) not in ends:
+                        gen.append(junction((xc, ry), f"j:cap:{key}:{row}:{j}"))
             # one power symbol per rail, hung off the left end
             gen.append(wire((left, ry), (left - 5.08, ry), f"rail:{key}:{row}:tail"))
             gen.append(power(kind, (left - 5.08, ry), f"pwr:{key}:{row}",
@@ -353,9 +407,12 @@ def main():
     # Montreal hangs LED_DATA and LED_IN straight off R1's two pins with no
     # wire, so both labels' text runs back across the resistor body, and
     # C1's value text runs through R1's reference. Electrically fine,
-    # unreadable on paper. Give each label a 5.08 mm stub to stand off on -
-    # a wire from the pin to the label is the same net - and move C1's value
-    # text clear. check_schematic.py counts what is left.
+    # unreadable on paper. Give each label a stub to stand off on - a wire
+    # from the pin to the label is the same net - and move C1's value text
+    # clear. check_schematic.py counts what is left.
+    # LED_DATA gets 2.54 mm, not 5.08: it stands above R1 and its text reads
+    # upward, so at 5.08 the far end of the text reached BUTTON_01's label.
+    # LED_IN reads downward into clear space and keeps the full 5.08.
     # Removing a block means finding that exact block, not matching a
     # pattern across the file: a lazy [\s\S]*? between the label's name and
     # its position happily spans from an earlier LED_DATA label all the way
@@ -363,8 +420,15 @@ def main():
     # did, and the netlist went from 281 components to 261 before
     # check_led_chain noticed R1 had gone.
     tidy = []
-    for name, pin, away, angle in (("LED_DATA", (120.65, 38.1), (120.65, 33.02), 90),
-                                   ("LED_IN", (120.65, 45.72), (120.65, 50.8), 270)):
+    # The angle decides which way the text runs from the anchor, so it has
+    # to point AWAY from R1: 270 reads upward, 90 downward. These were the
+    # wrong way round, which nobody saw because the block was never
+    # inserted - LED_DATA stands above R1 and ran its text back down through
+    # the resistor, LED_IN stands below and ran up, and the two met in the
+    # middle. Dead code does not get its geometry checked.
+    for name, pin, away, angle, just in (
+            ("LED_DATA", (120.65, 38.1), (120.65, 35.56), 270, "left"),
+            ("LED_IN", (120.65, 45.72), (120.65, 50.8), 90, "right")):
         want = f'(at {pin[0]:g} {pin[1]:g} '
         target = None
         for a, bnd in top_blocks(body):
@@ -377,7 +441,7 @@ def main():
             continue
         body = body[:target[0]] + body[target[1]:]
         tidy.append(wire(pin, away, f"r1:{name}"))
-        tidy.append(glabel(name, away, angle, "left", f"r1:lbl:{name}"))
+        tidy.append(glabel(name, away, angle, just, f"r1:lbl:{name}"))
     if tidy:
         print(f"tidied the controller: {len(tidy) // 2} label(s) moved off R1")
     # C1's value text is centred on the symbol and runs right, straight
@@ -397,7 +461,14 @@ def main():
         print("  note: C1's value text not found, left as it was")
     body = body.rstrip()
     assert body.endswith(")"), "unexpected end of schematic"
-    body = body[:-1] + "".join(gen) + ")\n"
+    # `tidy` MUST go in with `gen`. Leaving it out deleted LED_DATA and
+    # LED_IN from R1's pins and put nothing back, so the data path broke in
+    # three places at once: GPIO1 dead-ended at its test point, both of
+    # R1's pads fell to unconnected-(R1-Pad*), and LED1's DI sat on a
+    # one-node net. The chain was still continuous end to end, which is all
+    # check_led_chain.py asserts, so every check passed on a board where
+    # nothing would have lit.
+    body = body[:-1] + "".join(gen) + "".join(tidy) + ")\n"
     body = re.sub(r'\(paper "[^"]+"\)', f'(paper "{args.paper}")', body, count=1)
 
     with io.open(args.sch, "w", encoding="utf-8") as f:

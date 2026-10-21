@@ -40,12 +40,16 @@ def read_netlist(path):
         for ref, pin in re.findall(r'\(node\s*\(ref "([^"]+)"\)\s*\(pin "([^"]+)"\)', m[2]):
             pin_net[(ref, pin)] = m[1]
     sym = {}
+    val = {}
     for chunk in s.split("(comp")[1:]:
         ref = re.search(r'\(ref "([^"]+)"\)', chunk)
         stamps = re.findall(r'\(tstamps "([^"]+)"\)', chunk.split("(libparts")[0])
         if ref and stamps:
             sym[ref[1]] = stamps[-1]          # the symbol's own uuid; the first is the sheet path
-    return pin_net, sym
+        v = re.search(r'\(value "([^"]*)"\)', chunk.split("(libsource")[0])
+        if ref and v:
+            val[ref[1]] = v[1]
+    return pin_net, sym, val
 
 
 def mm(v):
@@ -57,7 +61,7 @@ def main():
     strip = "--strip" in sys.argv
     pcb_path, net_path, leds_path, parts_path = args
     board = pcbnew.LoadBoard(pcb_path)
-    pin_net, sym_uuid = read_netlist(net_path)
+    pin_net, sym_uuid, sym_val = read_netlist(net_path)
     leds = list(csv.DictReader(open(leds_path, encoding="utf-8")))
     parts = list(csv.DictReader(open(parts_path, encoding="utf-8")))
 
@@ -123,27 +127,39 @@ def main():
                 changed += 1
     print(f"pad nets changed: {changed}")
 
-    # --- LEDs: position, and DOUT toward the next in the chain -----------
-    def aim(fp, tx, ty):
-        """Rotate fp (45-degree steps) so its DI -> DO direction best matches (tx, ty)."""
-        best = None
-        for deg in range(0, 360, 45):
-            fp.SetOrientationDegrees(deg)
-            di = next(p for p in fp.Pads() if p.GetNumber() == "2").GetPosition()
-            do = next(p for p in fp.Pads() if p.GetNumber() == "4").GetPosition()
-            dot = (do.x - di.x) * tx + (do.y - di.y) * ty
-            if best is None or dot > best[0]:
-                best = (dot, deg)
-        fp.SetOrientationDegrees(best[1])
+    # Values follow the schematic too. KiCad's own "Update PCB from
+    # Schematic" does this; leaving it out meant changing the decoupling
+    # caps from 10uF,10V,X5R to 1uF,16V,X5R in the generator produced 52
+    # footprint_symbol_mismatch parity errors and a board whose silk and
+    # fab layers named a part the BOM no longer had.
+    revalued = 0
+    for ref, v in sym_val.items():
+        fp = by_ref.get(ref)
+        if fp is not None and fp.GetValue() != v:
+            fp.SetValue(v)
+            revalued += 1
+    print(f"values updated from the schematic: {revalued}")
 
-    xy = [(float(r["x_mm"]), float(r["y_mm"])) for r in leds]
-    for i, row in enumerate(leds):
+    # --- LEDs: position, all at ONE orientation, pin 1 up ----------------
+    # Every LED is turned the same way. The alternative - turning each one
+    # so DOUT faces the next in the chain, which is what this did until
+    # 2026-10-20 - gives the router a shorter hop but puts the parts at
+    # eight different angles, and then the only thing standing between a
+    # correct board and 248 parts fitted backwards is whether the assembler
+    # reads a 0.26 mm dot correctly at eight different rotations. Pads 1
+    # and 4 share the part's long edge, so a 180-degree error swaps GND
+    # with DI and +5V with DO. One orientation makes the whole board a
+    # single thing to check, by eye or in a photo.
+    #
+    # LED_ROT = 270 puts pad 1 at (-0.45, -0.75) and the silk pin-1 dot at
+    # (-0.45, -1.50): the pin-1 edge along the TOP of the part, with the
+    # dot directly above it. (KiCad's y runs down, so up is -y.)
+    LED_ROT = 270.0
+    for row in leds:
         fp = by_ref[row["ref"]]
-        fp.SetPosition(pcbnew.VECTOR2I(mm(xy[i][0]), mm(xy[i][1])))
-        a, b = (xy[i], xy[i + 1]) if i + 1 < len(xy) else (xy[i - 1], xy[i])
-        norm = math.hypot(b[0] - a[0], b[1] - a[1]) or 1.0
-        aim(fp, (b[0] - a[0]) / norm, (b[1] - a[1]) / norm)
-    print(f"placed {len(leds)} LEDs")
+        fp.SetPosition(pcbnew.VECTOR2I(mm(float(row["x_mm"])), mm(float(row["y_mm"]))))
+        fp.SetOrientationDegrees(LED_ROT)
+    print(f"placed {len(leds)} LEDs, all at {LED_ROT:g} deg (pin 1 up)")
 
     # --- other parts ---------------------------------------------------------
     for row in parts:

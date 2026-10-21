@@ -195,9 +195,24 @@ def main():
         x, y, rot = float(at.group(1)), float(at.group(2)), float(at.group(3))
         w = len(nm.group(1)) * 1.27 * TEXT_W + 2.6
         h = 1.9
-        box = (0, -h / 2, w, h / 2) if rot in (0, 360) else (-w, -h / 2, 0, h / 2)
+        # The ANGLE picks the axis; the JUSTIFY picks which side of the
+        # anchor the text sits on. Reading direction is +x when horizontal
+        # and -y when vertical, because KiCad always sets vertical text
+        # bottom-to-top - so 90 and 270 put the glyphs on the SAME side and
+        # only justify moves them. Deriving the side from the angle instead
+        # modelled LED_IN (90, left) as running down into empty space while
+        # it actually ran up into R1's body, and reported 0 overlapping
+        # pairs on a sheet that had one. It was the only 90-degree label on
+        # the sheet, so the one label the model got wrong was the only one
+        # exercising that branch.
+        just = re.search(r"\(justify ([^)]*)\)", b)
+        back = bool(just and "right" in just.group(1))
         if rot in (90, 270):
-            box = (-h / 2, 0, h / 2, w) if rot == 90 else (-h / 2, -w, h / 2, 0)
+            lo, hi = (0, w) if back else (-w, 0)        # +y when justified right
+            box = (-h / 2, lo, h / 2, hi)
+        else:
+            lo, hi = (-w, 0) if back else (0, w)        # -x when justified right
+            box = (lo, -h / 2, hi, h / 2)
         placed.append((f"label:{nm.group(1)}",
                        (x + box[0], y + box[1], x + box[2], y + box[3])))
 

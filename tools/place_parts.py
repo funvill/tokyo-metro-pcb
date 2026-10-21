@@ -22,7 +22,13 @@ from shapely.ops import unary_union
 import citymap
 import export_placement as ep
 
-DEFAULT_ROWS = 13                # one decoupling cap per schematic row
+DEFAULT_CAPS = 52                # make_schematic: 13 rows x --caps-per-row 4.
+                                 # One per row was bulk, not decoupling: the
+                                 # far LED sat nineteen pitches of trace from
+                                 # it and the east of the board was 74 mm from
+                                 # the nearest cap. These are spread along the
+                                 # chain, so they land across the whole map.
+DEFAULT_ROWS = DEFAULT_CAPS
 CAP_L, CAP_W = 2.0, 1.1          # 0402 courtyard, mm
 RINGS = [3.0, 3.6, 4.4, 5.4]     # candidate distances from the LED centre, mm
 LED_CLEAR = 2.2                  # keep a cap this far from any LED centre
@@ -37,7 +43,7 @@ def main():
     ap.add_argument("outdir")
     ap.add_argument("--scale", type=float, default=2.0)
     ap.add_argument("--rows", type=int, default=DEFAULT_ROWS,
-                    help="decoupling capacitors, one per schematic row")
+                    help="decoupling capacitors; must match the number of ROWn symbols make_schematic wrote")
     args = ap.parse_args()
     caps = [f"ROW{i}" for i in range(args.rows)]
     raw = json.load(open(args.data, encoding="utf-8"))

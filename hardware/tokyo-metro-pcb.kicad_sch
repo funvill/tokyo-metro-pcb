@@ -41052,7 +41052,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF,10V,X5R"
+		(property "Value" "1uF,16V,X5R"
 			(at 67.06 71.2699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41163,9 +41163,411 @@
 		)
 		(uuid "28264838-65dc-562d-b73a-b6b3bdf368d1")
 	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 511.56 70 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "281e941d-0f45-5296-86bb-b777b77608bf")
+		(property "Reference" "ROW1"
+			(at 514.1 68.7299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 514.1 71.2699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 511.56 70 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 511.56 70 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 511.56 70 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 511.56 70 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 511.56 70 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 511.56 70 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dfb3ce2f-9056-588a-8470-8fa38c3629f7")
+		)
+		(pin "2"
+			(uuid "6fcd91ea-7e9b-5b5f-8608-f38857f3ac71")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW1")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 511.56 67.46) (xy 511.56 63.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f526cec8-e117-598c-b19b-89ab2ac7e222")
+	)
 	(wire
 		(pts
-			(xy 64.52 63.65) (xy 488.7 63.65)
+			(xy 511.56 72.54) (xy 511.56 76.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6cd188f-508a-57b0-9aed-85424c5551a5")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 529.34 70 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0f0f608c-886a-5b74-9da9-6957188a4678")
+		(property "Reference" "ROW2"
+			(at 531.88 68.7299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 531.88 71.2699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 529.34 70 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 529.34 70 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 529.34 70 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 529.34 70 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 529.34 70 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 529.34 70 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a9f9edcd-3bc4-5d1e-aa01-90390e465a29")
+		)
+		(pin "2"
+			(uuid "77348063-c4d3-56d5-b7b6-e8eda1ac993b")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW2")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 529.34 67.46) (xy 529.34 63.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8900a751-48c7-5119-85d9-241412227016")
+	)
+	(wire
+		(pts
+			(xy 529.34 72.54) (xy 529.34 76.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab28aeb8-32b3-514c-bb96-43a630345adb")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 547.12 70 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f3f5b76b-9b80-5da1-b36a-b611eb6e1622")
+		(property "Reference" "ROW3"
+			(at 549.66 68.7299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 549.66 71.2699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 547.12 70 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 547.12 70 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 547.12 70 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 547.12 70 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 547.12 70 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 547.12 70 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bcc18e62-03ab-57be-9e16-20f73359bb93")
+		)
+		(pin "2"
+			(uuid "318e2448-a275-52bf-96c5-fbb31dff14f6")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW3")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 547.12 67.46) (xy 547.12 63.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad697f0b-2d36-5534-a97c-edf634ef3a79")
+	)
+	(wire
+		(pts
+			(xy 547.12 72.54) (xy 547.12 76.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6711953a-52bc-5d33-bbb8-ff5f3c9045a4")
+	)
+	(wire
+		(pts
+			(xy 64.52 63.65) (xy 547.12 63.65)
 		)
 		(stroke
 			(width 0)
@@ -41288,10 +41690,22 @@
 		(uuid "12c6eda0-f4c1-5031-8f08-6548f6c95b67")
 	)
 	(junction
-		(at 64.52 63.65)
+		(at 488.7 63.65)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1e510553-ba8e-5100-a844-31d714398f10")
+		(uuid "405f6655-6e1e-5222-8941-cdacee24b009")
+	)
+	(junction
+		(at 511.56 63.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0cecde40-22a2-553e-807f-d504eb5d8f56")
+	)
+	(junction
+		(at 529.34 63.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "43218cac-c28a-5b9d-a9f3-f72771378313")
 	)
 	(wire
 		(pts
@@ -41341,7 +41755,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.52 76.35) (xy 474.73 76.35)
+			(xy 64.52 76.35) (xy 547.12 76.35)
 		)
 		(stroke
 			(width 0)
@@ -41464,10 +41878,22 @@
 		(uuid "2e5d11aa-e22f-5391-9fb5-1f15fc4c7e7c")
 	)
 	(junction
-		(at 64.52 76.35)
+		(at 474.73 76.35)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "84906523-51cd-5ea1-ad07-6d4e04662baf")
+		(uuid "753b1cc4-03c3-5db8-b8a8-1c0dd4f6434a")
+	)
+	(junction
+		(at 511.56 76.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0ae24aef-0d84-5b15-8fdc-e0714e6da00f")
+	)
+	(junction
+		(at 529.34 76.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3990a703-7169-5dd0-893e-de1da056f256")
 	)
 	(wire
 		(pts
@@ -41570,8 +41996,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "281e941d-0f45-5296-86bb-b777b77608bf")
-		(property "Reference" "ROW1"
+		(uuid "ab3933f0-7ccb-5b94-8507-2b79a0a84faa")
+		(property "Reference" "ROW4"
 			(at 67.06 85.2399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41582,7 +42008,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF,10V,X5R"
+		(property "Value" "1uF,16V,X5R"
 			(at 67.06 87.7799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41660,15 +42086,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "dfb3ce2f-9056-588a-8470-8fa38c3629f7")
+			(uuid "f385a361-7fce-546e-b1ca-f4e505523782")
 		)
 		(pin "2"
-			(uuid "6fcd91ea-7e9b-5b5f-8608-f38857f3ac71")
+			(uuid "07719da2-3599-5ffb-bd26-53f2558303b8")
 		)
 		(instances
 			(project "montreal-metro-pcb"
 				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
-					(reference "ROW1")
+					(reference "ROW4")
 					(unit 1)
 				)
 			)
@@ -41681,7 +42107,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "f526cec8-e117-598c-b19b-89ab2ac7e222")
+		(uuid "aca1afd0-098d-5922-bdb0-2764eddf676f")
 	)
 	(wire
 		(pts
@@ -41691,11 +42117,413 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b6cd188f-508a-57b0-9aed-85424c5551a5")
+		(uuid "87412be1-b034-5d3e-ae58-9ea62bd1015f")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 511.56 86.51 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "038adce9-a1af-5411-b314-e4605d66b578")
+		(property "Reference" "ROW5"
+			(at 514.1 85.2399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 514.1 87.7799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 511.56 86.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 511.56 86.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 511.56 86.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 511.56 86.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 511.56 86.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 511.56 86.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cda1882d-0b03-51ff-8edf-bd8106980392")
+		)
+		(pin "2"
+			(uuid "0eaf2dbe-0c1f-56f7-9f14-c0226b6391c8")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW5")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 511.56 83.97) (xy 511.56 80.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5e473d9-403f-501e-9b5e-1741f738dc45")
 	)
 	(wire
 		(pts
-			(xy 64.52 80.16) (xy 488.7 80.16)
+			(xy 511.56 89.05) (xy 511.56 92.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee82606d-7cf7-545f-9377-72983b01dd94")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 529.34 86.51 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1addb4b4-f4a8-55d6-a229-342c5b8ae551")
+		(property "Reference" "ROW6"
+			(at 531.88 85.2399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 531.88 87.7799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 529.34 86.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 529.34 86.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 529.34 86.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 529.34 86.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 529.34 86.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 529.34 86.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d01d2fda-d9e3-5300-b63d-b3920b571241")
+		)
+		(pin "2"
+			(uuid "f0f7e5e9-fd90-5911-ac94-a08f9c8353b0")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW6")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 529.34 83.97) (xy 529.34 80.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7564742-aaf4-56a9-8978-f5acc28bc256")
+	)
+	(wire
+		(pts
+			(xy 529.34 89.05) (xy 529.34 92.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6b036bb-0c13-5459-8568-f08ac20328eb")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 547.12 86.51 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c201654a-99c1-53e9-ab58-969e4b5e1a3d")
+		(property "Reference" "ROW7"
+			(at 549.66 85.2399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 549.66 87.7799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 547.12 86.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 547.12 86.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 547.12 86.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 547.12 86.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 547.12 86.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 547.12 86.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "685e44f2-cff6-52fe-86ba-5ad8084e3262")
+		)
+		(pin "2"
+			(uuid "7d6e8314-c54a-5be1-937d-5585aa039d9c")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW7")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 547.12 83.97) (xy 547.12 80.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5819045e-6c62-5bd1-b38e-f85197467276")
+	)
+	(wire
+		(pts
+			(xy 547.12 89.05) (xy 547.12 92.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d434186-38da-513b-8286-7b7795009095")
+	)
+	(wire
+		(pts
+			(xy 64.52 80.16) (xy 547.12 80.16)
 		)
 		(stroke
 			(width 0)
@@ -41818,10 +42646,22 @@
 		(uuid "2a40f168-0b5a-5e47-a162-0e2c93b34da2")
 	)
 	(junction
-		(at 64.52 80.16)
+		(at 488.7 80.16)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2da9bbb9-3d37-522d-a3fa-b5e4ad8f44b4")
+		(uuid "afa1749b-86b2-5633-8896-00ac1f004b44")
+	)
+	(junction
+		(at 511.56 80.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "39b03b91-eadc-5001-b80d-53511bea12cf")
+	)
+	(junction
+		(at 529.34 80.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e1a32ccd-8444-5b2e-b77c-0970f2fa539b")
 	)
 	(wire
 		(pts
@@ -41871,7 +42711,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.52 92.86) (xy 474.73 92.86)
+			(xy 64.52 92.86) (xy 547.12 92.86)
 		)
 		(stroke
 			(width 0)
@@ -41994,10 +42834,22 @@
 		(uuid "66694cf1-34f7-54eb-aab2-47d5c968cfec")
 	)
 	(junction
-		(at 64.52 92.86)
+		(at 474.73 92.86)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "fa7e640a-9e3b-570b-ad13-a908433274b4")
+		(uuid "74d5f59f-9a3a-5b0f-bf26-79d2b322389e")
+	)
+	(junction
+		(at 511.56 92.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8c95c786-671b-5b51-b1b3-8ea700559fe7")
+	)
+	(junction
+		(at 529.34 92.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ec637fdd-2031-5f65-9eee-ca4ef9b28c1d")
 	)
 	(wire
 		(pts
@@ -42100,8 +42952,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "0f0f608c-886a-5b74-9da9-6957188a4678")
-		(property "Reference" "ROW2"
+		(uuid "518666f8-2d7a-53a2-8f4a-fdfbddcdc5d1")
+		(property "Reference" "ROW8"
 			(at 67.06 101.75 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42112,7 +42964,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF,10V,X5R"
+		(property "Value" "1uF,16V,X5R"
 			(at 67.06 104.29 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42190,15 +43042,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "a9f9edcd-3bc4-5d1e-aa01-90390e465a29")
+			(uuid "4b112886-30cc-550b-ac4b-747c32e92abb")
 		)
 		(pin "2"
-			(uuid "77348063-c4d3-56d5-b7b6-e8eda1ac993b")
+			(uuid "88097f9a-c917-5ccd-beb6-27d1bd56a0a3")
 		)
 		(instances
 			(project "montreal-metro-pcb"
 				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
-					(reference "ROW2")
+					(reference "ROW8")
 					(unit 1)
 				)
 			)
@@ -42211,7 +43063,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "8900a751-48c7-5119-85d9-241412227016")
+		(uuid "ab9a6b26-c050-560f-b1b2-a24ffd5b6744")
 	)
 	(wire
 		(pts
@@ -42221,11 +43073,413 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "ab28aeb8-32b3-514c-bb96-43a630345adb")
+		(uuid "3594e7a4-7c50-5097-871d-db77390bd9c2")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 511.56 103.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b81180ac-7a6c-5ba2-bd36-f4a799889716")
+		(property "Reference" "ROW9"
+			(at 514.1 101.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 514.1 104.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 511.56 103.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 511.56 103.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 511.56 103.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 511.56 103.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 511.56 103.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 511.56 103.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fe80ce48-ecae-5028-90d3-734a4d117319")
+		)
+		(pin "2"
+			(uuid "08727c6e-600c-51dc-b2fe-c8cb98ee6731")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW9")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 511.56 100.48) (xy 511.56 96.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b455b2e9-45b3-5585-add1-4ae47659747d")
 	)
 	(wire
 		(pts
-			(xy 64.52 96.67) (xy 488.7 96.67)
+			(xy 511.56 105.56) (xy 511.56 109.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd74cbbc-d936-5714-bab0-4e6c5ee8a227")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 529.34 103.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1c356d4b-14fb-5bc1-932e-6dda0d343dc3")
+		(property "Reference" "ROW10"
+			(at 531.88 101.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 531.88 104.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 529.34 103.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 529.34 103.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 529.34 103.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 529.34 103.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 529.34 103.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 529.34 103.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5e8435ba-d87d-50d1-aa83-35284c7e66c5")
+		)
+		(pin "2"
+			(uuid "842da6e9-a37b-51e1-b8e6-0896994083b9")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW10")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 529.34 100.48) (xy 529.34 96.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df8b8870-b462-5e82-bfd5-01da5f155cbb")
+	)
+	(wire
+		(pts
+			(xy 529.34 105.56) (xy 529.34 109.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cebeab8-ecda-50d8-bce2-fd3d48c2d604")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 547.12 103.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "327fddf0-1f13-5536-bc15-f53af7666654")
+		(property "Reference" "ROW11"
+			(at 549.66 101.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 549.66 104.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 547.12 103.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 547.12 103.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 547.12 103.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 547.12 103.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 547.12 103.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 547.12 103.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a64145c6-6996-57a1-91ad-2540cfc50c65")
+		)
+		(pin "2"
+			(uuid "bf5ed5e9-46d1-5ebb-9531-f6f96d7b7b3c")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW11")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 547.12 100.48) (xy 547.12 96.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23faca83-45bb-5a79-aca1-a6aef03a7b20")
+	)
+	(wire
+		(pts
+			(xy 547.12 105.56) (xy 547.12 109.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "908eb508-9dd5-554d-8e3b-7264cdb03aed")
+	)
+	(wire
+		(pts
+			(xy 64.52 96.67) (xy 547.12 96.67)
 		)
 		(stroke
 			(width 0)
@@ -42348,10 +43602,22 @@
 		(uuid "beac05b8-9b7c-5977-9b78-8b4b8002ea14")
 	)
 	(junction
-		(at 64.52 96.67)
+		(at 488.7 96.67)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4220bcf1-72a8-576b-ae5b-fa266c7fd96d")
+		(uuid "5a47eb4d-4d23-5242-8f02-58ba8b81b5bd")
+	)
+	(junction
+		(at 511.56 96.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e7a39bc3-b3aa-5a6d-9d22-e7ba259bdb53")
+	)
+	(junction
+		(at 529.34 96.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ffed6a30-c9b2-5b4a-8c4c-faf308dedf52")
 	)
 	(wire
 		(pts
@@ -42401,7 +43667,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.52 109.37) (xy 474.73 109.37)
+			(xy 64.52 109.37) (xy 547.12 109.37)
 		)
 		(stroke
 			(width 0)
@@ -42524,10 +43790,22 @@
 		(uuid "e6112963-6f75-569c-bb07-ab2b3a1543af")
 	)
 	(junction
-		(at 64.52 109.37)
+		(at 474.73 109.37)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3d231c7b-ec09-5b3a-98ee-2727c283ef5e")
+		(uuid "9c37814b-ce19-50f6-a0be-62c0ef6ea714")
+	)
+	(junction
+		(at 511.56 109.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "074bc57e-29eb-5665-b26f-43a49f68ae73")
+	)
+	(junction
+		(at 529.34 109.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a3d21530-66bf-58a7-b4ca-26dba0df1700")
 	)
 	(wire
 		(pts
@@ -42630,8 +43908,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f3f5b76b-9b80-5da1-b36a-b611eb6e1622")
-		(property "Reference" "ROW3"
+		(uuid "09beb542-b44e-5589-9b02-a93b3d1423fa")
+		(property "Reference" "ROW12"
 			(at 67.06 118.26 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42642,7 +43920,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF,10V,X5R"
+		(property "Value" "1uF,16V,X5R"
 			(at 67.06 120.8 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42720,15 +43998,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "bcc18e62-03ab-57be-9e16-20f73359bb93")
+			(uuid "ac8b494f-4d62-58a1-88f7-925a9707c06a")
 		)
 		(pin "2"
-			(uuid "318e2448-a275-52bf-96c5-fbb31dff14f6")
+			(uuid "04c4b244-d156-55a6-a07a-51a7ac5e3180")
 		)
 		(instances
 			(project "montreal-metro-pcb"
 				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
-					(reference "ROW3")
+					(reference "ROW12")
 					(unit 1)
 				)
 			)
@@ -42741,7 +44019,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "ad697f0b-2d36-5534-a97c-edf634ef3a79")
+		(uuid "159a4041-a4c9-503c-8c0a-6bedda521bb2")
 	)
 	(wire
 		(pts
@@ -42751,11 +44029,413 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "6711953a-52bc-5d33-bbb8-ff5f3c9045a4")
+		(uuid "fcedc91b-0f3c-5c81-a418-0ba139d54af2")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 511.56 119.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8c59fad0-ce69-52f2-8c8a-c856a8a0e7b6")
+		(property "Reference" "ROW13"
+			(at 514.1 118.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 514.1 120.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 511.56 119.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 511.56 119.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 511.56 119.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 511.56 119.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 511.56 119.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 511.56 119.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cbfb2bd4-a882-575f-8f4a-e1d0841328d1")
+		)
+		(pin "2"
+			(uuid "c3b56f6d-9c21-5d7a-9d15-2d832c33d9f4")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW13")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 511.56 116.99) (xy 511.56 113.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d84961ce-fac9-561d-bbc1-a6910e4d205f")
 	)
 	(wire
 		(pts
-			(xy 64.52 113.18) (xy 488.7 113.18)
+			(xy 511.56 122.07) (xy 511.56 125.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9c36002-9b5b-5812-a92e-c9f33c482025")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 529.34 119.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ee400c43-87a5-5f93-bbbe-92d669b5fd1d")
+		(property "Reference" "ROW14"
+			(at 531.88 118.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 531.88 120.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 529.34 119.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 529.34 119.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 529.34 119.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 529.34 119.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 529.34 119.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 529.34 119.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "19ff7dc9-6492-56f1-90b4-bf19e887fc28")
+		)
+		(pin "2"
+			(uuid "e9b22fc7-cc22-5f0f-9d5c-e0ae8837f202")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW14")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 529.34 116.99) (xy 529.34 113.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18f7bf23-7436-5563-aff5-83482e1f4a64")
+	)
+	(wire
+		(pts
+			(xy 529.34 122.07) (xy 529.34 125.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3879eb40-4257-51ad-99e9-948469c5e308")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 547.12 119.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f2862d84-08d3-5a9f-b1a9-981f8a58a873")
+		(property "Reference" "ROW15"
+			(at 549.66 118.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 549.66 120.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 547.12 119.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 547.12 119.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 547.12 119.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 547.12 119.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 547.12 119.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 547.12 119.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f78b8d45-ae0a-50c0-9ffe-08ccc717e7c6")
+		)
+		(pin "2"
+			(uuid "19a5cec4-3aec-5830-8dee-42bf11df8d8d")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW15")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 547.12 116.99) (xy 547.12 113.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d0e2aba-81c7-5ea1-a380-036c5077cc92")
+	)
+	(wire
+		(pts
+			(xy 547.12 122.07) (xy 547.12 125.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e68cb054-6398-5d77-b2ab-6d2ded37aef1")
+	)
+	(wire
+		(pts
+			(xy 64.52 113.18) (xy 547.12 113.18)
 		)
 		(stroke
 			(width 0)
@@ -42878,10 +44558,22 @@
 		(uuid "d9fa5f5c-d11d-5d0e-aeca-43e99e1225f1")
 	)
 	(junction
-		(at 64.52 113.18)
+		(at 488.7 113.18)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "cd0a2cd4-1703-5efa-98fa-8ecd4186d5a7")
+		(uuid "56223933-4bdd-57ac-b593-26a9c2811cb4")
+	)
+	(junction
+		(at 511.56 113.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "67e54695-659b-5375-b0ec-22c538597d67")
+	)
+	(junction
+		(at 529.34 113.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7ed68d65-3962-507d-a01e-5f035db56b64")
 	)
 	(wire
 		(pts
@@ -42931,7 +44623,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.52 125.88) (xy 474.73 125.88)
+			(xy 64.52 125.88) (xy 547.12 125.88)
 		)
 		(stroke
 			(width 0)
@@ -43054,10 +44746,22 @@
 		(uuid "15603a33-7f9e-5ba5-af2f-a9a3b258c9e8")
 	)
 	(junction
-		(at 64.52 125.88)
+		(at 474.73 125.88)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5f91e5b5-4cad-52df-abd7-284a3ce5a881")
+		(uuid "bac3bc4b-91ce-5b62-82f6-14cf02d3debd")
+	)
+	(junction
+		(at 511.56 125.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bb34051b-4ecd-5eeb-b79c-e8b67801f6da")
+	)
+	(junction
+		(at 529.34 125.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fdce16b8-0fbf-500c-8a02-6b5c035b0bb9")
 	)
 	(wire
 		(pts
@@ -43160,8 +44864,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ab3933f0-7ccb-5b94-8507-2b79a0a84faa")
-		(property "Reference" "ROW4"
+		(uuid "ea32c636-4547-59dd-93ed-be5606f7a0b6")
+		(property "Reference" "ROW16"
 			(at 67.06 134.77 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43172,7 +44876,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF,10V,X5R"
+		(property "Value" "1uF,16V,X5R"
 			(at 67.06 137.31 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43250,15 +44954,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "f385a361-7fce-546e-b1ca-f4e505523782")
+			(uuid "2b9f202c-801d-5d2e-b4df-217c0c958e5c")
 		)
 		(pin "2"
-			(uuid "07719da2-3599-5ffb-bd26-53f2558303b8")
+			(uuid "56d4dedd-6af0-57c1-8d26-cd3f0790450b")
 		)
 		(instances
 			(project "montreal-metro-pcb"
 				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
-					(reference "ROW4")
+					(reference "ROW16")
 					(unit 1)
 				)
 			)
@@ -43271,7 +44975,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "aca1afd0-098d-5922-bdb0-2764eddf676f")
+		(uuid "d75f845d-d4e7-57c5-a82c-3ee114e136c5")
 	)
 	(wire
 		(pts
@@ -43281,11 +44985,413 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "87412be1-b034-5d3e-ae58-9ea62bd1015f")
+		(uuid "b40c4f26-321b-5246-b2e4-89b511262731")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 511.56 136.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ac3b3f17-c5c9-51e5-a4c7-de71459509f7")
+		(property "Reference" "ROW17"
+			(at 514.1 134.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 514.1 137.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 511.56 136.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 511.56 136.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 511.56 136.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 511.56 136.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 511.56 136.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 511.56 136.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "daf054e4-20a8-52ef-82c1-3dd34a9e72c7")
+		)
+		(pin "2"
+			(uuid "8b0329a5-e76b-5ebe-860c-91de9300de82")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW17")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 511.56 133.5) (xy 511.56 129.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b8047ed-5b4f-54c9-a926-3e4c7c47299d")
 	)
 	(wire
 		(pts
-			(xy 64.52 129.69) (xy 488.7 129.69)
+			(xy 511.56 138.58) (xy 511.56 142.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ceb9a055-8af5-5335-aa91-b5cb2bd4de88")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 529.34 136.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c08eeabd-22e9-5bd3-a1d4-2f6fd63f6cf3")
+		(property "Reference" "ROW18"
+			(at 531.88 134.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 531.88 137.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 529.34 136.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 529.34 136.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 529.34 136.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 529.34 136.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 529.34 136.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 529.34 136.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5511fa4f-272a-5687-bc28-7674270d6d7e")
+		)
+		(pin "2"
+			(uuid "4252f176-05d5-57a2-bd3c-7aefdf6bec8d")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW18")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 529.34 133.5) (xy 529.34 129.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acf012b4-370b-520f-8fcd-1e5c641a3508")
+	)
+	(wire
+		(pts
+			(xy 529.34 138.58) (xy 529.34 142.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bf1df6b-e1b7-55be-adff-7dd4bde85219")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 547.12 136.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "51d434b6-7667-567d-9207-dcbdad002fdc")
+		(property "Reference" "ROW19"
+			(at 549.66 134.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 549.66 137.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 547.12 136.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 547.12 136.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 547.12 136.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 547.12 136.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 547.12 136.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 547.12 136.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "81114205-f2d2-53a6-adb2-776bb4b840ff")
+		)
+		(pin "2"
+			(uuid "d4228e76-53bf-5e25-9b95-2f1408ddce6e")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW19")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 547.12 133.5) (xy 547.12 129.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7c44856-fbb6-550e-9fc0-9604c1351890")
+	)
+	(wire
+		(pts
+			(xy 547.12 138.58) (xy 547.12 142.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b40f0bf7-76a4-5a0f-9da8-19263f68611f")
+	)
+	(wire
+		(pts
+			(xy 64.52 129.69) (xy 547.12 129.69)
 		)
 		(stroke
 			(width 0)
@@ -43408,10 +45514,22 @@
 		(uuid "24945f88-9d2e-572a-9869-ada5434b1d22")
 	)
 	(junction
-		(at 64.52 129.69)
+		(at 488.7 129.69)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "57751eda-2754-54f0-9304-9b467bb59676")
+		(uuid "908d5efb-98a9-5549-b38a-f12f38dd4017")
+	)
+	(junction
+		(at 511.56 129.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5c63002b-f782-561f-be79-f6256754fd57")
+	)
+	(junction
+		(at 529.34 129.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0839ddf4-60ff-555f-99b6-539d61617c6a")
 	)
 	(wire
 		(pts
@@ -43461,7 +45579,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.52 142.39) (xy 474.73 142.39)
+			(xy 64.52 142.39) (xy 547.12 142.39)
 		)
 		(stroke
 			(width 0)
@@ -43584,10 +45702,22 @@
 		(uuid "27096874-a872-5561-a0e5-68fe210e0b85")
 	)
 	(junction
-		(at 64.52 142.39)
+		(at 474.73 142.39)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "076c0b0b-f3a3-5a81-9ff9-5dab2e07f146")
+		(uuid "bf04b45c-4f4a-5f4b-bcc5-13e3d634d792")
+	)
+	(junction
+		(at 511.56 142.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "10665016-6941-5d9b-8616-438230133ba7")
+	)
+	(junction
+		(at 529.34 142.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aae4b263-17c3-58ea-99f2-acca6e8b66ec")
 	)
 	(wire
 		(pts
@@ -43690,8 +45820,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "038adce9-a1af-5411-b314-e4605d66b578")
-		(property "Reference" "ROW5"
+		(uuid "77bf851c-664a-5b5b-bd47-9a24aacda2f0")
+		(property "Reference" "ROW20"
 			(at 67.06 151.28 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43702,7 +45832,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF,10V,X5R"
+		(property "Value" "1uF,16V,X5R"
 			(at 67.06 153.82 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43780,15 +45910,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "cda1882d-0b03-51ff-8edf-bd8106980392")
+			(uuid "4ea04b63-0f11-539b-bd1f-21f79b466d25")
 		)
 		(pin "2"
-			(uuid "0eaf2dbe-0c1f-56f7-9f14-c0226b6391c8")
+			(uuid "bda2e50d-ef31-5c24-b88f-fd6a8bd734f7")
 		)
 		(instances
 			(project "montreal-metro-pcb"
 				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
-					(reference "ROW5")
+					(reference "ROW20")
 					(unit 1)
 				)
 			)
@@ -43801,7 +45931,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d5e473d9-403f-501e-9b5e-1741f738dc45")
+		(uuid "64c1b7ea-816f-552d-9567-10848ef8c1c5")
 	)
 	(wire
 		(pts
@@ -43811,11 +45941,413 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "ee82606d-7cf7-545f-9377-72983b01dd94")
+		(uuid "e3ea7c65-343b-5011-a5ce-cb333adc6221")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 511.56 152.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "40b2a9aa-51bf-5b44-ae16-faa9c5cfd4a9")
+		(property "Reference" "ROW21"
+			(at 514.1 151.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 514.1 153.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 511.56 152.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 511.56 152.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 511.56 152.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 511.56 152.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 511.56 152.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 511.56 152.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "34bc8c89-4a30-5ca4-a071-f003ae126f57")
+		)
+		(pin "2"
+			(uuid "cfeb8690-9008-5b64-bcc1-02ea865ab190")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW21")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 511.56 150.01) (xy 511.56 146.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b514f18-247c-5db6-9fbd-30ff2a3cb902")
 	)
 	(wire
 		(pts
-			(xy 64.52 146.2) (xy 488.7 146.2)
+			(xy 511.56 155.09) (xy 511.56 158.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca1223ee-82be-5e89-bee5-a2ff24f3b240")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 529.34 152.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a610d83e-932e-555d-842a-75e4f883c3e8")
+		(property "Reference" "ROW22"
+			(at 531.88 151.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 531.88 153.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 529.34 152.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 529.34 152.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 529.34 152.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 529.34 152.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 529.34 152.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 529.34 152.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "82b1b915-2344-54eb-92cf-bd0ded645fbd")
+		)
+		(pin "2"
+			(uuid "7f950579-d986-58f5-8ab9-a96b120f4e60")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW22")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 529.34 150.01) (xy 529.34 146.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4542a2d-c28e-5ce5-812f-8c2f170f8a0a")
+	)
+	(wire
+		(pts
+			(xy 529.34 155.09) (xy 529.34 158.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1ee581b-ca8d-5431-9cea-25cf42d2e854")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 547.12 152.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7ab486c5-fb10-5695-be12-c918296446d2")
+		(property "Reference" "ROW23"
+			(at 549.66 151.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 549.66 153.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 547.12 152.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 547.12 152.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 547.12 152.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 547.12 152.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 547.12 152.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 547.12 152.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f764e58b-c1dc-5225-96a9-98c59f308b8e")
+		)
+		(pin "2"
+			(uuid "4ea7acad-924f-5f87-b263-854485bc736f")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW23")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 547.12 150.01) (xy 547.12 146.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bda41614-a4a1-516f-bec0-9ed100146c7a")
+	)
+	(wire
+		(pts
+			(xy 547.12 155.09) (xy 547.12 158.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2a6de57-5743-56c0-8f9b-9d091d673433")
+	)
+	(wire
+		(pts
+			(xy 64.52 146.2) (xy 547.12 146.2)
 		)
 		(stroke
 			(width 0)
@@ -43938,10 +46470,22 @@
 		(uuid "4b3aaf4e-365d-50fd-afd7-242ab5bc23bb")
 	)
 	(junction
-		(at 64.52 146.2)
+		(at 488.7 146.2)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "73f1948f-1ad7-5e44-b0bb-3422dd317ead")
+		(uuid "164d5b5d-0d92-502d-8739-696911d6f1b2")
+	)
+	(junction
+		(at 511.56 146.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "38900426-6f4c-556d-90cf-2c8960f674ce")
+	)
+	(junction
+		(at 529.34 146.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ebd67c3f-6560-58a0-8f71-81f32dbe891c")
 	)
 	(wire
 		(pts
@@ -43991,7 +46535,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.52 158.9) (xy 474.73 158.9)
+			(xy 64.52 158.9) (xy 547.12 158.9)
 		)
 		(stroke
 			(width 0)
@@ -44114,10 +46658,22 @@
 		(uuid "ff49518c-756c-519d-833e-1eb931e696c8")
 	)
 	(junction
-		(at 64.52 158.9)
+		(at 474.73 158.9)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d8e5a923-b255-54a1-9818-930ac5475cf9")
+		(uuid "7aa5fa68-10f4-5e21-9cd5-8306bfbe9534")
+	)
+	(junction
+		(at 511.56 158.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7fdff616-c3d5-55e3-ad2f-4f9c08ed5282")
+	)
+	(junction
+		(at 529.34 158.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "46777ef4-79fc-52f4-adaa-f7b2d4767d32")
 	)
 	(wire
 		(pts
@@ -44220,8 +46776,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "1addb4b4-f4a8-55d6-a229-342c5b8ae551")
-		(property "Reference" "ROW6"
+		(uuid "d6df730c-0cea-5660-9940-ea9865792d22")
+		(property "Reference" "ROW24"
 			(at 67.06 167.79 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44232,7 +46788,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF,10V,X5R"
+		(property "Value" "1uF,16V,X5R"
 			(at 67.06 170.33 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44310,15 +46866,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "d01d2fda-d9e3-5300-b63d-b3920b571241")
+			(uuid "082db509-550b-5a58-837e-410e2f7b7712")
 		)
 		(pin "2"
-			(uuid "f0f7e5e9-fd90-5911-ac94-a08f9c8353b0")
+			(uuid "36faf186-4098-53cd-9b49-a95f24ba7f22")
 		)
 		(instances
 			(project "montreal-metro-pcb"
 				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
-					(reference "ROW6")
+					(reference "ROW24")
 					(unit 1)
 				)
 			)
@@ -44331,7 +46887,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "f7564742-aaf4-56a9-8978-f5acc28bc256")
+		(uuid "c26c6767-73e1-5c61-baff-ecffca66253c")
 	)
 	(wire
 		(pts
@@ -44341,11 +46897,413 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "a6b036bb-0c13-5459-8568-f08ac20328eb")
+		(uuid "7e35e581-b01b-59b2-90ab-c0440c70aa72")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 511.56 169.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5c95b158-76c7-5a50-acbf-318f8792c93c")
+		(property "Reference" "ROW25"
+			(at 514.1 167.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 514.1 170.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 511.56 169.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 511.56 169.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 511.56 169.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 511.56 169.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 511.56 169.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 511.56 169.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "55789d4c-21a2-5300-9b14-6e2250c9f76c")
+		)
+		(pin "2"
+			(uuid "467ce202-5bbc-5c6f-9234-d5ad4d6ac3b2")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW25")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 511.56 166.52) (xy 511.56 162.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fec4a7d8-7505-57ee-aebf-35d1cff03036")
 	)
 	(wire
 		(pts
-			(xy 64.52 162.71) (xy 488.7 162.71)
+			(xy 511.56 171.6) (xy 511.56 175.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fa7faa6-88c1-54aa-abbe-2670ef3d86a9")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 529.34 169.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d1066e28-bccf-58dc-8bf4-7d3192ec86de")
+		(property "Reference" "ROW26"
+			(at 531.88 167.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 531.88 170.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 529.34 169.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 529.34 169.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 529.34 169.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 529.34 169.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 529.34 169.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 529.34 169.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bee53e6d-60f4-5b96-9f85-35cb7a529e49")
+		)
+		(pin "2"
+			(uuid "71be5061-8c7b-5950-b590-dbf4fcd74194")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW26")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 529.34 166.52) (xy 529.34 162.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fca357c1-ba4d-5a29-a960-ecf8f50811ad")
+	)
+	(wire
+		(pts
+			(xy 529.34 171.6) (xy 529.34 175.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb9d6027-57aa-5fa7-81b0-004b6f60c9f8")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 547.12 169.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0a6a8f32-91b4-57c7-b16e-4a6b7056ed04")
+		(property "Reference" "ROW27"
+			(at 549.66 167.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 549.66 170.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 547.12 169.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 547.12 169.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 547.12 169.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 547.12 169.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 547.12 169.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 547.12 169.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "416dc88d-68d3-5220-a72d-300c12c22b7e")
+		)
+		(pin "2"
+			(uuid "09b2c60f-3c95-5647-accb-db5f0c25a59b")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW27")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 547.12 166.52) (xy 547.12 162.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c28afe67-56df-5bf9-84bc-47fd63b1c6be")
+	)
+	(wire
+		(pts
+			(xy 547.12 171.6) (xy 547.12 175.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9042d0da-fdfe-5ae2-8b89-5062b6ef3346")
+	)
+	(wire
+		(pts
+			(xy 64.52 162.71) (xy 547.12 162.71)
 		)
 		(stroke
 			(width 0)
@@ -44468,10 +47426,22 @@
 		(uuid "1b117caf-5fcc-5298-98e5-5b3e627addc3")
 	)
 	(junction
-		(at 64.52 162.71)
+		(at 488.7 162.71)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3d39582d-83c7-5ca6-9a15-07d73970489e")
+		(uuid "62e8eb6d-c46e-5ca7-9518-e74358b6c5ce")
+	)
+	(junction
+		(at 511.56 162.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1aae6b7b-5051-5caa-bc2a-1c39ac74b18d")
+	)
+	(junction
+		(at 529.34 162.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fceed1c4-18e5-5b3c-8215-1de032152300")
 	)
 	(wire
 		(pts
@@ -44521,7 +47491,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.52 175.41) (xy 474.73 175.41)
+			(xy 64.52 175.41) (xy 547.12 175.41)
 		)
 		(stroke
 			(width 0)
@@ -44644,10 +47614,22 @@
 		(uuid "b9273e9e-d6d2-5b89-ac2c-c12a04761477")
 	)
 	(junction
-		(at 64.52 175.41)
+		(at 474.73 175.41)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "42e00f45-6acb-50e8-be1b-59d0f6641441")
+		(uuid "a6579200-79ec-5958-8f30-f6e6ff21397b")
+	)
+	(junction
+		(at 511.56 175.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0d5fd46f-1365-5c64-9c75-ad5082286502")
+	)
+	(junction
+		(at 529.34 175.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "954feeb1-ad3d-5f3c-ad17-ebea614f29c1")
 	)
 	(wire
 		(pts
@@ -44750,8 +47732,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c201654a-99c1-53e9-ab58-969e4b5e1a3d")
-		(property "Reference" "ROW7"
+		(uuid "63c48ada-db5a-502e-a321-795b8a8a8560")
+		(property "Reference" "ROW28"
 			(at 67.06 184.3 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44762,7 +47744,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF,10V,X5R"
+		(property "Value" "1uF,16V,X5R"
 			(at 67.06 186.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -44840,15 +47822,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "685e44f2-cff6-52fe-86ba-5ad8084e3262")
+			(uuid "56cda60e-7395-5681-a30b-435d039c3d3c")
 		)
 		(pin "2"
-			(uuid "7d6e8314-c54a-5be1-937d-5585aa039d9c")
+			(uuid "7ae874a4-03b7-5e7d-95f8-3b15d6d994ce")
 		)
 		(instances
 			(project "montreal-metro-pcb"
 				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
-					(reference "ROW7")
+					(reference "ROW28")
 					(unit 1)
 				)
 			)
@@ -44861,7 +47843,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "5819045e-6c62-5bd1-b38e-f85197467276")
+		(uuid "58b9128d-c146-558c-8621-25406632dd40")
 	)
 	(wire
 		(pts
@@ -44871,11 +47853,413 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "3d434186-38da-513b-8286-7b7795009095")
+		(uuid "7b68524a-c2b9-58e7-a9fb-cd3d61b6c9ba")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 511.56 185.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0f1bfe30-a1f1-5a8f-bb15-159a61008b0a")
+		(property "Reference" "ROW29"
+			(at 514.1 184.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 514.1 186.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 511.56 185.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 511.56 185.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 511.56 185.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 511.56 185.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 511.56 185.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 511.56 185.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "eec15832-878b-56f8-b887-58bd72965aa0")
+		)
+		(pin "2"
+			(uuid "c5fe3bac-6dba-50a8-a865-65d78ae91f71")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW29")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 511.56 183.03) (xy 511.56 179.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45832aa9-cbb4-5d14-b4ce-39c0d32c2b79")
 	)
 	(wire
 		(pts
-			(xy 64.52 179.22) (xy 488.7 179.22)
+			(xy 511.56 188.11) (xy 511.56 191.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3cf9f937-3df4-52a9-9823-314c7f5aba5c")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 529.34 185.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fe2e4d4b-37bf-5c29-a7d0-d893d6b9a629")
+		(property "Reference" "ROW30"
+			(at 531.88 184.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 531.88 186.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 529.34 185.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 529.34 185.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 529.34 185.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 529.34 185.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 529.34 185.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 529.34 185.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a1118c06-9aa4-5707-be5f-a4cfe06f5b3e")
+		)
+		(pin "2"
+			(uuid "e6b483eb-a49f-5eb2-aee6-40d7f3d3d54d")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW30")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 529.34 183.03) (xy 529.34 179.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "539ae4ea-077a-5978-a5d2-68d6f1185486")
+	)
+	(wire
+		(pts
+			(xy 529.34 188.11) (xy 529.34 191.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a06370f9-1107-52db-861a-f96f967ab44a")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 547.12 185.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fe9d4719-016f-59e3-a903-707f5815052e")
+		(property "Reference" "ROW31"
+			(at 549.66 184.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 549.66 186.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 547.12 185.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 547.12 185.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 547.12 185.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 547.12 185.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 547.12 185.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 547.12 185.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a47a6706-e1f9-5a12-9435-d7f1fb4898ac")
+		)
+		(pin "2"
+			(uuid "bdc944d9-a905-5482-90e6-214faee955b7")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW31")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 547.12 183.03) (xy 547.12 179.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9fb7172-490f-5fd1-b788-95eb839ca0d5")
+	)
+	(wire
+		(pts
+			(xy 547.12 188.11) (xy 547.12 191.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63fe5e47-4ef0-58e1-9d0f-ff06371fcca8")
+	)
+	(wire
+		(pts
+			(xy 64.52 179.22) (xy 547.12 179.22)
 		)
 		(stroke
 			(width 0)
@@ -44998,10 +48382,22 @@
 		(uuid "438a3b6e-8f50-57fd-83c7-3c4370b1d632")
 	)
 	(junction
-		(at 64.52 179.22)
+		(at 488.7 179.22)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "24eafc69-149e-54e1-8280-891692435402")
+		(uuid "5b82cf97-2140-571f-a976-0df8464d7a71")
+	)
+	(junction
+		(at 511.56 179.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "36a5b152-9138-5034-adf2-7f917edaa30a")
+	)
+	(junction
+		(at 529.34 179.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e886dc07-098e-5f03-bcc3-694f9ca69bb9")
 	)
 	(wire
 		(pts
@@ -45051,7 +48447,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.52 191.92) (xy 474.73 191.92)
+			(xy 64.52 191.92) (xy 547.12 191.92)
 		)
 		(stroke
 			(width 0)
@@ -45174,10 +48570,22 @@
 		(uuid "d6a7c20b-8b0a-5c86-9e3c-fb65109da3cd")
 	)
 	(junction
-		(at 64.52 191.92)
+		(at 474.73 191.92)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2261789f-efd3-5ff2-8b51-b9a7f98a125f")
+		(uuid "3be49247-3a16-542e-aaf2-53fbe04cd8e5")
+	)
+	(junction
+		(at 511.56 191.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cb0235f7-4995-5b82-a381-4ee80483c6ff")
+	)
+	(junction
+		(at 529.34 191.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "07cb7105-72f5-52b1-b662-8c275ac029d1")
 	)
 	(wire
 		(pts
@@ -45280,8 +48688,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "518666f8-2d7a-53a2-8f4a-fdfbddcdc5d1")
-		(property "Reference" "ROW8"
+		(uuid "1b861d47-bcee-5498-869d-bc57d60d9ca2")
+		(property "Reference" "ROW32"
 			(at 67.06 200.81 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45292,7 +48700,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF,10V,X5R"
+		(property "Value" "1uF,16V,X5R"
 			(at 67.06 203.35 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45370,15 +48778,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "4b112886-30cc-550b-ac4b-747c32e92abb")
+			(uuid "2c67e91b-a048-5da1-9bab-2901d9b2bea1")
 		)
 		(pin "2"
-			(uuid "88097f9a-c917-5ccd-beb6-27d1bd56a0a3")
+			(uuid "53d22cf7-b15a-5995-bad0-4c763cd6cbfc")
 		)
 		(instances
 			(project "montreal-metro-pcb"
 				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
-					(reference "ROW8")
+					(reference "ROW32")
 					(unit 1)
 				)
 			)
@@ -45391,7 +48799,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "ab9a6b26-c050-560f-b1b2-a24ffd5b6744")
+		(uuid "ab81134b-c2b5-5885-a97c-bfaebd93ec26")
 	)
 	(wire
 		(pts
@@ -45401,11 +48809,413 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "3594e7a4-7c50-5097-871d-db77390bd9c2")
+		(uuid "a9fbeba1-f2bd-5c84-ad54-9362315f8416")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 511.56 202.08 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2af2d14c-0d1a-56b5-a84b-107ce357303a")
+		(property "Reference" "ROW33"
+			(at 514.1 200.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 514.1 203.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 511.56 202.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 511.56 202.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 511.56 202.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 511.56 202.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 511.56 202.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 511.56 202.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f63c42d2-ad80-53b8-9468-41712a023fd6")
+		)
+		(pin "2"
+			(uuid "31762cf4-913f-567e-aca6-2aedd6c1f282")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW33")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 511.56 199.54) (xy 511.56 195.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a98e175c-b698-5d25-8fcc-0366f23d8898")
 	)
 	(wire
 		(pts
-			(xy 64.52 195.73) (xy 488.7 195.73)
+			(xy 511.56 204.62) (xy 511.56 208.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "112d2756-b208-542c-8c29-c978eb71f18a")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 529.34 202.08 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9e4a539d-caf1-51c5-8a40-d5c966cea99f")
+		(property "Reference" "ROW34"
+			(at 531.88 200.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 531.88 203.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 529.34 202.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 529.34 202.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 529.34 202.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 529.34 202.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 529.34 202.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 529.34 202.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7525cb31-ebd8-5a23-9d59-e198c5b19724")
+		)
+		(pin "2"
+			(uuid "f8aeaf83-37f9-5bd2-be89-38fbfd708c46")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW34")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 529.34 199.54) (xy 529.34 195.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b29a2eda-6c5e-5673-8ac2-699d3efc3f9c")
+	)
+	(wire
+		(pts
+			(xy 529.34 204.62) (xy 529.34 208.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e742e79-9949-5802-aa1b-41c201b468c8")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 547.12 202.08 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4aa2534b-dcbf-503a-941f-e7e51b08e2a6")
+		(property "Reference" "ROW35"
+			(at 549.66 200.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 549.66 203.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 547.12 202.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 547.12 202.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 547.12 202.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 547.12 202.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 547.12 202.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 547.12 202.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7efa2a42-7c37-5fb8-9f58-36ea9b0638a3")
+		)
+		(pin "2"
+			(uuid "47653bd2-ab87-571c-acb4-1a8cd5c85356")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW35")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 547.12 199.54) (xy 547.12 195.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d77ede9-f117-5603-9e9b-c7a75f3fb96e")
+	)
+	(wire
+		(pts
+			(xy 547.12 204.62) (xy 547.12 208.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aeb64135-65a2-52a4-b010-0fa5f5412075")
+	)
+	(wire
+		(pts
+			(xy 64.52 195.73) (xy 547.12 195.73)
 		)
 		(stroke
 			(width 0)
@@ -45528,10 +49338,22 @@
 		(uuid "e9f5a053-5a75-552f-beb6-e8e9ce975a73")
 	)
 	(junction
-		(at 64.52 195.73)
+		(at 488.7 195.73)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "57195fa0-9d7c-5a75-a98d-c79bd5df7137")
+		(uuid "80655c7e-3d4c-5826-9c15-d246e4b0ae2a")
+	)
+	(junction
+		(at 511.56 195.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "936f4eae-bba5-5f02-b228-8f2b0d1570c7")
+	)
+	(junction
+		(at 529.34 195.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3c0e617a-7b37-5c60-a40c-296305b57657")
 	)
 	(wire
 		(pts
@@ -45581,7 +49403,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.52 208.43) (xy 474.73 208.43)
+			(xy 64.52 208.43) (xy 547.12 208.43)
 		)
 		(stroke
 			(width 0)
@@ -45704,10 +49526,22 @@
 		(uuid "e84842bb-f1bf-5fc8-9fff-f30f3650fa1b")
 	)
 	(junction
-		(at 64.52 208.43)
+		(at 474.73 208.43)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4e58b610-57c6-5fa6-875a-b2a9e1a64eaf")
+		(uuid "d827466f-789e-5664-b859-42cc0e257722")
+	)
+	(junction
+		(at 511.56 208.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "62ddaae2-510a-5dc3-919b-08c32dc4f31b")
+	)
+	(junction
+		(at 529.34 208.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "66149bb6-c587-5d1f-a4d9-fc04e80b1a68")
 	)
 	(wire
 		(pts
@@ -45810,8 +49644,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b81180ac-7a6c-5ba2-bd36-f4a799889716")
-		(property "Reference" "ROW9"
+		(uuid "1aad9333-06f1-5713-9213-b3f14f1ee9f6")
+		(property "Reference" "ROW36"
 			(at 67.06 217.32 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45822,7 +49656,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF,10V,X5R"
+		(property "Value" "1uF,16V,X5R"
 			(at 67.06 219.86 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45900,15 +49734,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "fe80ce48-ecae-5028-90d3-734a4d117319")
+			(uuid "21dae7cf-c852-5a30-bfe8-e53edf3cc29f")
 		)
 		(pin "2"
-			(uuid "08727c6e-600c-51dc-b2fe-c8cb98ee6731")
+			(uuid "4cd835c4-de0c-5784-abeb-1f3dbc7ca7d3")
 		)
 		(instances
 			(project "montreal-metro-pcb"
 				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
-					(reference "ROW9")
+					(reference "ROW36")
 					(unit 1)
 				)
 			)
@@ -45921,7 +49755,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b455b2e9-45b3-5585-add1-4ae47659747d")
+		(uuid "76b973eb-9c6f-5114-b348-7ed79a4814f0")
 	)
 	(wire
 		(pts
@@ -45931,11 +49765,413 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "cd74cbbc-d936-5714-bab0-4e6c5ee8a227")
+		(uuid "243e8842-a513-5822-a9c8-3fab10e12935")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 511.56 218.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d5d7c950-c52c-549b-977c-fbc8688b0081")
+		(property "Reference" "ROW37"
+			(at 514.1 217.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 514.1 219.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 511.56 218.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 511.56 218.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 511.56 218.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 511.56 218.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 511.56 218.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 511.56 218.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b61536bd-8eca-5218-a681-2213be93d6e6")
+		)
+		(pin "2"
+			(uuid "70fc6a5a-419d-5c0e-b951-c028fe4295d8")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW37")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 511.56 216.05) (xy 511.56 212.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97c58b10-5b8c-5a28-8a5a-af5a8513e8f3")
 	)
 	(wire
 		(pts
-			(xy 64.52 212.24) (xy 488.7 212.24)
+			(xy 511.56 221.13) (xy 511.56 224.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47cab278-2e93-5188-969e-a5aa95ffcd7a")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 529.34 218.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "374e6760-0776-5bf8-ae1c-4486b80f1a40")
+		(property "Reference" "ROW38"
+			(at 531.88 217.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 531.88 219.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 529.34 218.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 529.34 218.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 529.34 218.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 529.34 218.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 529.34 218.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 529.34 218.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "387794b1-0c7b-5772-bb66-2f35cb9eafad")
+		)
+		(pin "2"
+			(uuid "64c316c9-6eca-5d0f-9c44-b50c5a5cb27e")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW38")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 529.34 216.05) (xy 529.34 212.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b0c46d3-02f6-55ce-8543-339119b6c46d")
+	)
+	(wire
+		(pts
+			(xy 529.34 221.13) (xy 529.34 224.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5fbbc1c-36bf-53eb-9a3d-a3bf891f6ccd")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 547.12 218.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "08745331-800e-5969-a26a-c45baa4653e8")
+		(property "Reference" "ROW39"
+			(at 549.66 217.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 549.66 219.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 547.12 218.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 547.12 218.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 547.12 218.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 547.12 218.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 547.12 218.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 547.12 218.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f9dbe9be-e9a2-5195-9f4a-0a224fbc06a5")
+		)
+		(pin "2"
+			(uuid "ffb5e2a7-9f5f-57ba-9544-d0063f26d2a5")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW39")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 547.12 216.05) (xy 547.12 212.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f165b9f0-9765-52de-be49-1b95982bb753")
+	)
+	(wire
+		(pts
+			(xy 547.12 221.13) (xy 547.12 224.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5665182-5c43-5509-81f5-d9b3e07e4a19")
+	)
+	(wire
+		(pts
+			(xy 64.52 212.24) (xy 547.12 212.24)
 		)
 		(stroke
 			(width 0)
@@ -46058,10 +50294,22 @@
 		(uuid "1d9e32c5-33bf-5295-98d8-60b5d519003c")
 	)
 	(junction
-		(at 64.52 212.24)
+		(at 488.7 212.24)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b2c7c394-b216-56ff-8b85-093c3a71fdeb")
+		(uuid "bf0d50ae-1392-5f84-a6ac-cb96fc2f949d")
+	)
+	(junction
+		(at 511.56 212.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bac15c45-e19a-540b-a8de-aecfd52de02b")
+	)
+	(junction
+		(at 529.34 212.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9e6866d4-f5cf-5c57-9680-8ab82635f29b")
 	)
 	(wire
 		(pts
@@ -46111,7 +50359,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.52 224.94) (xy 474.73 224.94)
+			(xy 64.52 224.94) (xy 547.12 224.94)
 		)
 		(stroke
 			(width 0)
@@ -46234,10 +50482,22 @@
 		(uuid "e0d29104-224b-56ce-8554-c164bd3aa1ed")
 	)
 	(junction
-		(at 64.52 224.94)
+		(at 474.73 224.94)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "28497ce3-b0bb-59f4-a9b4-283007f61019")
+		(uuid "dc11755f-65e6-51dc-8aaf-b208602173ca")
+	)
+	(junction
+		(at 511.56 224.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b7e7353e-b060-5279-bc7f-84ab3a27e61d")
+	)
+	(junction
+		(at 529.34 224.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "65815e56-b635-5be8-a4db-f599c400f473")
 	)
 	(wire
 		(pts
@@ -46340,8 +50600,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "1c356d4b-14fb-5bc1-932e-6dda0d343dc3")
-		(property "Reference" "ROW10"
+		(uuid "f67ed52d-5af4-5069-b12a-5633e0327563")
+		(property "Reference" "ROW40"
 			(at 67.06 233.83 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46352,7 +50612,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF,10V,X5R"
+		(property "Value" "1uF,16V,X5R"
 			(at 67.06 236.37 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46430,15 +50690,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "5e8435ba-d87d-50d1-aa83-35284c7e66c5")
+			(uuid "459c5460-92c5-524a-a66b-21094d3be273")
 		)
 		(pin "2"
-			(uuid "842da6e9-a37b-51e1-b8e6-0896994083b9")
+			(uuid "5c02a4d5-2bc3-53ab-9c5b-229c73feba1c")
 		)
 		(instances
 			(project "montreal-metro-pcb"
 				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
-					(reference "ROW10")
+					(reference "ROW40")
 					(unit 1)
 				)
 			)
@@ -46451,7 +50711,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "df8b8870-b462-5e82-bfd5-01da5f155cbb")
+		(uuid "49b38aed-7602-59ff-8418-23204dc5faca")
 	)
 	(wire
 		(pts
@@ -46461,11 +50721,413 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "6cebeab8-ecda-50d8-bce2-fd3d48c2d604")
+		(uuid "8d07668b-caab-5ae0-a460-194590ff9e86")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 511.56 235.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dbca0fd6-2d51-5266-bd61-218730d1fccd")
+		(property "Reference" "ROW41"
+			(at 514.1 233.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 514.1 236.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 511.56 235.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 511.56 235.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 511.56 235.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 511.56 235.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 511.56 235.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 511.56 235.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cfeee0f5-59cf-5d48-a271-4f0e80a89296")
+		)
+		(pin "2"
+			(uuid "c819b019-684a-52ba-98bd-1e2d792561ff")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW41")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 511.56 232.56) (xy 511.56 228.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37a66e9d-e4c9-5654-9a20-b426e360ca55")
 	)
 	(wire
 		(pts
-			(xy 64.52 228.75) (xy 488.7 228.75)
+			(xy 511.56 237.64) (xy 511.56 241.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "717caf34-6b1b-52dc-b922-be987af61ea8")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 529.34 235.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a13f2c8a-3610-543a-8531-9cd608d6d2b6")
+		(property "Reference" "ROW42"
+			(at 531.88 233.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 531.88 236.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 529.34 235.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 529.34 235.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 529.34 235.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 529.34 235.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 529.34 235.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 529.34 235.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "80b33679-d816-511c-ad24-d4b48c6b0c05")
+		)
+		(pin "2"
+			(uuid "8960fb67-728e-5d94-a697-d968627f5614")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW42")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 529.34 232.56) (xy 529.34 228.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fa778a6-dd9c-5ee5-bc7b-ee55cd13782e")
+	)
+	(wire
+		(pts
+			(xy 529.34 237.64) (xy 529.34 241.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5265f9c5-a5f4-5aa1-aa67-8d25e68861dd")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 547.12 235.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4a5c7ddc-a96d-5f1b-9dd2-0769fe52d1d8")
+		(property "Reference" "ROW43"
+			(at 549.66 233.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 549.66 236.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 547.12 235.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 547.12 235.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 547.12 235.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 547.12 235.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 547.12 235.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 547.12 235.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "94a9723b-30d2-5b24-903f-35c8f44e2952")
+		)
+		(pin "2"
+			(uuid "4828561a-8d7a-52b6-bde7-a1fef85e71d8")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW43")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 547.12 232.56) (xy 547.12 228.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf451e51-9a43-5418-92f7-64def76d11ef")
+	)
+	(wire
+		(pts
+			(xy 547.12 237.64) (xy 547.12 241.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26d1acf0-9eaa-5e8b-9064-23330a2eeed4")
+	)
+	(wire
+		(pts
+			(xy 64.52 228.75) (xy 547.12 228.75)
 		)
 		(stroke
 			(width 0)
@@ -46588,10 +51250,22 @@
 		(uuid "240f23f9-dc04-5d17-be32-c03381fc4638")
 	)
 	(junction
-		(at 64.52 228.75)
+		(at 488.7 228.75)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3b6ec055-14db-5c22-9b36-f6ad1d3d4725")
+		(uuid "0c6f9aa5-0c0a-5943-9f17-56273812cdb1")
+	)
+	(junction
+		(at 511.56 228.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d7c84efd-7ec8-5b5c-a730-d51d73c5a858")
+	)
+	(junction
+		(at 529.34 228.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3896a79b-13bb-573d-8046-a0b993b5aeb4")
 	)
 	(wire
 		(pts
@@ -46641,7 +51315,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.52 241.45) (xy 474.73 241.45)
+			(xy 64.52 241.45) (xy 547.12 241.45)
 		)
 		(stroke
 			(width 0)
@@ -46764,10 +51438,22 @@
 		(uuid "e5e93616-690b-55b4-9ece-30703f1145ae")
 	)
 	(junction
-		(at 64.52 241.45)
+		(at 474.73 241.45)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "321c1dbd-d2a0-5f70-a013-96feae361873")
+		(uuid "45a25d3c-6b7f-5575-a6fa-1c678eebce84")
+	)
+	(junction
+		(at 511.56 241.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "19b450bb-9c78-5709-8b02-44e6fbd4efb2")
+	)
+	(junction
+		(at 529.34 241.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9b45506a-21df-5f5c-b097-b177244266dd")
 	)
 	(wire
 		(pts
@@ -46870,8 +51556,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "327fddf0-1f13-5536-bc15-f53af7666654")
-		(property "Reference" "ROW11"
+		(uuid "bae6d099-fafe-573a-9164-93478788ef67")
+		(property "Reference" "ROW44"
 			(at 67.06 250.34 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46882,7 +51568,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF,10V,X5R"
+		(property "Value" "1uF,16V,X5R"
 			(at 67.06 252.88 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46960,15 +51646,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "a64145c6-6996-57a1-91ad-2540cfc50c65")
+			(uuid "c0d765b8-1a11-56fe-93f1-df881db5f64e")
 		)
 		(pin "2"
-			(uuid "bf5ed5e9-46d1-5ebb-9531-f6f96d7b7b3c")
+			(uuid "fc3ac963-4d57-561f-a374-487baa1d9289")
 		)
 		(instances
 			(project "montreal-metro-pcb"
 				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
-					(reference "ROW11")
+					(reference "ROW44")
 					(unit 1)
 				)
 			)
@@ -46981,7 +51667,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "23faca83-45bb-5a79-aca1-a6aef03a7b20")
+		(uuid "b34f2514-6013-518c-b7a4-b2e232e88efb")
 	)
 	(wire
 		(pts
@@ -46991,11 +51677,413 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "908eb508-9dd5-554d-8e3b-7264cdb03aed")
+		(uuid "c9c4a046-029d-589a-92fe-dbdaa94a2cab")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 511.56 251.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ac67079e-0977-5387-a51a-7add1aab05a1")
+		(property "Reference" "ROW45"
+			(at 514.1 250.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 514.1 252.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 511.56 251.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 511.56 251.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 511.56 251.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 511.56 251.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 511.56 251.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 511.56 251.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e6728bb5-3a8a-5644-9486-ada6afc26c4e")
+		)
+		(pin "2"
+			(uuid "58b87b41-acfb-5e88-abfd-164ccb5e4a4f")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW45")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 511.56 249.07) (xy 511.56 245.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f762797c-10e0-586b-b136-cc8838e72132")
 	)
 	(wire
 		(pts
-			(xy 64.52 245.26) (xy 488.7 245.26)
+			(xy 511.56 254.15) (xy 511.56 257.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4f3b0ba-c4fb-5bb0-9517-734142afdc44")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 529.34 251.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9070d2eb-d810-59f5-a161-718c1481024d")
+		(property "Reference" "ROW46"
+			(at 531.88 250.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 531.88 252.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 529.34 251.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 529.34 251.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 529.34 251.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 529.34 251.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 529.34 251.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 529.34 251.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "efc67998-2ab4-52a4-b790-6b19c0b390e6")
+		)
+		(pin "2"
+			(uuid "2e6e7a7e-29c5-5f11-be5b-a2f2a14b868f")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW46")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 529.34 249.07) (xy 529.34 245.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5f1410d-dfc8-535d-a25d-6ba0f9346459")
+	)
+	(wire
+		(pts
+			(xy 529.34 254.15) (xy 529.34 257.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24098fee-fbe0-5378-b0f2-5acbf9bd4db9")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 547.12 251.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "714b102f-121f-51ed-9ba2-ffa74444dcd6")
+		(property "Reference" "ROW47"
+			(at 549.66 250.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 549.66 252.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 547.12 251.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 547.12 251.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 547.12 251.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 547.12 251.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 547.12 251.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 547.12 251.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b0914efb-d3d6-5ad2-95a1-28ebf42e1a7d")
+		)
+		(pin "2"
+			(uuid "72214098-747a-556d-97ea-8a1d486bc54b")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW47")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 547.12 249.07) (xy 547.12 245.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d6efdb6-9874-57dc-928e-7875b495c8c0")
+	)
+	(wire
+		(pts
+			(xy 547.12 254.15) (xy 547.12 257.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6775f84a-56e6-52fd-a3b8-5b603a026036")
+	)
+	(wire
+		(pts
+			(xy 64.52 245.26) (xy 547.12 245.26)
 		)
 		(stroke
 			(width 0)
@@ -47118,10 +52206,22 @@
 		(uuid "fb496feb-2bc6-5b8a-8061-1d01cc79dd4d")
 	)
 	(junction
-		(at 64.52 245.26)
+		(at 488.7 245.26)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8b3f9359-5854-5188-bde4-5c90a97ca5ef")
+		(uuid "8fad8f98-1a13-5653-8d81-f493f888f07f")
+	)
+	(junction
+		(at 511.56 245.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8c7fe9bf-1511-5cfe-9501-7d153da57207")
+	)
+	(junction
+		(at 529.34 245.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d4965073-bd6c-5f84-a91e-235cd386aec7")
 	)
 	(wire
 		(pts
@@ -47171,7 +52271,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.52 257.96) (xy 474.73 257.96)
+			(xy 64.52 257.96) (xy 547.12 257.96)
 		)
 		(stroke
 			(width 0)
@@ -47294,10 +52394,22 @@
 		(uuid "80b1d57d-d668-58e0-ad76-35b4d51afc0d")
 	)
 	(junction
-		(at 64.52 257.96)
+		(at 474.73 257.96)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "17f53495-eaea-5afb-a3ce-83b6e3a80026")
+		(uuid "54969727-165e-589e-9257-64c64401a9a3")
+	)
+	(junction
+		(at 511.56 257.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8799e567-79e8-55e2-8854-af89723b5317")
+	)
+	(junction
+		(at 529.34 257.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "22d79577-7d66-5695-a31f-4236fd6e6e0a")
 	)
 	(wire
 		(pts
@@ -47400,8 +52512,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "09beb542-b44e-5589-9b02-a93b3d1423fa")
-		(property "Reference" "ROW12"
+		(uuid "77a4efc4-2b2d-586b-8f86-d423e0e86cd5")
+		(property "Reference" "ROW48"
 			(at 67.06 266.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -47412,7 +52524,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF,10V,X5R"
+		(property "Value" "1uF,16V,X5R"
 			(at 67.06 269.39 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -47490,15 +52602,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "ac8b494f-4d62-58a1-88f7-925a9707c06a")
+			(uuid "108b3945-33d0-5630-8548-e50095d10955")
 		)
 		(pin "2"
-			(uuid "04c4b244-d156-55a6-a07a-51a7ac5e3180")
+			(uuid "8d3ed360-4b12-5f62-8a60-fd7ca5e94edd")
 		)
 		(instances
 			(project "montreal-metro-pcb"
 				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
-					(reference "ROW12")
+					(reference "ROW48")
 					(unit 1)
 				)
 			)
@@ -47511,7 +52623,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "159a4041-a4c9-503c-8c0a-6bedda521bb2")
+		(uuid "4cdc4aaf-0b63-520d-90e7-f5a9c00c3147")
 	)
 	(wire
 		(pts
@@ -47521,11 +52633,413 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "fcedc91b-0f3c-5c81-a418-0ba139d54af2")
+		(uuid "3a7aa22c-0106-5b3e-ac21-d42a0e7cad68")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 511.56 268.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ad9ad33b-4f03-50ff-af11-b4fba7df1688")
+		(property "Reference" "ROW49"
+			(at 514.1 266.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 514.1 269.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 511.56 268.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 511.56 268.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 511.56 268.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 511.56 268.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 511.56 268.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 511.56 268.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1e8bfdd2-8682-5d77-9571-061c47b5b347")
+		)
+		(pin "2"
+			(uuid "15643697-4aea-5435-8f69-9f1b610aba97")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW49")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 511.56 265.58) (xy 511.56 261.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f516ba58-8e3a-5cbb-96f6-b85546d6620c")
 	)
 	(wire
 		(pts
-			(xy 64.52 261.77) (xy 244.86 261.77)
+			(xy 511.56 270.66) (xy 511.56 274.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd39ccd3-9dd7-5735-bb98-f357e2ffb985")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 529.34 268.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e2e01bad-f315-58bb-9d2d-72b0dbaff0a2")
+		(property "Reference" "ROW50"
+			(at 531.88 266.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 531.88 269.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 529.34 268.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 529.34 268.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 529.34 268.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 529.34 268.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 529.34 268.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 529.34 268.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "154e80ca-d6ef-55cc-aced-2999133ab56a")
+		)
+		(pin "2"
+			(uuid "b324cc90-799b-598a-ad8e-e05158f5fc07")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW50")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 529.34 265.58) (xy 529.34 261.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26b7967f-193e-51e6-889c-4528d64123e7")
+	)
+	(wire
+		(pts
+			(xy 529.34 270.66) (xy 529.34 274.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7878f153-64d2-5db6-a14a-19295210f3a2")
+	)
+(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 547.12 268.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "401de72e-c907-59d3-bc77-2f3a9464fe12")
+		(property "Reference" "ROW51"
+			(at 549.66 266.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF,16V,X5R"
+			(at 549.66 269.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 547.12 268.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
+			(at 547.12 268.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 547.12 268.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 547.12 268.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 547.12 268.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL05A105KA5NQNC"
+			(at 547.12 268.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1d8a8a1e-0e46-5739-b589-a8fe5ab9678e")
+		)
+		(pin "2"
+			(uuid "75f3743d-7b5b-5b2a-843b-57e00da2937a")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "ROW51")
+					(unit 1)
+				)
+			)
+		)
+	)	(wire
+		(pts
+			(xy 547.12 265.58) (xy 547.12 261.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c1bbdb3-8da7-5010-8d88-afa3007fe103")
+	)
+	(wire
+		(pts
+			(xy 547.12 270.66) (xy 547.12 274.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a46718af-1d99-58ac-9132-c7c76e46b4b8")
+	)
+	(wire
+		(pts
+			(xy 64.52 261.77) (xy 547.12 261.77)
 		)
 		(stroke
 			(width 0)
@@ -47576,10 +53090,22 @@
 		(uuid "0086b807-0f31-5429-ab0c-7f68a3f32609")
 	)
 	(junction
-		(at 64.52 261.77)
+		(at 244.86 261.77)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "08325866-e1c5-56f1-a17c-7d143da77a5d")
+		(uuid "503aa289-af93-51f7-8393-687a93250122")
+	)
+	(junction
+		(at 511.56 261.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b7d6e15a-30be-5350-be17-0f56a0ad1482")
+	)
+	(junction
+		(at 529.34 261.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9565e0dd-69c4-5e01-9097-e63ed89ab5a1")
 	)
 	(wire
 		(pts
@@ -47629,7 +53155,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.52 274.47) (xy 230.89 274.47)
+			(xy 64.52 274.47) (xy 547.12 274.47)
 		)
 		(stroke
 			(width 0)
@@ -47680,10 +53206,22 @@
 		(uuid "34a61b38-13be-56d6-86c8-c95f96f7d013")
 	)
 	(junction
-		(at 64.52 274.47)
+		(at 230.89 274.47)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d9308cde-64c0-5e64-b911-7ec6e8c1ec71")
+		(uuid "4eba28a2-e739-5df3-bbe9-b95e20c280c2")
+	)
+	(junction
+		(at 511.56 274.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d2b49e08-8e7e-5c0f-9f21-94e458ca8c38")
+	)
+	(junction
+		(at 529.34 274.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "01b1929d-557e-59d9-abeb-0f2a7f649302")
 	)
 	(wire
 		(pts
@@ -47774,5 +53312,49 @@
 			(justify left)
 		)
 		(uuid "4ee845f3-8db6-5322-8df1-c96ccebff8e1")
+	)
+	(wire
+		(pts
+			(xy 120.65 38.1) (xy 120.65 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85a8766f-695b-54fd-a0c4-bf93f6a90efa")
+	)
+	(global_label "LED_DATA"
+		(shape input)
+		(at 120.65 35.56 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ddfc8c89-fba3-592a-bdfe-29659f0ebebd")
+	)
+	(wire
+		(pts
+			(xy 120.65 45.72) (xy 120.65 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ee6b0e1-5a6c-5e46-bd60-28f82393fb69")
+	)
+	(global_label "LED_IN"
+		(shape input)
+		(at 120.65 50.8 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6a7074c7-3136-5e27-a578-dfd3bc06a69e")
 	)
 )
