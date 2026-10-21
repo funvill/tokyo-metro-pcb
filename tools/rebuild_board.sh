@@ -25,10 +25,16 @@ python -X utf8 test_tokyo_data.py "$DATA" | tail -1
 python -X utf8 export_placement.py "$DATA" ../hardware --scale 2.0 | head -1
 cp ../hardware/firmware_tables.h ../firmware/include/firmware_tables.h
 python -X utf8 place_parts.py "$DATA" ../hardware --scale 2.0 | tail -1
-python -X utf8 reposition_board.py "$PCB" ../hardware/leds.csv --board 160 --height 160 --controller 124 122
+python -X utf8 reposition_board.py "$PCB" ../hardware/leds.csv --board 320 --height 280 --controller 40 220
 "$KICAD/kicad-cli.exe" sch export netlist --format kicadsexpr -o ../test-results/netlist.net "$SCH" >/dev/null
-python -X utf8 check_led_chain.py ../test-results/netlist.net 73 | tail -1
+python -X utf8 check_led_chain.py ../test-results/netlist.net 248 | tail -1
 "$KICAD/python.exe" port_board.py "$PCB" ../test-results/netlist.net ../hardware/leds.csv ../hardware/parts.csv 2>&1 | quiet
+# The pin-1 silk dot is the only thing on the board saying which way round
+# an LED goes, and pads 1 and 4 share a side, so a 180-degree error swaps
+# GND with DI and +5V with DO. port_board clones new LEDs from an existing
+# board instance rather than from the library, so the fix survives - but
+# nothing would notice if it stopped. This exits 1 on drift.
+"$KICAD/python.exe" led_polarity.py "$PCB" --check 2>&1 | quiet | tail -1
 python -X utf8 export_art.py "$DATA" "$PCB" --scale 2.0 | tail -1
 "$KICAD/python.exe" mask_under_silk.py "$PCB" 2>&1 | quiet | tail -1
 

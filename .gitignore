@@ -22,3 +22,9 @@ test-results/*
 # that were dropped in the project root and are byte-identical to them.
 /202305_number_en.pdf
 /Tokyo_subway_map_(metro).png
+
+# Copied from hardware/ by tools/rebuild_board.sh; the tracked copy is
+# hardware/firmware_tables.h. (The firmware still cannot build from a
+# clean clone without it - the real fix is an include path, not a second
+# copy in git.)
+firmware/include/firmware_tables.h

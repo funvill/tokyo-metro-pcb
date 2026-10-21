@@ -199,16 +199,251 @@ queries are worth keeping as files anyway.
 
 ## D13. What is waiting in the hardware stage
 
-- **67 LEDs sit in a hole cut out of the water**, so the front ground pour
-  will be cut into islands and every one of them needs its own via to the
-  back plane. Montréal shipped with *one* LED stranded, second in the chain,
-  which would have left 71 of 73 dark. At 67 this cannot be eyeballed —
-  Part C item 5 has to be a scripted gate.
+- **44 LEDs sit in a hole cut out of the water** (across 9 holes; none
+  stands on live water copper — the earlier figure of 67 counted stations
+  near the water, not inside it), so the front ground pour will be cut into
+  islands and every one of them needs its own via to the back plane.
+  Montréal shipped with *one* LED stranded, second in the chain, which would
+  have left 71 of 73 dark. At 44 this cannot be eyeballed — Part C item 5
+  has to be a scripted gate.
+- **Sixteen GND pads reach the pour by a single thermal spoke** and want an
+  explicit via at the pad: LED18, 19, 30, 35, 37, 47, 58, 82, 98, 99, 109,
+  133, 136, 158, 239, 244. These are the `starved_thermal` reports, and they
+  are not cosmetic — they are all on cut-up islands.
+- **There is no way to get power into the board.** Every `+5V` node is an
+  LED, a cap, U1's VBUS, or a 3 × 3 mm test pad. Fix it in the schematic
+  before routing, not after.
 - **38 of the 247 chain hops cross bare-copper water**, 174 mm in total.
   None of those can run on the front; they go down a via, across on the back,
   and up again.
-- **248 LEDs is about 15 A at full white.** The firmware cap stays at 900 mA
-  until the supply and the injection points are proven.
+- **248 LEDs is about 15 A at full white** *if* each draws the 5050
+  WS2812B's 60 mA. The XL-1615 is a 1.6 × 1.5 mm part and is likely well
+  under 20 mA, which would put the board nearer 4–5 A — but no datasheet is
+  in the repo and the symbol's Datasheet field is empty, so the number is
+  unverified either way. The firmware cap stays at 900 mA until the supply
+  and the injection points are proven.
+
+## D14. A check that only tests the middle of a chain passes a dead board
+
+The deepest bug in the project was found by a review, not by a check:
+`make_schematic.py` deleted the `LED_DATA` and `LED_IN` labels off R1's pins
+and never inserted the replacements it had built, so `GPIO1` dead-ended at
+its test point, both of R1's pads fell to `unconnected-(R1-Pad*)`, and
+LED1's DI sat alone on a one-node net. **Not one LED would have lit.**
+
+Everything passed. `check_led_chain.py` asserted `DO[n] == DI[n+1]` for all
+247 hops and they were all fine — the chain was continuous, it just had
+nothing driving it. The script even *printed* `data in: LED_IN [('LED1',
+'2')]`, a one-node net, and said PASS. Schematic parity was clean, because
+the board faithfully reproduced the broken netlist.
+
+- **Check the ends, not just the links.** A chain test must walk from the
+  driver to the far end: GPIO → series resistor → first DI, and last DO →
+  out. The checker now does, and refuses any single-node net on the path.
+- **Printing a value is not checking it.** If a script prints a number worth
+  looking at, assert on it.
+- **Deleting and re-adding in one pass needs the re-add verified.** The
+  generator built its replacement blocks into a list, logged
+  "2 label(s) moved off R1", and then appended only the *other* list. The
+  log line was true and the output was wrong.
+- **Dead code does not get its geometry checked.** The replacement blocks
+  had been wrong since the day they were written — both labels ran their
+  text back across the resistor — and nobody could see it, because nothing
+  ever rendered them. Fixing the insertion exposed a second bug underneath.
+- **For a vertical schematic label, the angle does not choose the side;
+  the justify does.** KiCad always sets vertical text bottom-to-top, so 90
+  and 270 put the glyphs on the same side of the anchor and only
+  `(justify left|right)` moves them. `check_schematic.py` derived the box
+  from the angle, so it modelled `LED_IN` as running down into empty space
+  while it actually ran up into R1's body, and reported **0 overlapping
+  pairs on a sheet that had one**. `LED_IN` was the only 90-degree label on
+  the sheet: the one label the model got wrong was the only one exercising
+  that branch. Verify a text-placement model against rendered ink
+  (`kicad-cli sch export svg`, then measure), not against itself.
+- **A rail checked by NAME is not checked at all.** `check_led_chain.py`
+  asserted every LED's pin 3 sat on a net called `+5V`. Drop the `+5V`
+  label off U1's VBUS pin the way `LED_DATA` was dropped off R1 and all 248
+  LEDs are still on a net called `+5V`, fed by nothing, and the script
+  prints PASS. It now requires each rail to reach the controller.
+
+## D15. Zero-width seams are real geometry to the DRC, invisible to shapely
+
+`gr_poly` carries one ring, so each hole is bridged into the outer ring by a
+seam traversed out and back. Both copies of `ring_with_holes` joined the
+outer ring to `hole[0]` — whichever vertex shapely happened to start the
+ring at — making the seam an arbitrary chord. For Tsukishima it ran 3.9 mm
+from the far shore straight through the middle of the LED's own keepout
+hole, across LED20's pads.
+
+Every geometric check in the pipeline said the water was 2.995 mm away,
+because `buffer(0)` collapses a doubled edge before anything measures it.
+KiCad's DRC reads the seam as boundary and called it two shorts and a
+clearance violation. Both fill rules (even-odd and non-zero) agree the point
+is *outside* the polygon — the fill was never the problem, the edge was.
+
+- **Bridge at the nearest pair**, searching both rings. The seam then
+  arrives at the hole's rim instead of crossing its interior. One line of
+  fix; it cleared all three violations.
+- **A check that runs on `buffer(0)` output cannot see self-touching
+  geometry.** If you emit invalid-as-written rings on purpose, test the
+  *segments*, not the resolved polygon.
+- **When your geometry and the DRC disagree, the DRC is describing the
+  board.** Two hours went into hypotheses about KiCad's fill rule; the
+  answer was an edge list anyone could have printed.
+
+## D17. Every LED the same way up beats every LED the shortest way round
+
+The LEDs were each turned so DOUT faced the next station in the chain -
+eight different angles across the board, which is the right answer if the
+router is what you are optimising. It is the wrong answer for the person
+who has to fit 248 parts: pads 1 and 4 share the part's long edge, so the
+only thing between a correct board and 248 parts fitted backwards is a
+0.26 mm dot read correctly at eight different rotations. All 248 now sit at
+270 degrees, pin 1 up. The routing gets harder; the assembly gets checkable
+in one glance, and in one photograph.
+
+## D18. Growing a generated schematic breaks it in the gaps you didn't grow
+
+Going from 13 decoupling caps to 52 took three tries, and each failure was
+silent:
+
+1. The new caps went in the gaps between LED columns. The bodies fit; the
+   Value text is 11.3 mm wide and ran into the next LED - 74 overlapping
+   pairs. Where a cap sits on the SHEET is cosmetic (they all bridge the
+   same two rails, and `place_parts.py` decides the board position), so
+   they moved to the clear band right of each row.
+2. The power rail still stopped at the last LED, so all 39 new caps sat
+   with both pads on `unconnected-(ROWn-Pad*)`. **`check_led_chain.py`
+   printed PASS** - it had never looked at a capacitor.
+3. Extending the rail past the last LED turned that LED's stub from an
+   end-to-end meeting into a T-junction, and in KiCad a wire ending in the
+   middle of another wire is not connected without an explicit junction.
+   One LED per row went dark, 13 of them, along with all 52 caps.
+
+- **When a generated rail grows, re-check what was at its END.** The thing
+  that used to be the endpoint is now a tee.
+- **Add the assertion with the feature.** Caps were invisible to every
+  check in the repo, so the netlist was the only thing that noticed.
+  `check_led_chain.py` now requires every `ROWn` to bridge +5V and GND, and
+  that check fails on the broken version.
+
+## D19. A weight of zero is not a preference
+
+`W_LINE` - the cost of a label lying on a route - was set to 0 because at
+100 it drove most of the rotations and leaders. Zero does not mean "mildly
+discouraged", it means the optimiser cannot see it, and 140 of 248 capsules
+ended up taking a bite out of a line. It is now 6: far below W_ROT (150)
+and W_GEO (60), so a label will still sit on a track rather than rotate or
+move onto the water, but between two otherwise equal spots it takes the
+clear one.
+
+## D20. Repair what is wrong; do not re-solve what is right
+
+Enlarging the station ring from 0.63 to 1.65 left 240 of 248 capsules
+overlapping a ring. Re-running the optimiser would have fixed it and thrown
+away every hand placement. `push_labels.py` instead pushes only the
+offending labels straight out along their own direction, keeping the angle,
+the anchor and the side that were chosen by hand - and writes the result
+back to `label_overrides.json` so it survives a rebuild. 195 cleared every
+ring; the 45 downtown ones, where the rings are 3.3 mm across and 2.8 mm
+apart and no distance along their own direction misses all of them, clear
+their OWN ring, which is the overlap you actually see.
+
+## D16a. A mark nobody can read is not a mark
+
+Pads 1 and 4 of the XL-1615 are on the SAME side of the part, so the
+vendor's silk dot — on that side but centred between them — says which side
+and not which corner. A part fitted 180 degrees out looked identical on
+silkscreen, and that error swaps GND with DI and +5V with DO. The F.Fab
+layer was always unambiguous (arrow, dot and a "1" in pad 1's own corner);
+silkscreen was not. Moving the dot onto pad 1's row costs no extra ink.
+
+Then the harder half. The dot is white silk in a map made of white silk:
+with the station ring at 1.65 mm its band ran straight through the dot on
+every LED, and **not one of the 248 dots had half its ink standing clear**.
+Cutting the dot out of the routes and notching it out of the ring took that
+to 184 fully clear and 190 at 90 % or better. The ring still reads as a
+circle; the notch is at pin 1, which is a second polarity cue for free.
+
+- **Measure legibility, not just position.** Every dot was geometrically
+  perfect and a third of them were invisible. The check that matters is
+  "how much of this ink is not on top of other ink".
+- **Thirteen dots are still buried under a station name's glyphs**
+  (LED125, 151, 83, 211, 136, 237, 50, 20, 141, 100, 119, 156, 194). The
+  label optimiser does not know the dots exist. Nudge those labels, or
+  teach `check_fit` the dot keepout.
+
+## D16b. The constant and the comment above it disagreed for two days
+
+`RING_R` was halved to 0.63 on request. Directly above it the comment said
+*"1.33 mm is the smallest radius that clears the pads… silkscreen cannot
+print on a solder-mask opening anyway, so it would be clipped away."*
+Nobody read it, and **60.7 % of every ring's ink was sitting on a pad
+opening** — all 248 would have printed as four arcs with four gaps.
+
+And the comment was itself out of date: it quoted the 1.15 mm pad reach,
+but the binding constraint is the **corner** of the pad's mask opening at
+1.4407 mm. Sizing to the comment's 1.33 still clipped 15 %. The ring's
+inner edge has to clear the corner, which is 1.65 with a 0.25 stroke.
+
+- **When you change a constant, read the comment attached to it.** If the
+  comment is now wrong, it was load-bearing and you just broke something.
+- **Derive the clearance from the real geometry**, not from a number in
+  prose: pad reach, plus mask expansion, on the diagonal.
+
+## D16c. Solder-mask expansion is a board setting and it was 4x too big
+
+`pad_to_mask_clearance` was **0.2 mm** and no LED footprint overrode it, so
+each 0.8 x 0.65 mm pad got a 1.2 x 1.05 mm opening and the 0.25 mm gaps
+between pads disappeared entirely. That was 199 `solder_mask_bridge`
+warnings — a check the project had set to `ignore`, so nobody saw them. At
+the standard 0.05 mm the dams come out at 0.150 mm, which JLCPCB makes in
+any colour at 1 oz (their minimum is 0.10 mm; **0.20 mm at 2 oz, so order
+1 oz**). The 0.2 mm expansion was also printing the footprint's own silk
+body lines on top of the mask openings on all 248 parts.
+
+- **A DRC check set to "ignore" is a check you have deleted.** Turn it on,
+  look at what falls out, and fix the cause rather than the severity.
+
+## D16d. Mask cutting kept a side file, and the side file lied
+
+`mask_under_silk.py` replaces each water mask opening with pieces cut round
+the silkscreen, and records the originals so it can re-run. But `export_art`
+rewrites the water every run, so after it ran the recorded uuids were
+"missing from the board" and the tool **restored the previous run's
+openings alongside the new ones, every run, for ever**: 7 of 11 recorded
+openings were ghosts of water shapes that no longer existed, left as bare
+copper beside LED100's pads. The art manifest is the discriminator — a uuid
+export_art no longer claims must not come back.
+
+Worse, two `geo` shapes were both called `water-0` (both `crop_board`
+splits keep the parent's name), and the block uuid is `uuid5` of the name:
+**two board items with the same uuid**. `mask_under_silk` keys its drawings
+by uuid in a dict, so one of the pair was silently dropped and its opening
+was never cut — leaving 374 mm² of front silk over a bare copper opening,
+which the fab clips away. Both fixed; silk-on-opening is now 0.000 mm².
+
+- **A deterministic uuid needs a unique key.** If a shape can split, the
+  piece index belongs in the name.
+- **Deleting a tool's state file is not a clean slate** if its previous
+  output is still on the board. Without the record, those pieces became
+  "originals" and got cut again — 9 openings became 158. The tool now
+  discards anything the manifest does not claim.
+
+## D16. Duplicated zones manufacture their own DRC noise
+
+Three GND zones sat stacked with byte-identical outlines and priorities 2, 0
+and 1. Their fills split arbitrarily (151 787 / 4 100 / 7 mm²), and the
+4 107 mm² of slivers belonging to the two redundant copies accounted for
+**all 32 `isolated_copper` reports**. Deleting them and refilling took the
+count to zero and changed nothing electrical — same net, same outline.
+
+Also: `solder_mask_bridge` was set to `ignore` in the project file, which is
+the one check that would have caught a mask aperture spanning two nets. It
+is now `warning`. 199 of its 200 hits are pad-to-pad *inside* a single LED
+footprint, whose own inter-pad gap is 0.250 mm — a fab mask-dam question
+about the footprint, not an artwork bug, but worth seeing rather than
+suppressing.
 
 ---
 
