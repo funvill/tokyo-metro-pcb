@@ -106,10 +106,17 @@ def score(ctx, sid, prev_angle):
 # about. The optimiser converges by pass 2, so the only way past the floor
 # it reaches is to change these, not to search harder.
 W_COLLIDE = 100.0  # label on a label, a pad, or off the board
-W_LINE = 0.0       # label lying on a route. Not a fault: every label is
-                   # drawn in a capsule that knocks the route out behind it.
-                   # It was the commonest "collision" by far, and at 100 it
-                   # was what drove most of the rotations and leaders.
+W_LINE = 6.0       # label lying on a route. Not a fault: every label is
+                   # drawn in a capsule that knocks the route out behind
+                   # it. It was the commonest "collision" by far, and at
+                   # 100 it was what drove most of the rotations and
+                   # leaders, so it went to 0 - which made it not a
+                   # preference at all, and 140 of 248 capsules now take a
+                   # bite out of a line. 6 is a nudge, not a veto: far
+                   # below W_ROT (150) and W_GEO (60), so the optimiser
+                   # will still happily sit a label on a track rather than
+                   # rotate it or put it on the water, but between two
+                   # otherwise equal spots it will pick the clear one.
 W_GEO = 60.0       # label over the bare-copper water
 W_ROT = 150.0      # a rotated label. Deliberately DEARER than the water:
                    # the order of preference is a name on the track first,

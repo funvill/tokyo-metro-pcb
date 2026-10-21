@@ -25,6 +25,7 @@ import argparse
 import json
 import math
 import os
+import re
 import uuid
 
 import citymap
@@ -42,8 +43,18 @@ ROUTE_W = 1.0          # route stroke - one style for every segment, built
 # pads and the body - and silkscreen cannot print on a solder-mask opening
 # anyway (lesson A6), so it would be clipped away rather than merely hidden.
 # 1.33 mm is the smallest radius that clears the pads with a 0.25 mm stroke.
-RING_R, RING_W = 0.63, 0.15            # halved, 2026-10-18
-RING_R_INT, RING_W_INT = 0.78, 0.2
+# Halved to 0.63/0.15 on 2026-10-18, which put the whole ring INSIDE the
+# pads' mask openings: 60.7% of all 248 rings' ink was on an opening, so
+# the fab would have clipped each one into four arcs with four gaps. The
+# warning above had been there the whole time. Back to a radius that
+# clears, 2026-10-20.
+# The binding constraint is the CORNER of a pad's mask opening, 1.4407 mm
+# from the part centre - not the 1.15 mm pad reach the note above quotes,
+# and not the 1.20 mm the opening reaches along x. The ring's INNER edge
+# has to clear that corner, so R - W/2 > 1.4407: at the old "1.33 clears"
+# figure 15% of the ink was still being clipped. 1.65 leaves 0.08 mm.
+RING_R, RING_W = 1.65, 0.25
+RING_R_INT, RING_W_INT = 1.90, 0.30
 DASH_STYLES = {  # (dash, gap) in mm for "line" geo and future routes
     "dash": (2.2, 1.4),
     "dot": (0.5, 0.9),
@@ -58,6 +69,24 @@ CAPSULE_BORDER = 0.12  # the capsule outline stroke
 PAD_SILK_CLEAR = 0.06  # silk kept just off the pad: enough that it is
                        # not ON the mask opening, no more. The old 0.18
                        # plus half a stroke read as a gap round every LED.
+# The water's F.Mask opening has to keep a mask dam away from every LED
+# pad, or the pad's own opening and the water's merge into one aperture
+# with two nets exposed in it - bare pour and a pad, or a +5V pad and a
+# GND pad 3.5 mm apart with nothing but bare copper between them. Solder
+# follows that during assembly. KiCad reports it as solder_mask_bridge,
+# which this project had set to "ignore". 0.05 is the board's pad mask
+# expansion, 0.1 is JLCPCB's minimum dam.
+MASK_DAM_CLEAR = 0.15
+# The LED footprint's silkscreen pin-1 dot, at footprint-local (-1.5, 0.45)
+# beside pad 1, with ink reaching 0.255 mm from its centre (0.13 radius +
+# half of a 0.25 stroke). It is the only thing on the board that says which
+# way round the part goes, and pads 1 and 4 share a side, so a part fitted
+# 180 degrees out swaps GND with DI and +5V with DO. The map's routes and
+# the station ring are white silk too, so without a gap round it the mark
+# is just more ink. DOT_CLEAR is how much bare board to leave round it.
+DOT_LOCAL = (-1.5, 0.45)
+DOT_INK_R = 0.255
+DOT_CLEAR = 0.18
 RIVER_MITRE = 1.0  # extra length added at each river segment end, to close gaps
 # citymap.repel() only pushes vertices, not the edges between them, so two
 # adjacent vertices each individually clear of a station can still bound an
@@ -348,16 +377,56 @@ def _with_holes(poly):
     return pts
 
 
-def station_ring_blocks(city, scale):
+def pin1_dots(pcb_path):
+    """Every LED's silkscreen pin-1 dot, in board mm, read from the board.
+
+    The dot lives in the footprint at local (-1.5, 0.45) - beside pad 1 -
+    so where it lands depends on the part's rotation, and the LEDs sit at
+    eight different ones. KiCad's y runs down, so a footprint's local point
+    maps to the board through -rot.
+    """
+    with open(pcb_path, encoding="utf-8") as f:
+        src = f.read()
+    out = []
+    for blk in src.split("\n\t(footprint ")[1:]:
+        ref = re.search(r'\(property "Reference" "(LED\d+)"', blk)
+        at = re.search(r"\(at ([-\d.]+) ([-\d.]+)(?: ([-\d.]+))?\)", blk)
+        if not (ref and at):
+            continue
+        cx, cy = float(at.group(1)), float(at.group(2))
+        th = math.radians(-float(at.group(3) or 0.0))
+        lx, ly = DOT_LOCAL
+        out.append((cx + lx * math.cos(th) - ly * math.sin(th),
+                    cy + lx * math.sin(th) + ly * math.cos(th)))
+    return out
+
+
+def station_ring_blocks(city, scale, dot_cuts=None):
     """A white silk ring behind every LED so a station reads as the classic
     circle-on-line marker rather than a bare pad interrupting the route;
-    interchanges get a visibly heavier ring. Rings sit inside the route
-    stroke width at the tightest (2.8 mm) pitches downtown."""
+    interchanges get a visibly heavier ring.
+
+    The ring is drawn as a filled annulus rather than a stroked circle so
+    the pin-1 dot can be cut out of it. At RING_R = 1.65 the ring's band
+    runs straight through the dot's ink, which left the polarity mark as
+    one more white blob in a field of white - on every LED, and invisible
+    on three. A notch in the ring puts bare board round the dot, so the
+    ring still reads as a circle and the mark reads as a mark.
+    """
     blocks = []
     for st in list(city.stations.values()) + city.extras:
         r, w = (RING_R_INT, RING_W_INT) if st.interchange else (RING_R, RING_W)
-        blocks.append(circle_block(st.x * scale, st.y * scale, r, "F.SilkS",
-                                   f"ring:{st.id}", w))
+        from shapely.geometry import Point as _Pt
+        c = _Pt(st.x * scale, st.y * scale)
+        ring = c.buffer(r + w / 2.0, resolution=24).difference(
+            c.buffer(r - w / 2.0, resolution=24))
+        if dot_cuts is not None:
+            ring = ring.difference(dot_cuts)
+        for i, g in enumerate(getattr(ring, "geoms", [ring])):
+            if g.geom_type != "Polygon" or g.is_empty or g.area < 0.002:
+                continue
+            blocks.append(poly_block("gr_poly", _with_holes(g), "F.SilkS",
+                                     True, f"ring:{st.id}:{i}", width=0.01))
     return blocks
 
 
@@ -386,10 +455,29 @@ def label_blocks(city, scale):
         blocks.append(text_block(citymap.display_name(st), x, y, -st.label["angle"],
                                  st.label["anchor"], "F.SilkS",
                                  f"label:{st.id}"))
-        seg = citymap.leader_segment(st, scale)
-        if seg:
-            blocks.append(line_block(seg[0], seg[1], "F.SilkS",
-                                     f"leader:{st.id}", width=0.15))
+        seg = citymap.leader_segment(st, scale, pad_r=RING_R + RING_W / 2.0)
+        if not seg:
+            continue
+        # Clip the leader where it meets the capsule. Drawn to the anchor it
+        # carries on under the text - the anchor is the text ORIGIN, inside
+        # the capsule, not its edge - so the hairline crossed the first
+        # glyphs. Cut it at the capsule's outer border and keep the piece on
+        # the LED's side.
+        import capsules as _caps
+        from shapely.geometry import LineString as _LS, Point as _Pt
+        cap = _caps.label_capsule(st, scale).buffer(CAPSULE_BORDER / 2.0)
+        line = _LS([seg[0], seg[1]]).difference(cap)
+        here = _Pt(st.x * scale, st.y * scale)
+        parts = [g for g in getattr(line, "geoms", [line])
+                 if g.geom_type == "LineString" and not g.is_empty]
+        if not parts:
+            continue
+        keep = min(parts, key=lambda g: g.distance(here))
+        if keep.length < 0.2:         # nothing worth drawing
+            continue
+        a, b = keep.coords[0], keep.coords[-1]
+        blocks.append(line_block(a, b, "F.SilkS",
+                                 f"leader:{st.id}", width=0.15))
     return blocks
 
 
@@ -412,9 +500,15 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("data")
     ap.add_argument("pcb")
-    ap.add_argument("--scale", type=float, default=1.5)
+    ap.add_argument("--scale", type=float, default=None,
+                    help="board mm per canvas unit; taken from the data "
+                         "file's board_scale when omitted. It used to "
+                         "default to 1.5 while the board is 2.0, so a run "
+                         "that forgot the flag wrote every shape at 0.75x")
     args = ap.parse_args()
     city = citymap.load(args.data)
+    if args.scale is None:
+        args.scale = city.scale
     geo = citymap.prepared_geo(city, args.scale, avoid_points(city, args.scale))
     # What the silkscreen must keep clear of: the capsule behind every
     # station name, and every LED pad. The capsule geometry is imported
@@ -425,11 +519,20 @@ def main():
     caps = list(capsules.all_capsules(city, args.scale).values())
     water = water_blocks(city, args.scale, geo,
                          mask_cut=_uu([c.buffer(CAPSULE_BORDER / 2.0)
-                                       for c in caps]))
+                                       for c in caps]
+                                      + capsules.pad_keepouts(
+                                          city, args.scale, MASK_DAM_CLEAR)))
+    # The pin-1 dots come from the BOARD, not from leds.csv: the dot's
+    # place depends on the part's rotation and the board is the only file
+    # that is certainly in step with the footprints as placed.
+    from shapely.geometry import Point as _Pt
+    dot_cuts = _uu([_Pt(x, y).buffer(DOT_INK_R + DOT_CLEAR, resolution=16)
+                    for x, y in pin1_dots(args.pcb)])
     keepouts = _uu([c.buffer(CAPSULE_BORDER / 2.0) for c in caps]
-                   + capsules.pad_keepouts(city, args.scale, PAD_SILK_CLEAR))
+                   + capsules.pad_keepouts(city, args.scale, PAD_SILK_CLEAR)
+                   + [dot_cuts])
     routes = (route_blocks(city, args.scale, keepouts)
-              + station_ring_blocks(city, args.scale))
+              + station_ring_blocks(city, args.scale, dot_cuts))
 
     # The capsule outline itself. It was being computed as a keepout and
     # never drawn, so the board had the cleared space but no border round

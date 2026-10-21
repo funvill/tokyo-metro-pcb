@@ -27,7 +27,8 @@ LINE_PITCH = 1.6  # KiCad stroke-font interline pitch (multiple of size)
 # label's own direction - clear of the 1.6 mm pad and the station ring.
 LABEL_STANDOFF = 1.9
 TEXT_H = 1.1   # station label height, mm - the one place it is set
-LABEL_HALO = 0.36  # clear border around a label, inside its capsule. Must
+KICAD_W_FUDGE = 1.03  # matplotlib outline metrics -> what KiCad actually draws
+LABEL_HALO = 0.56  # clear border around a label, inside its capsule. Must
                    # exceed the font's descender depth (0.270 mm at this
                    # size) or a 'y' on the last line pokes through. Also
                    # the one place it is set: check_fit scores the capsule
@@ -222,9 +223,20 @@ def text_width(text, text_h):
         if not os.path.exists(_FONT_TTF):
             raise OSError(_FONT_TTF)
         size = text_h * (72.0 / 25.4) * 1.35      # as preview_map.font_pt
-        w = TextPath((0, 0), text, size=size,
-                     prop=FontProperties(fname=_FONT_TTF)).get_extents().width
-        w /= (72.0 / 25.4)
+        ext = TextPath((0, 0), text, size=size,
+                       prop=FontProperties(fname=_FONT_TTF)).get_extents()
+        # x1, not width. KiCad puts the text ORIGIN at the anchor and the
+        # ink starts a left side bearing further along (up to 0.095 mm
+        # here), so a box the width of the ink alone is short by exactly
+        # that much at the far end - which is where the overhang showed.
+        # Measuring from the origin to the far edge of the ink covers both.
+        w = ext.x1 / (72.0 / 25.4)
+        # matplotlib's outline metrics run narrower than KiCad's renderer
+        # of the same TTF - measured across 246 one-line labels the drawn
+        # ink reached up to 1.0269x this. Carry the worst case, because a
+        # capsule that is a little roomy costs nothing and one that is
+        # short prints the last glyph on top of the route.
+        w *= KICAD_W_FUDGE
     except Exception:
         w = len(text) * CHAR_W * text_h
     _TEXT_W_CACHE[key] = w

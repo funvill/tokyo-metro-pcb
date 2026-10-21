@@ -39,6 +39,10 @@ from scipy.sparse.linalg import lsqr
 from shapely.geometry import LineString, Point, Polygon, box
 from shapely.ops import nearest_points, unary_union
 
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                "..", "tools"))
+import citymap          # for text_width: label and wordmark extents are
+                        # measured from the real face, never modelled
 import geo_tokyo as GEO
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -536,9 +540,21 @@ def ring_with_holes(poly):
     pts = list(poly.exterior.coords)[:-1]
     for ring in poly.interiors:
         hole = list(ring.coords)[:-1]
-        i = min(range(len(pts)), key=lambda k: (pts[k][0] - hole[0][0]) ** 2 +
-                (pts[k][1] - hole[0][1]) ** 2)
-        pts = pts[:i + 1] + hole + [hole[0]] + [pts[i]] + pts[i + 1:]
+        # The seam must be the SHORTEST chord between the two rings, which
+        # means searching both of them. Bridging to hole[0] - whichever
+        # vertex shapely happened to start the ring at - makes the seam an
+        # arbitrary chord, and a hole cut round an LED is entered through
+        # its middle: the seam ran 3.9 mm across Tsukishima and straight
+        # over LED20's pads. It is zero width so it does not print and
+        # shapely's buffer(0) collapses it, which is why every check here
+        # passed, but KiCad's DRC reads it as real boundary and called it a
+        # short. Nearest-pair arrives at the rim instead of crossing it.
+        i, j = min(
+            ((k, m) for k in range(len(pts)) for m in range(len(hole))),
+            key=lambda km: (pts[km[0]][0] - hole[km[1]][0]) ** 2 +
+                           (pts[km[0]][1] - hole[km[1]][1]) ** 2)
+        bridged = hole[j:] + hole[:j] + [hole[j]]
+        pts = pts[:i + 1] + bridged + [pts[i]] + pts[i + 1:]
     return [[round(x / BOARD, 2), round(y / BOARD, 2)] for x, y in pts]
 
 
@@ -1210,7 +1226,12 @@ def main():
     # Copper like the water, on the clearest land the lower-left quarter has
     # to offer. Searched rather than placed by hand so it moves with the
     # layout instead of quietly ending up on top of a line.
-    tw = len(TITLE) * TITLE_CHAR_W * TITLE_MM
+    # Measured, not modelled. TITLE_CHAR_W is one average advance per
+    # glyph and "TOKYO" is 18% wider than it predicts - 53.75 mm against
+    # 45.50 - so the search was validating a box 4.13 mm short at each end
+    # of what gets drawn, and the wordmark ended up 9.88 mm from the board
+    # edge where the search demanded 12.
+    tw = citymap.text_width(TITLE, TITLE_MM)
     th = 1.25 * TITLE_MM
     land = box(0, 0, BOARD_W_MM, BOARD_H_MM).difference(water)
     avoid = unary_union([routes.buffer(3.0)]
@@ -1220,13 +1241,16 @@ def main():
     # sets a little wider than it, so a 6 mm margin left the T touching the
     # board edge in the preview.
     for cx in np.arange(tw / 2 + 12, BOARD_W_MM * 0.55, 2.0):
-        for cy in np.arange(BOARD_H_MM * 0.55, BOARD_H_MM - th / 2 - 6, 2.0):
+        for cy in np.arange(BOARD_H_MM * 0.35, BOARD_H_MM - th / 2 - 6, 2.0):
             blk = box(cx - tw / 2, cy - th / 2, cx + tw / 2, cy + th / 2)
             if not land.contains(blk.buffer(2.0)) or blk.intersects(avoid):
                 continue
-            # the clearest spot, nudged toward the bottom-left corner
+            # The clearest spot, nudged toward the LEFT and UP. It used to
+            # be pulled toward the bottom-left corner, which put the
+            # wordmark in the strip the crop then had to shuffle, sitting
+            # on the board edge rather than in the map.
             score = (min(blk.distance(avoid), 14.0)
-                     + 0.05 * (BOARD_H_MM - cy) * -1
+                     - 0.05 * cy
                      + 0.05 * (BOARD_W_MM - cx))
             if best is None or score > best[0]:
                 best = (score, float(cx), float(cy))

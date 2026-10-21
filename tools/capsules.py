@@ -134,17 +134,27 @@ def all_capsules(city, scale, halo=None, text_h=None):
     return out
 
 
+# The XL-1615's four pads sit at (+/-0.75, +/-0.45) and are 0.8 x 0.65, so
+# copper reaches 1.150 mm across and 0.775 mm down from the part centre -
+# 1.387 mm on the diagonal. The LEDs are placed at mixed rotations (the
+# footprint is turned so DOUT faces the next in the chain), so an
+# axis-aligned box cannot describe the opening: the keepout is the
+# circumscribed circle, which is right at any angle.
+PAD_REACH_MM = 1.387
+
+
 def pad_keepouts(city, scale, clear):
-    """A box round every LED pad, grown by `clear`.
+    """A disc round every LED pad, `clear` mm outside the copper.
 
     Silkscreen will not print on the pad's mask opening, so a route drawn
-    across a pad is ink the board will not have; cutting it is truer as
-    well as clearer.
+    across one is ink the board will not have - it comes back as a notch
+    where the artwork says the line is continuous. The earlier box
+    (+/-0.8 x +/-0.75) was smaller than the real opening in x and blind to
+    rotation, leaving 0.29 mm per side of silk over copper on every one of
+    the 248 LEDs.
     """
     out = []
     for st in list(city.stations.values()) + city.extras:
-        x, y = st.x * scale, st.y * scale
-        out.append(Polygon([(x - 0.8, y - 0.75), (x + 0.8, y - 0.75),
-                            (x + 0.8, y + 0.75), (x - 0.8, y + 0.75)])
-                   .buffer(clear, join_style=1))
+        out.append(Point(st.x * scale, st.y * scale)
+                   .buffer(PAD_REACH_MM + clear, resolution=12))
     return out

@@ -150,7 +150,9 @@ class Context:
         self.annots = []
         for a in city.annotations:
             size = a.get("size", 1.4)
-            w = len(a["text"]) * citymap.CHAR_W * size
+            # measured, like every other text extent - the CHAR_W model
+            # is 18% narrow on the wordmark
+            w = citymap.text_width(a["text"], size)
             h = citymap.BOX_H * size
             x, y = a["x"] * scale, a["y"] * scale
             anchor = a.get("anchor", "start")

@@ -63,6 +63,11 @@ def main(pcb_path):
     side = pcb_path + ".silk-mask.json"
     state = json.load(open(side)) if os.path.exists(side) else {"originals": {}, "pieces": []}
     board = pcbnew.LoadBoard(pcb_path)
+    # What export_art.py says the real openings are: {uuid: key}. It is the
+    # authority both for spotting our own orphaned pieces below and for
+    # refusing to restore an opening export_art has since dropped.
+    man_path = pcb_path + ".art-manifest.json"
+    claimed = set(json.load(open(man_path)) if os.path.exists(man_path) else [])
 
     # In KiCad 10 the Python wrappers go bad after a board.Remove() (objects
     # come back as bare SwigPyObjects), so everything is read and added
@@ -72,13 +77,41 @@ def main(pcb_path):
                 and d.GetShape() == pcbnew.SHAPE_T_POLY}
     ink = silk(board)
     doomed = [on_board.pop(u) for u in set(state["pieces"]) & set(on_board)]
+    # Anything left that export_art does not claim is one of OUR pieces from
+    # an earlier run whose record we have lost. Cutting it again would cut
+    # pieces out of pieces: with the state file deleted, 9 openings became
+    # 158 and the board collected 192 orphaned fragments. The manifest is
+    # the authority on what a real opening is, so drop the rest and let the
+    # pieces be rebuilt from the openings themselves.
+    orphans = [u for u in on_board if u not in claimed]
+    if orphans:
+        print(f"  discarding {len(orphans)} unrecorded mask piece(s) from an "
+              f"earlier run - RE-RUN export_art.py AND THEN THIS, because "
+              f"the openings they were cut from went with them")
+        for u in orphans:
+            doomed.append(on_board.pop(u))
     # every water opening, by its original uuid: fresh from export_art if it
     # is on the board, otherwise the copy recorded the last time it was cut
     originals = {}
     for u, d in on_board.items():
         originals[u] = pcbnew.SHAPE_POLY_SET()
         d.TransformShapeToPolygon(originals[u], pcbnew.F_Mask, 0, MAX_ERR, pcbnew.ERROR_INSIDE)
-    stored = {u: pts for u, pts in state["originals"].items() if u not in originals}
+    # A recorded original is only worth restoring if export_art.py still
+    # claims it. export_art rewrites the water with FRESH uuids on every
+    # run, so after it re-runs, every uuid recorded here is missing from
+    # the board - and restoring them all put the PREVIOUS run's openings
+    # back alongside the new ones, every run, for ever. Seven of eleven
+    # recorded openings were ghosts of water shapes that no longer exist,
+    # left as bare copper next to LED100's pads. export_art's manifest is
+    # the discriminator: it lists what the current artwork wrote, so a uuid
+    # it no longer names was dropped by export_art and must not come back.
+    ghosts = [u for u in state["originals"]
+              if u not in originals and u not in claimed]
+    if ghosts:
+        print(f"  dropping {len(ghosts)} stale opening(s) from a previous "
+              f"export_art run: {', '.join(u[:8] for u in ghosts)}")
+    stored = {u: pts for u, pts in state["originals"].items()
+              if u not in originals and u in claimed}
     for u, pts in stored.items():
         originals[u] = poly_from(pts)
 

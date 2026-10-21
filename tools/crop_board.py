@@ -24,7 +24,7 @@ import io
 import json
 import os
 
-from shapely.geometry import Polygon, box
+from shapely.geometry import Point, Polygon, box
 from shapely.ops import unary_union
 
 
@@ -32,9 +32,21 @@ def ring_with_holes(poly, scale):
     pts = list(poly.exterior.coords)[:-1]
     for ring in poly.interiors:
         hole = list(ring.coords)[:-1]
-        i = min(range(len(pts)), key=lambda k: (pts[k][0] - hole[0][0]) ** 2 +
-                (pts[k][1] - hole[0][1]) ** 2)
-        pts = pts[:i + 1] + hole + [hole[0]] + [pts[i]] + pts[i + 1:]
+        # The seam must be the SHORTEST chord between the two rings, which
+        # means searching both of them. Bridging to hole[0] - whichever
+        # vertex shapely happened to start the ring at - makes the seam an
+        # arbitrary chord, and a hole cut round an LED is entered through
+        # its middle: the seam ran 3.9 mm across Tsukishima and straight
+        # over LED20's pads. It is zero width so it does not print and
+        # shapely's buffer(0) collapses it, which is why every check here
+        # passed, but KiCad's DRC reads it as real boundary and called it a
+        # short. Nearest-pair arrives at the rim instead of crossing it.
+        i, j = min(
+            ((k, m) for k in range(len(pts)) for m in range(len(hole))),
+            key=lambda km: (pts[km[0]][0] - hole[km[1]][0]) ** 2 +
+                           (pts[km[0]][1] - hole[km[1]][1]) ** 2)
+        bridged = hole[j:] + hole[:j] + [hole[j]]
+        pts = pts[:i + 1] + bridged + [pts[i]] + pts[i + 1:]
     return [[round(x / scale, 2), round(y / scale, 2)] for x, y in pts]
 
 
@@ -142,6 +154,54 @@ def main():
     inset = d["mounting_holes"][0][0] if d["mounting_holes"] else 4.0
     d["mounting_holes"] = [[x, y] for x in (inset, W2 - inset)
                            for y in (inset, H2 - inset)]
+
+    # build_tokyo cut a clearance disc out of the water at each mounting
+    # hole - but at the UNCROPPED corners. Moving the board edge in moves
+    # the holes, and nothing re-cut at the new positions, so a corner that
+    # now lands in the bay was drilled straight through the copper pour:
+    # 60.8 of the 63.5 mm2 keepout at (316, 276) was solid copper, and it
+    # is where two of the board's DRC shorts came from.
+    HOLE_CLEAR_MM = 4.5
+    holed = []
+    for g in d["geo"]:
+        if g["type"] not in ("water", "lake"):
+            holed.append(g)
+            continue
+        poly = Polygon([(x * B, y * B) for x, y in g["points"]]).buffer(0)
+        for hx, hy in d["mounting_holes"]:
+            poly = poly.difference(Point(hx, hy).buffer(HOLE_CLEAR_MM, 16))
+        if poly.is_empty:
+            continue
+        for piece in getattr(poly, "geoms", [poly]):
+            if piece.geom_type == "Polygon" and piece.area >= 1.0:
+                holed.append({"name": g["name"], "type": g["type"],
+                              "points": ring_with_holes(piece, B)})
+    cut_n = len(holed) - sum(1 for g in d["geo"] if g["type"] in ("water", "lake"))
+    d["geo"] = holed
+
+    # Both splits above - the frame intersection and the mounting-hole
+    # difference - can break one polygon into several, and each piece kept
+    # the parent's name. export_art derives its block uuid from that name
+    # (uuid5 of "water:NAME:LAYER"), so two pieces called water-0 produced
+    # two board items with the SAME uuid. That is a malformed KiCad file,
+    # it collapses the art manifest's {uuid: key} to one entry for two
+    # blocks, and mask_under_silk keys its drawings by uuid in a dict, so
+    # one of the pair was silently dropped and its solder-mask opening was
+    # never cut back under the silkscreen - leaving front silk over a bare
+    # copper opening, which the fab clips away. The first piece keeps the
+    # plain name so existing hand work still matches; extras are suffixed.
+    seen = {}
+    for g in d["geo"]:
+        n = g["name"]
+        seen[n] = seen.get(n, 0) + 1
+        if seen[n] > 1:
+            g["name"] = f"{n}-{seen[n] - 1}"
+    dups = [n for n, c in seen.items() if c > 1]
+    if dups:
+        print(f"  renamed split pieces so every geo name is unique: "
+              f"{', '.join(f'{n} x{seen[n]}' for n in dups)}")
+    print(f"  mounting holes cleared from the water "
+          f"({len(d['mounting_holes'])} holes, {HOLE_CLEAR_MM} mm)")
 
     for a in d.get("annotations", []):
         th = 1.25 * a.get("size", 14.0)
