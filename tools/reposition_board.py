@@ -100,6 +100,19 @@ def main():
     # middle of the map, which is how R1's pads ended up shorted to the water.
     pos.update({"R1": (c - 6, cy - 24), "C1": (c + 8, cy - 24)})
 
+    # TP1-4, LED_OUT1 and +5V1 were never repositioned at all, so they sat
+    # wherever the Montreal board left them: the four button test points in
+    # the middle of the map at (109, 120-142), LED_OUT1 at (150, 109) and
+    # +5V1 in the top-left corner. They are back-side pads, so they do not
+    # fight the artwork, but they are awkward to reach and they are not
+    # where anyone would look for them. They go in a row along the bottom
+    # edge with everything else that is handled from the back.
+    tp_y = height - 10.0
+    for i, ref in enumerate(("TP1", "TP2", "TP3", "TP4")):
+        pos[ref] = (c + 50 + i * 10, tp_y)
+    pos["LED_OUT1"] = (c + 95, tp_y)
+    pos["+5V1"] = (c + 105, tp_y)
+
     # Three test points (GND / +5V / LED_IN) share a reference pattern with
     # others on the board, so they are keyed by uuid. They go in a row below
     # the XIAO, well clear of it and of the buttons: packed in beside them

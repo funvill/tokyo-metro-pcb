@@ -63,16 +63,17 @@ def export(pcb_path, dsn_path):
             outline.AddOutline(sps.Outline(i))
             board.Add(zone)
             n += 1
-    # The pours stay on both layers in the real board, but the front one is
-    # cut into islands by the artwork, so it cannot be trusted to carry
-    # ground. Tell the router the plane is on the back only: it then drops a
-    # via to the back pour for every ground pad.
-    b_cu = board.GetLayerID("B.Cu")
+    # Each pour goes to the router on its OWN layer. This used to force
+    # every pour onto B.Cu, which was right while both planes were GND and
+    # the front one was cut into islands by the artwork: the router then
+    # dropped a via to the back pour for every ground pad. Now the front
+    # pour is +5V and the back is GND, so forcing them together would hand
+    # the router two different nets poured on the same layer.
     for zone in board.Zones():
-        if not zone.GetIsRuleArea():
-            ls = pcbnew.LSET()
-            ls.AddLayer(b_cu)
-            zone.SetLayerSet(ls)
+        if zone.GetIsRuleArea():
+            continue
+        print(f"  plane: {zone.GetNetname()} on "
+              f"{','.join(board.GetLayerName(l) for l in zone.GetLayerSet().Seq())}")
     for t in list(board.GetTracks()):
         board.Remove(t)
     tmp = os.path.splitext(dsn_path)[0] + ".tmp.kicad_pcb"
